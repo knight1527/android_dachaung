@@ -1,0 +1,28 @@
+.color_press{
+	color: #03DAC5;
+}
+.margin_auto{
+	margin: auto;
+}
+.margin_top_20{
+	margin-top: 20rpx;
+}
+.margin_top_50{
+	margin-top: 50rpx;
+}
+.margin_right_30{
+	margin-right: 30rpx;
+}
+.margin_left_30{
+	margin-left: 30rpx;
+}
+.margin_right_50{
+	margin-right: 50rpx;
+}
+.margin_left_50{
+	margin-left: 50rpx;
+}
+/* 超链接 */
+.a_href{
+	color: #03DAC5;
+}

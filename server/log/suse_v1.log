@@ -1,0 +1,38 @@
+2023-02-10 16:07:52.385  INFO 9952 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 9952 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-02-10 16:07:52.391  INFO 9952 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-02-10 16:07:52.484  INFO 9952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-10 16:07:52.485  INFO 9952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-10 16:07:53.665  INFO 9952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-02-10 16:07:53.674  INFO 9952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-10 16:07:53.674  INFO 9952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-02-10 16:07:53.677  INFO 9952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-02-10 16:07:53.677  INFO 9952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-02-10 16:07:53.677  INFO 9952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-02-10 16:07:53.677  INFO 9952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-02-10 16:07:53.691  INFO 9952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-02-10 16:07:53.773  INFO 9952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-10 16:07:53.773  INFO 9952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1287 ms
+2023-02-10 16:07:53.977  INFO 9952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-10 16:07:53.982  WARN 9952 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-02-10 16:07:54.524  INFO 9952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-10 16:07:55.083  INFO 9952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-10 16:07:55.116  INFO 9952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-02-10 16:07:55.127  INFO 9952 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 3.257 seconds (JVM running for 4.373)
+2023-02-10 16:09:08.791  INFO 9952 --- [http-nio-8096-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-10 16:09:08.791  INFO 9952 --- [http-nio-8096-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-10 16:09:08.792  INFO 9952 --- [http-nio-8096-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-10 16:10:34.189  INFO 9952 --- [http-nio-8096-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x03I0xc5r0xc8(0x110xd6[0xc00xbf0xbe0x1d!x0xb00xbb(0x9b0xdb0xd4M0xf1hK0x090xa20xde0xf7y`0xfa0xd1 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+

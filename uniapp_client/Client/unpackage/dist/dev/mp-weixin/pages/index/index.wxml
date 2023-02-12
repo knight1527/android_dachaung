@@ -1,0 +1,1 @@
+<view class="content"><view class="status_bar"></view><text>首页</text><button type="primary" bindtap="{{a}}">登录</button><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{b}}</text></view><button type="primary" bindtap="{{c}}">api</button></view>

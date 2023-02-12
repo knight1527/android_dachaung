@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/login/login",
+    "pages/user/register/register",
+    "pages/events/events",
+    "pages/msg/msg",
+    "pages/self/self"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#03DAC5",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/discuss.png",
+        "selectedIconPath": "static/tabbar/discuss_press.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/events/events",
+        "iconPath": "static/tabbar/cop.png",
+        "selectedIconPath": "static/tabbar/cop_press.png",
+        "text": "赛事"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "iconPath": "static/tabbar/msg.png",
+        "selectedIconPath": "static/tabbar/msg_press.png",
+        "text": "关注"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "iconPath": "static/tabbar/self.png",
+        "selectedIconPath": "static/tabbar/self_press.png",
+        "text": "自己"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

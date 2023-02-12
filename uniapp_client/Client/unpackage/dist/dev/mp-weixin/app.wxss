@@ -1,0 +1,36 @@
+
+	/*每个页面公共css */
+.color_press{
+	color: #03DAC5;
+}
+.margin_auto{
+	margin: auto;
+}
+.margin_top_20{
+	margin-top: 20rpx;
+}
+.margin_top_50{
+	margin-top: 50rpx;
+}
+.margin_right_30{
+	margin-right: 30rpx;
+}
+.margin_left_30{
+	margin-left: 30rpx;
+}
+.margin_right_50{
+	margin-right: 50rpx;
+}
+.margin_left_50{
+	margin-left: 50rpx;
+}
+
+	/* 超链接 */
+.a_href{
+	color: #03DAC5;
+}
+.status_bar {
+		height: var(--status-bar-height);
+		width: 100%;
+}
+page{--status-bar-height:25px;--top-window-height:0px;--window-top:0px;--window-bottom:0px;--window-left:0px;--window-right:0px;--window-magin:0px}[data-c-h="true"]{display: none !important;}
