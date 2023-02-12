@@ -65,8 +65,10 @@ public class UserServiceImpl implements UserService {
     public UserDto register(UserDto userDto) {
         User user = new User();
         BeanUtil.copyProperties(userDto, user, true);
+        String password = userDto.getPassword();
+        user.setPassword(MD5Utils.code(password));
         System.out.println("before insert：" + user);
-        insertUser(user);
+        boolean tag = insertUser(user);
         //查找user，查看插入成功与否
         user = getUserInfo(userDto);
         System.out.println("after insert： user" + user + "\n userdto: " + userDto);
@@ -75,10 +77,12 @@ public class UserServiceImpl implements UserService {
             //得到token
             String token = TokenUtil.genToken(user.getId().toString(), user.getPassword());
             userDto.setToken(token);
+            userDto.setPassword(password);
             System.out.println("token: " + userDto);
             return userDto;
+        }else{
+            throw new ServiceException(Constants.CODE_600, "注册失败");
         }
-        throw new ServiceException(Constants.CODE_600, "注册失败");
     }
 
     /**

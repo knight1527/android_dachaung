@@ -48,13 +48,9 @@ public class UserController {
         if(!verifyCaptcha(userDto.getCodeID(), userDto.getCode())){
             return Resp.success(Constants.CODE_202);
         }
-        try {
-            UserDto rel = userService.login(userDto);
-            return Resp.success(rel);
-        }catch (ServiceException e){
-            //可改进点：用户名密码错误
-            return Resp.success(e.getCode(), e.getMessage());
-        }
+        //有异常globalExceptionHandler会处理
+        UserDto rel = userService.login(userDto);
+        return Resp.success(rel);
     }
 
     @PostMapping(value = "/register")
@@ -62,13 +58,8 @@ public class UserController {
         if(!verifyCaptcha(userDto.getCodeID(), userDto.getCode())){
             return Resp.success(Constants.CODE_202);
         }
-        try {
-            UserDto rel = userService.register(userDto);
-            return Resp.success(rel);
-        }catch (ServiceException e){
-            //可改进点：注册
-            return Resp.success(e.getCode(), e.getMessage());
-        }
+        UserDto rel = userService.register(userDto);
+        return Resp.success(rel);
     }
 
 

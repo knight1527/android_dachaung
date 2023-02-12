@@ -4,6 +4,8 @@ import cn.hutool.core.util.IdUtil;
 import com.auth0.jwt.JWT;
 import com.wf.captcha.SpecCaptcha;
 import com.wf.captcha.base.Captcha;
+import icu.qihangduan.dachuang_server.mapper.UserMapper;
+import icu.qihangduan.dachuang_server.pojo.User;
 import icu.qihangduan.dachuang_server.service.UserService;
 import icu.qihangduan.dachuang_server.service.impl.UserServiceImpl;
 import icu.qihangduan.dachuang_server.utils.MD5Utils;
@@ -33,6 +35,9 @@ public class TestService {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
+    @Autowired
+    UserMapper userMapper;
+
 
     @Test
     public void testQueryUser(){
@@ -41,7 +46,9 @@ public class TestService {
 
     @Test
     public void other(){
-        System.out.println(JWT.decode("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxIiwiZXhwIjoxNjc2OTA3MDU5fQ" +
-                ".fi-5iV2KJVMOFtW6j4InBoD-14Y51b3n1WU4NMqclgI").getAudience().get(0));
+        User user = new User();
+        user.setUsername("admin2");
+        user.setPassword("f6fdffe48c908deb0f4c3bd36c032e72");
+        System.out.println(userMapper.insert(user));
     }
 }

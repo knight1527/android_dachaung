@@ -46,6 +46,8 @@
 <script>
 	//导入封装的request方法
 	import {$request} from '@/utils/request.js'
+	//this
+	var self_
 	export default {
 		data() {
 			return {
@@ -104,6 +106,8 @@
 		created() {
 			//获取验证码
 			this.getCode()
+			//获得this
+			self_ = this
 		},
 		methods: {
 			//每次点击刷新验证码
@@ -115,6 +119,44 @@
 			  	console.log('验证码请求失败' + err.msg)
 			  }) 
 			},
+			relSubmit(){
+				console.log("真正提交")
+				$request({
+					url: '/user/register',
+					method: 'POST',
+					data: {
+						username: this.formData_register.username,
+						password: this.formData_register.password,
+						code: this.formData_register.code,
+						codeID: this.formData_register.codeID
+					}
+				}).then(res=>{
+					if(res.code == '200'){
+						uni.setStorageSync('token', res.data.token)
+					
+						uni.switchTab({
+							url: '/pages/index/index'
+						})
+						uni.showToast({
+							title: '注册成功'
+						})
+					}else if(res.code == '202'){
+						uni.showToast({
+							icon: 'error',
+							title: '验证码错误'
+						})
+					}else{
+						//注册失败
+						uni.showToast({
+							icon: 'error',
+							title: res.msg
+						})
+						console.log(res.code + " Msg:" + res.msg)
+					}
+				}).catch(err=>{
+					console.log(err.code + "Msg:" + err.msg)
+				})
+			},
 			//表单提交
 			submit(){
 				this.$refs.form.validate().then(res=>{
@@ -125,60 +167,23 @@
 						method: 'GET',
 						data: {username: this.formData_register.username}
 					}).then(res=>{
-						//console.log(res.code + this.formData_register.username)
 						if(res.code == '200'){
 							console.log("username 合法")
+							self_.relSubmit()
 						}else{
 							uni.showToast({
 								icon: 'error',
 								title: '账号已存在！'
 							})
-							return
 						}
 					}).catch(err=>{
+						console.log(err)
 						console.log('服务器 500！')
-						return
-					})
-					//提交表单
-					$request({
-						url: '/user/register',
-						method: 'POST',
-						data: {
-							username: this.formData_register.username,
-							password: this.formData_register.password,
-							code: this.formData_register.code,
-							codeID: this.formData_register.codeID
-						}
-					}).then(res=>{
-						if(res.code == '200'){
-							uni.setStorageSync('token', res.data.token)
-						
-							uni.switchTab({
-								url: '/pages/index/index'
-							})
-							uni.showToast({
-								title: '注册成功'
-							})
-						}else if(res.code == '202'){
-							uni.showToast({
-								icon: 'error',
-								title: '验证码错误'
-							})
-						}else{
-							//注册失败
-							uni.showToast({
-								icon: 'error',
-								title: res.msg
-							})
-							console.log(res.code + " Msg:" + res.msg)
-						}
-					}).catch(err=>{
-						console.log(err.code + "Msg:" + err.msg)
 					})
 				}).catch(err=>{
 					console.log('表单错误：', err);
 				})
-			}
+			},
 		}
 	}
 </script>

@@ -1,6 +1,7 @@
 "use strict";
 var common_vendor = require("../../../common/vendor.js");
 var utils_request = require("../../../utils/request.js");
+var self_;
 const _sfc_main = {
   data() {
     return {
@@ -57,6 +58,7 @@ const _sfc_main = {
   },
   created() {
     this.getCode();
+    self_ = this;
   },
   methods: {
     getCode() {
@@ -65,6 +67,42 @@ const _sfc_main = {
         this.formData_register.codeID = res.data.uuid;
       }).catch((err) => {
         console.log("\u9A8C\u8BC1\u7801\u8BF7\u6C42\u5931\u8D25" + err.msg);
+      });
+    },
+    relSubmit() {
+      console.log("\u771F\u6B63\u63D0\u4EA4");
+      utils_request.$request({
+        url: "/user/register",
+        method: "POST",
+        data: {
+          username: this.formData_register.username,
+          password: this.formData_register.password,
+          code: this.formData_register.code,
+          codeID: this.formData_register.codeID
+        }
+      }).then((res) => {
+        if (res.code == "200") {
+          common_vendor.index.setStorageSync("token", res.data.token);
+          common_vendor.index.switchTab({
+            url: "/pages/index/index"
+          });
+          common_vendor.index.showToast({
+            title: "\u6CE8\u518C\u6210\u529F"
+          });
+        } else if (res.code == "202") {
+          common_vendor.index.showToast({
+            icon: "error",
+            title: "\u9A8C\u8BC1\u7801\u9519\u8BEF"
+          });
+        } else {
+          common_vendor.index.showToast({
+            icon: "error",
+            title: res.msg
+          });
+          console.log(res.code + " Msg:" + res.msg);
+        }
+      }).catch((err) => {
+        console.log(err.code + "Msg:" + err.msg);
       });
     },
     submit() {
@@ -77,49 +115,16 @@ const _sfc_main = {
         }).then((res2) => {
           if (res2.code == "200") {
             console.log("username \u5408\u6CD5");
+            self_.relSubmit();
           } else {
             common_vendor.index.showToast({
               icon: "error",
               title: "\u8D26\u53F7\u5DF2\u5B58\u5728\uFF01"
             });
-            return;
           }
         }).catch((err) => {
+          console.log(err);
           console.log("\u670D\u52A1\u5668 500\uFF01");
-          return;
-        });
-        utils_request.$request({
-          url: "/user/register",
-          method: "POST",
-          data: {
-            username: this.formData_register.username,
-            password: this.formData_register.password,
-            code: this.formData_register.code,
-            codeID: this.formData_register.codeID
-          }
-        }).then((res2) => {
-          if (res2.code == "200") {
-            common_vendor.index.setStorageSync("token", res2.data.token);
-            common_vendor.index.switchTab({
-              url: "/pages/index/index"
-            });
-            common_vendor.index.showToast({
-              title: "\u6CE8\u518C\u6210\u529F"
-            });
-          } else if (res2.code == "202") {
-            common_vendor.index.showToast({
-              icon: "error",
-              title: "\u9A8C\u8BC1\u7801\u9519\u8BEF"
-            });
-          } else {
-            common_vendor.index.showToast({
-              icon: "error",
-              title: res2.msg
-            });
-            console.log(res2.code + " Msg:" + res2.msg);
-          }
-        }).catch((err) => {
-          console.log(err.code + "Msg:" + err.msg);
         });
       }).catch((err) => {
         console.log("\u8868\u5355\u9519\u8BEF\uFF1A", err);
