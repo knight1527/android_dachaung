@@ -13,7 +13,7 @@ import java.io.*;
  * Created with IntelliJ IDEA.
  * User: suse_QiHang
  * Date: 2023/2/28 14:59
- * Description: 阿里云OSS工具类
+ * Description: 阿里云OSS工具类（测试）
  */
 /**
  * public static void main(String[] args) throws Exception {
