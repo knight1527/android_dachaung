@@ -5,7 +5,8 @@
     "pages/user/register/register",
     "pages/events/events",
     "pages/msg/msg",
-    "pages/self/self"
+    "pages/self/self",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -35,7 +36,7 @@
         "pagePath": "pages/msg/msg",
         "iconPath": "static/tabbar/msg.png",
         "selectedIconPath": "static/tabbar/msg_press.png",
-        "text": "关注"
+        "text": "同志"
       },
       {
         "pagePath": "pages/self/self",

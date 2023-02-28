@@ -9,11 +9,10 @@ if (!Math) {
   "./pages/events/events.js";
   "./pages/msg/msg.js";
   "./pages/self/self.js";
+  "./pages/test/test.js";
 }
 const _sfc_main = {
-  globalData: {
-    BASEURL: `http://localhost:8096`
-  },
+  globalData: {},
   onLaunch: function() {
     console.log("App Launch");
   },

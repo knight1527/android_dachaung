@@ -3,55 +3,70 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-					"navigationStyle": "custom"
+					"navigationStyle": "custom",
+					"app-plus": {
+						"scrollIndicator": "none"
+					}
 			}
+		},
+		{
+				"path" : "pages/user/login/login",
+				"style" :                                                                                    
+				{
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+				}
+				
+		},
+		{
+				"path" : "pages/user/register/register",
+				"style" :                                                                                    
+				{
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+				}
+				
+		},
+		{
+				"path" : "pages/events/events",
+				"style" :                                                                                    
+				{
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false,
+						"app-plus": {
+							"scrollIndicator": "none"
+						}
+				}
+				
+		},
+		{
+				"path" : "pages/msg/msg",
+				"style" :                                                                                    
+				{
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+				}
+				
+		},
+		{
+				"path" : "pages/self/self",
+				"style" :                                                                                    
+				{
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": true
+				}
+				
+		},
+		{
+				"path" : "pages/test/test",
+				"style" :                                                                                    
+				{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+				}
+				
 		}
-	    ,{
-            "path" : "pages/user/login/login",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/register/register",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/events/events",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/msg/msg",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/self/self",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": true
-            }
-            
-        }
-    ],
+  ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -79,7 +94,7 @@
 				"pagePath": "pages/msg/msg",
 				"iconPath": "static/tabbar/msg.png",
 				"selectedIconPath": "static/tabbar/msg_press.png",
-				"text": "关注"
+				"text": "同志"
 			},{
 				"pagePath": "pages/self/self",
 				"iconPath": "static/tabbar/self.png",

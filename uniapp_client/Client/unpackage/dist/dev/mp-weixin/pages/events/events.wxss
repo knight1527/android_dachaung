@@ -1,0 +1,26 @@
+
+.popup_content{
+		height: auto;
+		max-height: 200rpx;
+		overflow: scroll;
+		background-color: #fff;
+}
+.popup_item{
+		color: #808080;
+		font-size: 35rpx;
+		font-weight: 300;
+}
+.item_active{
+		color: #03dac5;
+}
+.fixed_eventNav{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+}
+.eventNav{
+		color: #808080;
+		font-size: 30rpx;
+}

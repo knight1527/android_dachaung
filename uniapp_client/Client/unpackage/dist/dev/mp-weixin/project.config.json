@@ -16,7 +16,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.26.0",
+  "libVersion": "",
   "appid": "touristappid",
   "projectname": "Client",
   "condition": {

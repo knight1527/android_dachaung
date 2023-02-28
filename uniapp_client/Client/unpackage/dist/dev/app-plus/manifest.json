@@ -38,7 +38,7 @@
       "kernel": "WKWebview"
     },
     "statusbar": {
-      "immersed": "supportedDevice",
+      "immersed": false,
       "style": "light",
       "background": "#F8F8F8"
     },
@@ -123,7 +123,7 @@
           "pagePath": "pages/msg/msg",
           "iconPath": "/static/tabbar/msg.png",
           "selectedIconPath": "/static/tabbar/msg_press.png",
-          "text": "关注"
+          "text": "同志"
         },
         {
           "pagePath": "pages/self/self",

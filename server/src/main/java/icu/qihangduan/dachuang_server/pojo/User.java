@@ -30,6 +30,7 @@ public class User {
     private String major;
     private String description;
     private String nickname;
+    private String blog;
 
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;

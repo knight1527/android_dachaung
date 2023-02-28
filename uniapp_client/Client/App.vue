@@ -1,7 +1,7 @@
 <script>
 	export default {
 		globalData: {
-			BASEURL: `http://localhost:8096`
+			//BASEURL: `http://localhost:8096`
 		},
 		onLaunch: function() {
 			console.log('App Launch')
@@ -21,8 +21,9 @@
 	@import './common/mine.css';
 	/* #endif*/
 	
-	.status_bar {
+	/* .status_bar {
 		height: var(--status-bar-height);
 		width: 100%;
-	}
+		
+	} */
 </style>
