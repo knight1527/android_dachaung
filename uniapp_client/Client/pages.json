@@ -65,8 +65,47 @@
 						"enablePullDownRefresh": false
 				}
 				
+		},
+		{
+				"path" : "pages/self/self_detail/self_detail",
+				"style" :                                                                                    
+				{
+						"navigationBarTitleText": "个人主页",
+						"enablePullDownRefresh": false,
+						"app-plus": {
+							"scrollIndicator": "none"
+						}
+				}			
 		}
-  ],
+		,{
+				"path" : "pages/self/self_update/self_update",
+				"style" :                                                                                    
+				{
+						"navigationBarTitleText": "编辑资料",
+						"enablePullDownRefresh": false
+				}
+				
+		}
+		,{
+				"path" : "pages/search_result/search_result",
+				"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"scrollIndicator": "none"
+						}
+				}
+				
+		}
+        ,{
+            "path" : "pages/index/sec_detail/sec_detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "文章详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

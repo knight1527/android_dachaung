@@ -6,7 +6,11 @@
     "pages/events/events",
     "pages/msg/msg",
     "pages/self/self",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/self/self_detail/self_detail",
+    "pages/self/self_update/self_update",
+    "pages/search_result/search_result",
+    "pages/index/sec_detail/sec_detail"
   ],
   "window": {
     "navigationBarTextStyle": "black",

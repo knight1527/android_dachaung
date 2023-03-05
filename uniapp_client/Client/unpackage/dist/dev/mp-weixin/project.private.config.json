@@ -20,9 +20,37 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "个人主页",
+          "pathName": "pages/self/self_detail/self_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "个人信息修改",
+          "pathName": "pages/self/self_update/self_update",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "搜索结果",
+          "pathName": "pages/search_result/search_result",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "文章详情",
+          "pathName": "pages/index/sec_detail/sec_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
-  "libVersion": "2.30.2"
+  "libVersion": "2.29.2"
 }

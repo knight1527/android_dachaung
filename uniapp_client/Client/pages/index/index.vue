@@ -78,6 +78,7 @@
 				
 				<!-- 文章 -->
 				<scroll-view >
+					<view style="height: 1000rpx;background-color: #03dac5;"></view>
 					<!-- 文章预览卡片 -->
 					<view class="border_line_grey_bt margin_top_20 padding_rl_20">
 						<uni-row>

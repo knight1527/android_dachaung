@@ -10,6 +10,10 @@ if (!Math) {
   "./pages/msg/msg.js";
   "./pages/self/self.js";
   "./pages/test/test.js";
+  "./pages/self/self_detail/self_detail.js";
+  "./pages/self/self_update/self_update.js";
+  "./pages/search_result/search_result.js";
+  "./pages/index/sec_detail/sec_detail.js";
 }
 const _sfc_main = {
   globalData: {},

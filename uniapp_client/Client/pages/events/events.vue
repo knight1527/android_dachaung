@@ -11,7 +11,7 @@
 					<uni-col :span="4" >
 						<view style="width: 100%;" class="margin_auto">
 							<view class="margin_top_20 margin_left_15">
-								<uni-icons type="search" size="28" color="grey"></uni-icons>
+								<uni-icons type="search" size="28" color="grey" @click="search"></uni-icons>
 							</view>
 						</view>
 					</uni-col>
@@ -67,10 +67,47 @@
 
 		<!-- 赛事卡片 -->
 		<scroll-view>
-			<!-- 赛事卡片 -->
-			<view>
-				
+			<!-- 赛事卡片 （卡片中图片默认提供几种）-->
+			<view class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" style="position: relative;">
+				<!-- 赛事状态 -->
+				<view style="height: 55rpx;width:150rpx" class="absolute_event_status box_radius_20 aligin_center_item status_before">已结束</view>
+				<!-- 图片 -->
+				<view style="height: 230rpx;width: 100%;background-color: antiquewhite;">
+					<image class="fill" src="../../static/ad/ad2.jpg"></image>
+				</view>
+				<!-- 信息 -->
+				<view class="margin_lr_10 margin_bt_15">
+					<view class="fill_width eventTitle padding_tb_10 overflowHide">
+						<text>2023ACM程序设计竞赛中国区预选赛</text>
+					</view>
+					<!-- 时间 -->
+					<view class="fill_width aligin_center_text_left eventTime margin_top_5">
+						<view class="margin_right_10" style="color: black;">报名时间 ：</view>
+						<view class="margin_lr_10">2022-10-2</view>
+						<view>--</view>
+						<view class="margin_lr_10">2022-10-2</view>
+					</view>
+					<view class="fill_width aligin_center_text_left eventTime margin_top_5">
+						<view class="margin_right_10" style="color: black;">结束时间 ：</view>
+						<view class="margin_lr_10">2022-10-2</view>
+						<view>--</view>
+						<view class="margin_lr_10">2022-10-2</view>
+					</view>
+					<view class="fill_width aligin_center_text_left margin_bt_15 event_other">
+						<view class="margin_right_10">主办方：</view>
+						<view class="margin_left_15">机构名称</view>
+					</view>
+					<view class="fill_width aligin_center_text_left event_other">
+						<view>收藏： {{0}}</view>
+						<view class="margin_lr_50">|</view>
+						<view>评论：{{0}}</view>
+						<view class="margin_lr_50">|</view>
+						<view>级别：{{"其他"}}</view>
+					</view>
+				</view>
 			</view>
+			
+		
 			
 			<!-- 加载更多 -->
 			<view class="margin_top_50 aligin_center_item">
@@ -121,7 +158,11 @@
 					collected: 0,
 					level: '',
 					category: '',
+					/* 主办单位 */
 					hostUnit: [''],
+					/* 赛事状态（进行中，报名中，已结束） */
+					status: 1,
+					status_content: '进行中',
 					author: {
 						id: 0,
 						avatar: '',
@@ -160,7 +201,11 @@
 				    this.status='nomore'
 				},1000);
 			},
-			
+			search(){
+				uni.navigateTo({
+					url: '/pages/search_result/search_result',
+				})
+			},
 		}
 	}
 </script>
@@ -185,10 +230,11 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 1;
+		z-index: 4;
 	}
 	.eventNav{
 		color: #808080;
 		font-size: 30rpx;
 	}
+	
 </style>

@@ -1,5 +1,11 @@
 {
   "navigationStyle": "custom",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-nav-bar": "../../uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "uni-easyinput": "../../uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput",
+    "uni-col": "../../uni_modules/uni-row/components/uni-col/uni-col",
+    "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-row": "../../uni_modules/uni-row/components/uni-row/uni-row"
+  }
 }

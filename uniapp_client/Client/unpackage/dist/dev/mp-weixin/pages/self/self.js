@@ -4,7 +4,7 @@ const _sfc_main = {
   data() {
     return {
       icon_color: "",
-      form: {
+      user: {
         avatar: "",
         nickname: "",
         college: "",

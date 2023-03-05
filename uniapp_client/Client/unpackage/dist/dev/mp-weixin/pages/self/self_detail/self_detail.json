@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "个人主页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-col": "../../../uni_modules/uni-row/components/uni-col/uni-col",
+    "uni-icons": "../../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-link": "../../../uni_modules/uni-link/components/uni-link/uni-link",
+    "uni-row": "../../../uni_modules/uni-row/components/uni-row/uni-row"
+  }
+}

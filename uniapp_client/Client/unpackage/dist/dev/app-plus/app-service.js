@@ -101,7 +101,7 @@ if (uni.restoreGlobal) {
     return target;
   };
   const ComponentClass$1 = "uni-col";
-  const _sfc_main$p = {
+  const _sfc_main$v = {
     name: "uniCol",
     props: {
       span: {
@@ -201,7 +201,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-col", $data.sizeClass, $options.pointClassList]),
       style: vue.normalizeStyle({
@@ -212,7 +212,7 @@ if (uni.restoreGlobal) {
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ], 6);
   }
-  var __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-fff79656"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-row/components/uni-col/uni-col.vue"]]);
+  var __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-fff79656"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-row/components/uni-col/uni-col.vue"]]);
   function resolveEasycom(component, easycom) {
     return shared.isString(component) ? easycom : component;
   }
@@ -1391,7 +1391,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$o = {
+  const _sfc_main$u = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -1435,14 +1435,14 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("text", {
       style: vue.normalizeStyle({ color: $props.color, "font-size": $options.iconSize }),
       class: vue.normalizeClass(["uni-icons", ["uniui-" + $props.type, $props.customPrefix, $props.customPrefix ? $props.type : ""]]),
       onClick: _cache[0] || (_cache[0] = (...args) => $options._onClick && $options._onClick(...args))
     }, null, 6);
   }
-  var __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-a2e81f6e"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  var __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-a2e81f6e"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
   function obj2strClass(obj) {
     let classess = "";
     for (let key in obj) {
@@ -1461,7 +1461,7 @@ if (uni.restoreGlobal) {
     }
     return style;
   }
-  const _sfc_main$n = {
+  const _sfc_main$t = {
     name: "uni-easyinput",
     emits: ["click", "iconClick", "update:modelValue", "input", "focus", "blur", "confirm", "clear", "eyes", "change"],
     model: {
@@ -1744,8 +1744,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
+  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-easyinput", { "uni-easyinput-error": $options.msg }]),
       style: vue.normalizeStyle($options.boxStyle)
@@ -1833,10 +1833,10 @@ if (uni.restoreGlobal) {
       ], 6)
     ], 6);
   }
-  var __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__scopeId", "data-v-abe12412"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue"]]);
+  var __easycom_2$3 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-abe12412"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue"]]);
   const ComponentClass = "uni-row";
   const modifierSeparator = "--";
-  const _sfc_main$m = {
+  const _sfc_main$s = {
     name: "uniRow",
     componentName: "uniRow",
     props: {
@@ -1875,7 +1875,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-row", $options.typeClass, $options.justifyClass, $options.alignClass]),
       style: vue.normalizeStyle({
@@ -1886,7 +1886,7 @@ if (uni.restoreGlobal) {
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ], 6);
   }
-  var __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__scopeId", "data-v-1d993189"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-row/components/uni-row/uni-row.vue"]]);
+  var __easycom_3$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-1d993189"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-row/components/uni-row/uni-row.vue"]]);
   class MPAnimation {
     constructor(options, _this) {
       this.options = options;
@@ -1996,7 +1996,7 @@ if (uni.restoreGlobal) {
     clearTimeout(_this.timer);
     return new MPAnimation(option, _this);
   }
-  const _sfc_main$l = {
+  const _sfc_main$r = {
     name: "uniTransition",
     emits: ["click", "change"],
     props: {
@@ -2221,7 +2221,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
     return $data.isShow ? (vue.openBlock(), vue.createElementBlock("view", {
       key: 0,
       ref: "ani",
@@ -2233,8 +2233,8 @@ if (uni.restoreGlobal) {
       vue.renderSlot(_ctx.$slots, "default")
     ], 14, ["animation"])) : vue.createCommentVNode("v-if", true);
   }
-  var __easycom_6$2 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
-  const _sfc_main$k = {
+  var __easycom_6$2 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
+  const _sfc_main$q = {
     name: "uniPopup",
     components: {},
     emits: ["change", "maskClick"],
@@ -2531,7 +2531,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_6$2);
     return $data.showPopup ? (vue.openBlock(), vue.createElementBlock("view", {
       key: 0,
@@ -2572,7 +2572,7 @@ if (uni.restoreGlobal) {
       ], 32)
     ], 2)) : vue.createCommentVNode("v-if", true);
   }
-  var __easycom_4$3 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__scopeId", "data-v-7c43d41b"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  var __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__scopeId", "data-v-7c43d41b"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
   const isObject = (val) => val !== null && typeof val === "object";
   const defaultDelimiters = ["{", "}"];
   class BaseFormatter {
@@ -2853,34 +2853,34 @@ if (uni.restoreGlobal) {
       }
     };
   }
-  var en = {
+  var en$1 = {
     "uni-load-more.contentdown": "Pull up to show more",
     "uni-load-more.contentrefresh": "loading...",
     "uni-load-more.contentnomore": "No more data"
   };
-  var zhHans = {
+  var zhHans$1 = {
     "uni-load-more.contentdown": "\u4E0A\u62C9\u663E\u793A\u66F4\u591A",
     "uni-load-more.contentrefresh": "\u6B63\u5728\u52A0\u8F7D...",
     "uni-load-more.contentnomore": "\u6CA1\u6709\u66F4\u591A\u6570\u636E\u4E86"
   };
-  var zhHant = {
+  var zhHant$1 = {
     "uni-load-more.contentdown": "\u4E0A\u62C9\u986F\u793A\u66F4\u591A",
     "uni-load-more.contentrefresh": "\u6B63\u5728\u52A0\u8F09...",
     "uni-load-more.contentnomore": "\u6C92\u6709\u66F4\u591A\u6578\u64DA\u4E86"
   };
-  var messages = {
-    en,
-    "zh-Hans": zhHans,
-    "zh-Hant": zhHant
+  var messages$1 = {
+    en: en$1,
+    "zh-Hans": zhHans$1,
+    "zh-Hant": zhHant$1
   };
   let platform$1;
   setTimeout(() => {
     platform$1 = uni.getSystemInfoSync().platform;
   }, 16);
   const {
-    t
-  } = initVueI18n(messages);
-  const _sfc_main$j = {
+    t: t$1
+  } = initVueI18n(messages$1);
+  const _sfc_main$p = {
     name: "UniLoadMore",
     emits: ["clickLoadMore"],
     props: {
@@ -2931,13 +2931,13 @@ if (uni.restoreGlobal) {
         return (Math.floor(this.iconSize / 24) || 1) * 2;
       },
       contentdownText() {
-        return this.contentText.contentdown || t("uni-load-more.contentdown");
+        return this.contentText.contentdown || t$1("uni-load-more.contentdown");
       },
       contentrefreshText() {
-        return this.contentText.contentrefresh || t("uni-load-more.contentrefresh");
+        return this.contentText.contentrefresh || t$1("uni-load-more.contentrefresh");
       },
       contentnomoreText() {
-        return this.contentText.contentnomore || t("uni-load-more.contentnomore");
+        return this.contentText.contentnomore || t$1("uni-load-more.contentnomore");
       }
     },
     mounted() {
@@ -2961,7 +2961,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: "uni-load-more",
       onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
@@ -3000,9 +3000,9 @@ if (uni.restoreGlobal) {
       }, vue.toDisplayString($props.status === "more" ? $options.contentdownText : $props.status === "loading" ? $options.contentrefreshText : $options.contentnomoreText), 5)) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  var __easycom_5$1 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__scopeId", "data-v-90d4256a"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
+  var __easycom_5$1 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-90d4256a"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
   let platform = "other";
-  const _sfc_main$i = {
+  const _sfc_main$o = {
     name: "UniFab",
     emits: ["fabClick", "trigger"],
     props: {
@@ -3143,8 +3143,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
+  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-cursor-point" }, [
       $props.popMenu && ($options.leftBottom || $options.rightBottom || $options.leftTop || $options.rightTop) && $props.content.length > 0 ? (vue.openBlock(), vue.createElementBlock("view", {
         key: 0,
@@ -3217,7 +3217,7 @@ if (uni.restoreGlobal) {
       ], 6)
     ]);
   }
-  var __easycom_6$1 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-7d5a6316"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
+  var __easycom_6$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-7d5a6316"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
   const BASE_URL = `http://localhost:8096`;
   const $request = (options) => {
     return new Promise((resolve, reject) => {
@@ -3252,8 +3252,8 @@ if (uni.restoreGlobal) {
       });
     });
   };
-  var self_$1;
-  const _sfc_main$h = {
+  var self_$3;
+  const _sfc_main$n = {
     data() {
       return {
         pattern: {
@@ -3286,15 +3286,15 @@ if (uni.restoreGlobal) {
       };
     },
     created() {
-      self_$1 = this;
-      self_$1.openSection(1);
+      self_$3 = this;
+      self_$3.openSection(1);
     },
     onLoad() {
     },
     onReady() {
     },
     onPageScroll() {
-      self_$1.nav_fixed_top();
+      self_$3.nav_fixed_top();
     },
     methods: {
       openSection(index) {
@@ -3307,36 +3307,36 @@ if (uni.restoreGlobal) {
         }
       },
       touchStart(e) {
-        formatAppLog("log", "at pages/index/index.vue:364", "\u89E6\u6478\u5F00\u59CB");
+        formatAppLog("log", "at pages/index/index.vue:365", "\u89E6\u6478\u5F00\u59CB");
         this.touchStartX = e.touches[0].clientX;
         this.touchStartY = e.touches[0].clientY;
       },
       touchEnd(e) {
-        formatAppLog("log", "at pages/index/index.vue:373", "\u89E6\u6478\u7ED3\u675F");
+        formatAppLog("log", "at pages/index/index.vue:374", "\u89E6\u6478\u7ED3\u675F");
         let deltaX = e.changedTouches[0].clientX - this.touchStartX;
         let deltaY = e.changedTouches[0].clientY - this.touchStartY;
         if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
           if (deltaX >= 0) {
             if (this.touchStartY > 223 || this.touchStartY < 89) {
-              self_$1.openSection(1);
+              self_$3.openSection(1);
             }
-            formatAppLog("log", "at pages/index/index.vue:381", "\u5DE6\u6ED1");
-            formatAppLog("log", "at pages/index/index.vue:382", "x:" + this.touchStartX + "y:" + this.touchStartY);
+            formatAppLog("log", "at pages/index/index.vue:382", "\u5DE6\u6ED1");
+            formatAppLog("log", "at pages/index/index.vue:383", "x:" + this.touchStartX + "y:" + this.touchStartY);
           } else {
             if (this.touchStartY > 223 || this.touchStartY < 89) {
-              self_$1.openSection(2);
+              self_$3.openSection(2);
             }
-            formatAppLog("log", "at pages/index/index.vue:387", "\u53F3\u6ED1");
+            formatAppLog("log", "at pages/index/index.vue:388", "\u53F3\u6ED1");
           }
         } else if (Math.abs(deltaY) > 50 && Math.abs(deltaX) < Math.abs(deltaY)) {
           if (deltaY < 0) {
-            formatAppLog("log", "at pages/index/index.vue:391", "\u4E0A\u6ED1");
+            formatAppLog("log", "at pages/index/index.vue:392", "\u4E0A\u6ED1");
           } else {
-            formatAppLog("log", "at pages/index/index.vue:393", "x:" + this.touchStartX + "y:" + this.touchStartY);
-            formatAppLog("log", "at pages/index/index.vue:394", "\u4E0B\u6ED1");
+            formatAppLog("log", "at pages/index/index.vue:394", "x:" + this.touchStartX + "y:" + this.touchStartY);
+            formatAppLog("log", "at pages/index/index.vue:395", "\u4E0B\u6ED1");
           }
         } else {
-          formatAppLog("log", "at pages/index/index.vue:397", "\u53EF\u80FD\u662F\u8BEF\u89E6\uFF01");
+          formatAppLog("log", "at pages/index/index.vue:398", "\u53EF\u80FD\u662F\u8BEF\u89E6\uFF01");
         }
       },
       clickLoadMore(e) {
@@ -3370,12 +3370,12 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
-    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
-    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
-    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_4$3);
+    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_2$3);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_3);
     const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_5$1);
     const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_6$2);
     const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_6$1);
@@ -3549,6 +3549,7 @@ if (uni.restoreGlobal) {
             ]),
             vue.createCommentVNode(" \u6587\u7AE0 "),
             vue.createElementVNode("scroll-view", null, [
+              vue.createElementVNode("view", { style: { "height": "1000rpx", "background-color": "#03dac5" } }),
               vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
               vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
                 vue.createVNode(_component_uni_row, null, {
@@ -3962,8 +3963,8 @@ if (uni.restoreGlobal) {
       }, null, 8, ["pattern"])
     ], 32);
   }
-  var PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__file", "D:/dachuang/uniapp_client/Client/pages/index/index.vue"]]);
-  const _sfc_main$g = {
+  var PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__file", "D:/dachuang/uniapp_client/Client/pages/index/index.vue"]]);
+  const _sfc_main$m = {
     name: "uniFormsItem",
     options: {
       virtualHost: true
@@ -4243,7 +4244,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-forms-item", ["is-direction-" + $data.localLabelPos, $data.border ? "uni-forms-item--border" : "", $data.border && $data.isFirstBorder ? "is-first-border" : ""]])
     }, [
@@ -4269,8 +4270,8 @@ if (uni.restoreGlobal) {
       ])
     ], 2);
   }
-  var __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-61dfc0d0"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
-  const _sfc_main$f = {
+  var __easycom_2$2 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__scopeId", "data-v-61dfc0d0"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
+  const _sfc_main$l = {
     name: "uniGroup",
     emits: ["click"],
     props: {
@@ -4328,7 +4329,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-group", ["uni-group--" + $props.mode, $data.margin ? "group-margin" : ""]]),
       style: vue.normalizeStyle({ marginTop: `${$props.top}px` })
@@ -4349,7 +4350,7 @@ if (uni.restoreGlobal) {
       ], 2)
     ], 6);
   }
-  var __easycom_4$2 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-176b3b64"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-group/components/uni-group/uni-group.vue"]]);
+  var __easycom_4$3 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__scopeId", "data-v-176b3b64"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-group/components/uni-group/uni-group.vue"]]);
   var pattern = {
     email: /^\S+?@\S+?\.\S+?$/,
     idcard: /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/,
@@ -4909,7 +4910,7 @@ if (uni.restoreGlobal) {
       return false;
     }
   };
-  const _sfc_main$e = {
+  const _sfc_main$k = {
     name: "uniForms",
     emits: ["validate", "submit"],
     options: {
@@ -5151,15 +5152,15 @@ if (uni.restoreGlobal) {
       _isEqual: isEqual
     }
   };
-  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-forms" }, [
       vue.createElementVNode("form", null, [
         vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
       ])
     ]);
   }
-  var __easycom_4$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-7ae0e404"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
-  const _sfc_main$d = {
+  var __easycom_4$2 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__scopeId", "data-v-7ae0e404"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
+  const _sfc_main$j = {
     data() {
       return {
         formData_login: {
@@ -5254,13 +5255,13 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
-    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
-    const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_2);
+  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_2$3);
+    const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_2$2);
     const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
-    const _component_uni_group = resolveEasycom(vue.resolveDynamicComponent("uni-group"), __easycom_4$2);
-    const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_4$1);
+    const _component_uni_group = resolveEasycom(vue.resolveDynamicComponent("uni-group"), __easycom_4$3);
+    const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_4$2);
     return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
       vue.createElementVNode("view", { class: "status_bar" }, [
         vue.createCommentVNode(" \u8FD9\u91CC\u662F\u72B6\u6001\u680F ")
@@ -5377,9 +5378,9 @@ if (uni.restoreGlobal) {
       })
     ]);
   }
-  var PagesUserLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "D:/dachuang/uniapp_client/Client/pages/user/login/login.vue"]]);
-  var self_;
-  const _sfc_main$c = {
+  var PagesUserLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__file", "D:/dachuang/uniapp_client/Client/pages/user/login/login.vue"]]);
+  var self_$2;
+  const _sfc_main$i = {
     data() {
       return {
         formData_register: {
@@ -5435,7 +5436,7 @@ if (uni.restoreGlobal) {
     },
     created() {
       this.getCode();
-      self_ = this;
+      self_$2 = this;
     },
     methods: {
       getCode() {
@@ -5492,7 +5493,7 @@ if (uni.restoreGlobal) {
           }).then((res2) => {
             if (res2.code == "200") {
               formatAppLog("log", "at pages/user/register/register.vue:171", "username \u5408\u6CD5");
-              self_.relSubmit();
+              self_$2.relSubmit();
             } else {
               uni.showToast({
                 icon: "error",
@@ -5509,12 +5510,12 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
-    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
-    const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_2);
+  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_2$3);
+    const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_2$2);
     const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
-    const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_4$1);
+    const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_4$2);
     return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
       vue.createElementVNode("view", { class: "status_bar" }, [
         vue.createCommentVNode(" \u8FD9\u91CC\u662F\u72B6\u6001\u680F ")
@@ -5637,8 +5638,8 @@ if (uni.restoreGlobal) {
       })
     ]);
   }
-  var PagesUserRegisterRegister = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__file", "D:/dachuang/uniapp_client/Client/pages/user/register/register.vue"]]);
-  const _sfc_main$b = {
+  var PagesUserRegisterRegister = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__file", "D:/dachuang/uniapp_client/Client/pages/user/register/register.vue"]]);
+  const _sfc_main$h = {
     data() {
       return {
         pattern: {
@@ -5664,7 +5665,17 @@ if (uni.restoreGlobal) {
           duringTime: "",
           duringEndTime: "",
           comments: 0,
-          collected: 0
+          collected: 0,
+          level: "",
+          category: "",
+          hostUnit: [""],
+          status: 1,
+          status_content: "\u8FDB\u884C\u4E2D",
+          author: {
+            id: 0,
+            avatar: "",
+            nickname: ""
+          }
         }]
       };
     },
@@ -5679,15 +5690,15 @@ if (uni.restoreGlobal) {
         }
       },
       choseCategory(index) {
-        formatAppLog("log", "at pages/events/events.vue:136", this.categories[index]);
+        formatAppLog("log", "at pages/events/events.vue:186", this.categories[index]);
         this.category_index = index;
-        formatAppLog("log", "at pages/events/events.vue:138", this.category_index);
+        formatAppLog("log", "at pages/events/events.vue:188", this.category_index);
         this.$refs.popup_category.close();
       },
       choseLevel(index) {
-        formatAppLog("log", "at pages/events/events.vue:142", this.levels[index]);
+        formatAppLog("log", "at pages/events/events.vue:192", this.levels[index]);
         this.level_index = index;
-        formatAppLog("log", "at pages/events/events.vue:144", this.level_index);
+        formatAppLog("log", "at pages/events/events.vue:194", this.level_index);
         this.$refs.popup_level.close();
       },
       clickLoadMore(e) {
@@ -5695,15 +5706,20 @@ if (uni.restoreGlobal) {
         this.timer = setTimeout(() => {
           this.status = "nomore";
         }, 1e3);
+      },
+      search() {
+        uni.navigateTo({
+          url: "/pages/search_result/search_result"
+        });
       }
     }
   };
-  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_2$3);
     const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
-    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
-    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_4$3);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_3);
     const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_5$1);
     const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_6$1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
@@ -5735,8 +5751,9 @@ if (uni.restoreGlobal) {
                       vue.createVNode(_component_uni_icons, {
                         type: "search",
                         size: "28",
-                        color: "grey"
-                      })
+                        color: "grey",
+                        onClick: $options.search
+                      }, null, 8, ["onClick"])
                     ])
                   ])
                 ]),
@@ -5857,12 +5874,63 @@ if (uni.restoreGlobal) {
         ]),
         _: 1
       }, 512),
+      vue.createCommentVNode(" \u5360\u4F4D "),
       vue.createElementVNode("view", { style: { "height": "190rpx" } }),
       vue.createCommentVNode(" \u8D5B\u4E8B\u5361\u7247 "),
       vue.createElementVNode("scroll-view", null, [
-        vue.createCommentVNode(" \u8D5B\u4E8B\u5361\u7247 "),
-        vue.createElementVNode("view", { style: { "height": "2000rpx", "background-color": "#03dac5" } }, [
-          vue.createElementVNode("text", null, "Test")
+        vue.createCommentVNode(" \u8D5B\u4E8B\u5361\u7247 \uFF08\u5361\u7247\u4E2D\u56FE\u7247\u9ED8\u8BA4\u63D0\u4F9B\u51E0\u79CD\uFF09"),
+        vue.createElementVNode("view", {
+          class: "margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan",
+          style: { "position": "relative" }
+        }, [
+          vue.createCommentVNode(" \u8D5B\u4E8B\u72B6\u6001 "),
+          vue.createElementVNode("view", {
+            style: { "height": "55rpx", "width": "150rpx" },
+            class: "absolute_event_status box_radius_20 aligin_center_item status_before"
+          }, "\u5DF2\u7ED3\u675F"),
+          vue.createCommentVNode(" \u56FE\u7247 "),
+          vue.createElementVNode("view", { style: { "height": "230rpx", "width": "100%", "background-color": "antiquewhite" } }, [
+            vue.createElementVNode("image", {
+              class: "fill",
+              src: "/static/ad/ad2.jpg"
+            })
+          ]),
+          vue.createCommentVNode(" \u4FE1\u606F "),
+          vue.createElementVNode("view", { class: "margin_lr_10 margin_bt_15" }, [
+            vue.createElementVNode("view", { class: "fill_width eventTitle padding_tb_10 overflowHide" }, [
+              vue.createElementVNode("text", null, "2023ACM\u7A0B\u5E8F\u8BBE\u8BA1\u7ADE\u8D5B\u4E2D\u56FD\u533A\u9884\u9009\u8D5B")
+            ]),
+            vue.createCommentVNode(" \u65F6\u95F4 "),
+            vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+              vue.createElementVNode("view", {
+                class: "margin_right_10",
+                style: { "color": "black" }
+              }, "\u62A5\u540D\u65F6\u95F4 \uFF1A"),
+              vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+              vue.createElementVNode("view", null, "--"),
+              vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+            ]),
+            vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+              vue.createElementVNode("view", {
+                class: "margin_right_10",
+                style: { "color": "black" }
+              }, "\u7ED3\u675F\u65F6\u95F4 \uFF1A"),
+              vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+              vue.createElementVNode("view", null, "--"),
+              vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+            ]),
+            vue.createElementVNode("view", { class: "fill_width aligin_center_text_left margin_bt_15 event_other" }, [
+              vue.createElementVNode("view", { class: "margin_right_10" }, "\u4E3B\u529E\u65B9\uFF1A"),
+              vue.createElementVNode("view", { class: "margin_left_15" }, "\u673A\u6784\u540D\u79F0")
+            ]),
+            vue.createElementVNode("view", { class: "fill_width aligin_center_text_left event_other" }, [
+              vue.createElementVNode("view", null, "\u6536\u85CF\uFF1A " + vue.toDisplayString(0)),
+              vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+              vue.createElementVNode("view", null, "\u8BC4\u8BBA\uFF1A" + vue.toDisplayString(0)),
+              vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+              vue.createElementVNode("view", null, "\u7EA7\u522B\uFF1A" + vue.toDisplayString("\u5176\u4ED6"))
+            ])
+          ])
         ]),
         vue.createCommentVNode(" \u52A0\u8F7D\u66F4\u591A "),
         vue.createElementVNode("view", { class: "margin_top_50 aligin_center_item" }, [
@@ -5883,23 +5951,8 @@ if (uni.restoreGlobal) {
       }, null, 8, ["pattern"])
     ]);
   }
-  var PagesEventsEvents = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "D:/dachuang/uniapp_client/Client/pages/events/events.vue"]]);
-  const _sfc_main$a = {
-    data() {
-      return {};
-    },
-    methods: {}
-  };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view", null, [
-      vue.createElementVNode("view", { class: "status_bar" }, [
-        vue.createCommentVNode(" \u8FD9\u91CC\u662F\u72B6\u6001\u680F ")
-      ]),
-      vue.createElementVNode("text", null, "\u5173\u6CE8\u9875")
-    ]);
-  }
-  var PagesMsgMsg = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "D:/dachuang/uniapp_client/Client/pages/msg/msg.vue"]]);
-  const _sfc_main$9 = {
+  var PagesEventsEvents = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__file", "D:/dachuang/uniapp_client/Client/pages/events/events.vue"]]);
+  const _sfc_main$g = {
     name: "UniStatusBar",
     data() {
       return {
@@ -5910,7 +5963,7 @@ if (uni.restoreGlobal) {
       this.statusBarHeight = uni.getSystemInfoSync().statusBarHeight + "px";
     }
   };
-  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       style: vue.normalizeStyle({ height: $data.statusBarHeight }),
       class: "uni-status-bar"
@@ -5918,9 +5971,9 @@ if (uni.restoreGlobal) {
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ], 4);
   }
-  var statusBar = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-f9a87a8e"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-status-bar.vue"]]);
+  var statusBar = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-f9a87a8e"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-status-bar.vue"]]);
   const getVal = (val) => typeof val === "number" ? val + "px" : val;
-  const _sfc_main$8 = {
+  const _sfc_main$f = {
     name: "UniNavBar",
     components: {
       statusBar
@@ -6040,9 +6093,9 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_status_bar = vue.resolveComponent("status-bar");
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-navbar", { "uni-dark": $props.dark, "uni-nvue-fixed": $props.fixed }])
     }, [
@@ -6135,8 +6188,162 @@ if (uni.restoreGlobal) {
       ])) : vue.createCommentVNode("v-if", true)
     ], 2);
   }
-  var __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__scopeId", "data-v-6bda1a90"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue"]]);
-  const _sfc_main$7 = {
+  var __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-6bda1a90"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue"]]);
+  const _sfc_main$e = {
+    data() {
+      return {};
+    },
+    methods: {}
+  };
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_0);
+    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_2$3);
+    const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
+      vue.createVNode(_component_uni_nav_bar, {
+        fixed: true,
+        height: "80rpx",
+        title: "\u540C\u5FD7"
+      }),
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            style: { "height": "110rpx" },
+            class: "baiyan"
+          }, [
+            vue.createVNode(_component_uni_col, { span: 20 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", { class: "margin_10" }, [
+                  vue.createVNode(_component_uni_easyinput, {
+                    placeholder: "\u641C\u7D22\u7528\u6237",
+                    clearable: ""
+                  })
+                ])
+              ]),
+              _: 1
+            }),
+            vue.createVNode(_component_uni_col, { span: 4 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  style: { "width": "100%" },
+                  class: "margin_auto"
+                }, [
+                  vue.createElementVNode("view", { class: "margin_top_20 margin_left_15" }, [
+                    vue.createVNode(_component_uni_icons, {
+                      type: "search",
+                      size: "28",
+                      color: "grey"
+                    })
+                  ])
+                ])
+              ]),
+              _: 1
+            })
+          ])
+        ]),
+        _: 1
+      }),
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            style: { "height": "110rpx" },
+            class: "border_line_grey_bt_tiny aligin_center_text_left"
+          }, [
+            vue.createVNode(_component_uni_col, { span: 12 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", { class: "aligin_center_text_left" }, [
+                  vue.createElementVNode("view", { class: "margin_left_15" }),
+                  vue.createVNode(_component_uni_icons, {
+                    type: "auth-filled",
+                    size: "27",
+                    color: "#03dac5"
+                  }),
+                  vue.createElementVNode("view", { class: "margin_left_30" }, "\u5173\u6CE8")
+                ])
+              ]),
+              _: 1
+            }),
+            vue.createVNode(_component_uni_col, { span: 12 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", { class: "aligin_center_text_right padding_right_30" }, [
+                  vue.createVNode(_component_uni_icons, { type: "right" })
+                ])
+              ]),
+              _: 1
+            })
+          ]),
+          vue.createElementVNode("view", {
+            style: { "height": "110rpx" },
+            class: "border_line_grey_bt_tiny aligin_center_text_left"
+          }, [
+            vue.createVNode(_component_uni_col, { span: 12 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", { class: "aligin_center_text_left" }, [
+                  vue.createElementVNode("view", { class: "margin_left_15" }),
+                  vue.createVNode(_component_uni_icons, {
+                    type: "auth-filled",
+                    size: "27",
+                    color: "#F0E68C"
+                  }),
+                  vue.createElementVNode("view", { class: "margin_left_30" }, "\u7C89\u4E1D")
+                ])
+              ]),
+              _: 1
+            }),
+            vue.createVNode(_component_uni_col, { span: 12 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", { class: "aligin_center_text_right padding_right_30" }, [
+                  vue.createVNode(_component_uni_icons, { type: "right" })
+                ])
+              ]),
+              _: 1
+            })
+          ])
+        ]),
+        _: 1
+      }),
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            class: "border_line_grey_bt_tiny fill_width",
+            style: { "height": "800rpx" }
+          }, [
+            vue.createElementVNode("view", {
+              style: { "height": "110rpx" },
+              class: "aligin_center_text_left"
+            }, [
+              vue.createVNode(_component_uni_col, { span: 12 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { class: "aligin_center_text_left" }, [
+                    vue.createElementVNode("view", { class: "margin_left_15" }),
+                    vue.createVNode(_component_uni_icons, {
+                      type: "chatboxes-filled",
+                      size: "27",
+                      color: "#87CEFA"
+                    }),
+                    vue.createElementVNode("view", { class: "margin_left_30" }, "\u7CFB\u7EDF\u6D88\u606F")
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_col, { span: 12 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { class: "aligin_center_text_right padding_right_30" })
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createElementVNode("view", { class: "baiyan margin_20" })
+          ])
+        ]),
+        _: 1
+      })
+    ]);
+  }
+  var PagesMsgMsg = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__file", "D:/dachuang/uniapp_client/Client/pages/msg/msg.vue"]]);
+  const _sfc_main$d = {
     name: "UniCard",
     emits: ["click"],
     props: {
@@ -6195,7 +6402,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-card", { "uni-card--full": $props.isFull, "uni-card--shadow": $props.isShadow, "uni-card--border": $props.border }]),
       style: vue.normalizeStyle({ "margin": $props.isFull ? 0 : $props.margin, "padding": $props.spacing, "box-shadow": $props.isShadow ? $props.shadow : "" })
@@ -6266,8 +6473,8 @@ if (uni.restoreGlobal) {
       ])
     ], 6);
   }
-  var __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__scopeId", "data-v-19622063"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
-  const _sfc_main$6 = {
+  var __easycom_4$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-19622063"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
+  const _sfc_main$c = {
     name: "UniSection",
     emits: ["click"],
     props: {
@@ -6326,7 +6533,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-section" }, [
       vue.createElementVNode("view", {
         class: "uni-section-header",
@@ -6359,8 +6566,8 @@ if (uni.restoreGlobal) {
       ], 4)
     ]);
   }
-  var __easycom_5 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__scopeId", "data-v-f7ca1098"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-section/components/uni-section/uni-section.vue"]]);
-  const _sfc_main$5 = {
+  var __easycom_5 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-f7ca1098"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-section/components/uni-section/uni-section.vue"]]);
+  const _sfc_main$b = {
     name: "UniBadge",
     emits: ["click"],
     props: {
@@ -6483,7 +6690,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-badge--x" }, [
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true),
       $props.text ? (vue.openBlock(), vue.createElementBlock("text", {
@@ -6494,8 +6701,8 @@ if (uni.restoreGlobal) {
       }, vue.toDisplayString($options.displayValue), 7)) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  var __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__scopeId", "data-v-7c66581c"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-badge/components/uni-badge/uni-badge.vue"]]);
-  const _sfc_main$4 = {
+  var __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-7c66581c"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-badge/components/uni-badge/uni-badge.vue"]]);
+  const _sfc_main$a = {
     name: "UniListItem",
     emits: ["click", "switchChange"],
     props: {
@@ -6725,8 +6932,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
     const _component_uni_badge = resolveEasycom(vue.resolveDynamicComponent("uni-badge"), __easycom_1);
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass([{ "uni-list-item--disabled": $props.disabled }, "uni-list-item"]),
@@ -6812,8 +7019,8 @@ if (uni.restoreGlobal) {
       })) : vue.createCommentVNode("v-if", true)
     ], 14, ["hover-class"]);
   }
-  var __easycom_6 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__scopeId", "data-v-296a3d7e"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-list/components/uni-list-item/uni-list-item.vue"]]);
-  const _sfc_main$3 = {
+  var __easycom_6 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__scopeId", "data-v-296a3d7e"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-list/components/uni-list-item/uni-list-item.vue"]]);
+  const _sfc_main$9 = {
     name: "uniList",
     "mp-weixin": {
       options: {
@@ -6854,7 +7061,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-list uni-border-top-bottom" }, [
       $props.border ? (vue.openBlock(), vue.createElementBlock("view", {
         key: 0,
@@ -6867,12 +7074,12 @@ if (uni.restoreGlobal) {
       })) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  var __easycom_7 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__scopeId", "data-v-5009d455"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
-  const _sfc_main$2 = {
+  var __easycom_7 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-5009d455"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
+  const _sfc_main$8 = {
     data() {
       return {
         icon_color: "",
-        form: {
+        user: {
           avatar: "",
           nickname: "",
           college: "",
@@ -6901,12 +7108,12 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_0);
     const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
-    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_3);
-    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_4);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_4$1);
     const _component_uni_section = resolveEasycom(vue.resolveDynamicComponent("uni-section"), __easycom_5);
     const _component_uni_list_item = resolveEasycom(vue.resolveDynamicComponent("uni-list-item"), __easycom_6);
     const _component_uni_list = resolveEasycom(vue.resolveDynamicComponent("uni-list"), __easycom_7);
@@ -7001,7 +7208,7 @@ if (uni.restoreGlobal) {
                 }, [
                   vue.createElementVNode("navigator", {
                     "hover-class": "click_nav",
-                    url: "/pages/test/test"
+                    url: "/pages/self/self_detail/self_detail"
                   }, [
                     vue.createElementVNode("text", { class: "margin_right_10" }, "\u4E3B\u9875"),
                     vue.createVNode(_component_uni_icons, {
@@ -7073,17 +7280,2960 @@ if (uni.restoreGlobal) {
       })
     ]);
   }
-  var PagesSelfSelf = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "D:/dachuang/uniapp_client/Client/pages/self/self.vue"]]);
-  const _sfc_main$1 = {
+  var PagesSelfSelf = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "D:/dachuang/uniapp_client/Client/pages/self/self.vue"]]);
+  const _sfc_main$7 = {
     data() {
       return {};
     },
     methods: {}
   };
-  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view");
   }
-  var PagesTestTest = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/dachuang/uniapp_client/Client/pages/test/test.vue"]]);
+  var PagesTestTest = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "D:/dachuang/uniapp_client/Client/pages/test/test.vue"]]);
+  const _sfc_main$6 = {
+    name: "uniLink",
+    props: {
+      href: {
+        type: String,
+        default: ""
+      },
+      text: {
+        type: String,
+        default: ""
+      },
+      download: {
+        type: String,
+        default: ""
+      },
+      showUnderLine: {
+        type: [Boolean, String],
+        default: true
+      },
+      copyTips: {
+        type: String,
+        default: "\u5DF2\u81EA\u52A8\u590D\u5236\u7F51\u5740\uFF0C\u8BF7\u5728\u624B\u673A\u6D4F\u89C8\u5668\u91CC\u7C98\u8D34\u8BE5\u7F51\u5740"
+      },
+      color: {
+        type: String,
+        default: "#999999"
+      },
+      fontSize: {
+        type: [Number, String],
+        default: 14
+      }
+    },
+    computed: {
+      isShowA() {
+        if ((this.isMail() || this.isTel()) && this._isH5 === true) {
+          return true;
+        }
+        return false;
+      }
+    },
+    created() {
+      this._isH5 = null;
+    },
+    methods: {
+      isMail() {
+        return this.href.startsWith("mailto:");
+      },
+      isTel() {
+        return this.href.startsWith("tel:");
+      },
+      openURL() {
+        if (this.isTel()) {
+          this.makePhoneCall(this.href.replace("tel:", ""));
+        } else {
+          plus.runtime.openURL(this.href);
+        }
+      },
+      makePhoneCall(phoneNumber) {
+        uni.makePhoneCall({
+          phoneNumber
+        });
+      }
+    }
+  };
+  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+    return $options.isShowA ? (vue.openBlock(), vue.createElementBlock("a", {
+      key: 0,
+      class: vue.normalizeClass(["uni-link", { "uni-link--withline": $props.showUnderLine === true || $props.showUnderLine === "true" }]),
+      href: $props.href,
+      style: vue.normalizeStyle({ color: $props.color, fontSize: $props.fontSize + "px" }),
+      download: $props.download
+    }, [
+      vue.renderSlot(_ctx.$slots, "default", {}, () => [
+        vue.createTextVNode(vue.toDisplayString($props.text), 1)
+      ], true)
+    ], 14, ["href", "download"])) : (vue.openBlock(), vue.createElementBlock("text", {
+      key: 1,
+      class: vue.normalizeClass(["uni-link", { "uni-link--withline": $props.showUnderLine === true || $props.showUnderLine === "true" }]),
+      style: vue.normalizeStyle({ color: $props.color, fontSize: $props.fontSize + "px" }),
+      onClick: _cache[0] || (_cache[0] = (...args) => $options.openURL && $options.openURL(...args))
+    }, [
+      vue.renderSlot(_ctx.$slots, "default", {}, () => [
+        vue.createTextVNode(vue.toDisplayString($props.text), 1)
+      ], true)
+    ], 6));
+  }
+  var __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__scopeId", "data-v-6c93f7f9"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-link/components/uni-link/uni-link.vue"]]);
+  var self_$1;
+  const _sfc_main$5 = {
+    data() {
+      return {
+        is_self: true,
+        is_focus: false,
+        nav_show: false,
+        swiperIndex: 0
+      };
+    },
+    created() {
+      self_$1 = this;
+    },
+    onPageScroll() {
+      self_$1.nav_fixed_top();
+    },
+    methods: {
+      swiperChage(e) {
+        this.swiperIndex = e.detail.current;
+        formatAppLog("log", "at pages/self/self_detail/self_detail.vue:454", e.detail.current);
+      },
+      nav_fixed_top() {
+        const query = uni.createSelectorQuery().in(this);
+        let tep = 0;
+        query.select("#navTop").boundingClientRect((data) => {
+          tep = data.top;
+          if (tep <= 0) {
+            this.nav_show = true;
+          } else {
+            this.nav_show = false;
+          }
+        }).exec();
+      },
+      selfUpdate() {
+        uni.navigateTo({
+          url: "/pages/self/self_update/self_update"
+        });
+      }
+    }
+  };
+  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+    const _component_uni_link = resolveEasycom(vue.resolveDynamicComponent("uni-link"), __easycom_2$1);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            style: { "height": "180rpx" },
+            class: "aligin_center_text_left border_line_grey_bt"
+          }, [
+            vue.createVNode(_component_uni_col, { span: 8 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  class: "margin_lr_50",
+                  style: { "height": "150rpx", "width": "150rpx", "border-radius": "150rpx" }
+                }, [
+                  vue.createElementVNode("image", {
+                    class: "fill",
+                    src: "/static/faces/1-thump.jpg"
+                  })
+                ])
+              ]),
+              _: 1
+            }),
+            vue.createVNode(_component_uni_col, { span: 16 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  class: "padding_right_50 aligin_center_item_right",
+                  style: { "height": "180rpx" }
+                }, [
+                  vue.withDirectives(vue.createElementVNode("button", {
+                    onClick: _cache[0] || (_cache[0] = (...args) => $options.selfUpdate && $options.selfUpdate(...args)),
+                    class: "margin_none",
+                    size: "mini",
+                    type: "warn",
+                    plain: "true"
+                  }, "\u7F16\u8F91", 512), [
+                    [vue.vShow, $data.is_self]
+                  ]),
+                  vue.withDirectives(vue.createElementVNode("button", {
+                    class: "margin_none",
+                    size: "mini",
+                    type: "primary",
+                    plain: "true"
+                  }, "\u5173\u6CE8", 512), [
+                    [vue.vShow, $data.is_focus]
+                  ]),
+                  vue.withDirectives(vue.createElementVNode("button", {
+                    class: "margin_none",
+                    size: "mini",
+                    disabled: "true"
+                  }, "\u5DF2\u5173\u6CE8", 512), [
+                    [vue.vShow, $data.is_focus]
+                  ])
+                ])
+              ]),
+              _: 1
+            })
+          ]),
+          vue.createElementVNode("view", { class: "margin_bottom_20" }, [
+            vue.createElementVNode("view", { class: "margin_lr_50 self_detail_text" }, [
+              vue.createElementVNode("view", {
+                style: {},
+                class: "margin_bt_15 aligin_center_item_left"
+              }, vue.toDisplayString("Author")),
+              vue.createElementVNode("view", {
+                style: {},
+                class: "margin_bt_15 aligin_center_item_left"
+              }, vue.toDisplayString("\u56DB\u5DDD\u8F7B\u5316\u5DE5\u5927\u5B66")),
+              vue.createElementVNode("view", {
+                style: {},
+                class: "margin_bt_15 aligin_center_item_left"
+              }, vue.toDisplayString("\u8BA1\u7B97\u673A\u79D1\u5B66\u4E0E\u6280\u672F")),
+              vue.createElementVNode("view", {
+                style: {},
+                class: "margin_bt_15 aligin_center_item_left"
+              }, [
+                vue.createVNode(_component_uni_icons, {
+                  color: "#808080",
+                  type: "mail-open-filled",
+                  size: "22"
+                }),
+                vue.createElementVNode("view", { class: "margin_left_20" }),
+                vue.createElementVNode("view", null, vue.toDisplayString("qihang_duan@foxmail.com"), 1)
+              ]),
+              vue.createElementVNode("view", {
+                style: {},
+                class: "margin_bt_15 aligin_center_item_left"
+              }, [
+                vue.createVNode(_component_uni_icons, {
+                  color: "#808080",
+                  type: "navigate",
+                  size: "22"
+                }),
+                vue.createElementVNode("view", { class: "margin_left_20" }),
+                vue.createVNode(_component_uni_link, {
+                  href: "https://uniapp.dcloud.io/",
+                  text: "https://uniapp.dcloud.io/",
+                  color: "#03dac5"
+                })
+              ]),
+              vue.createElementVNode("view", {
+                style: {},
+                class: "margin_bt_15 aligin_center_item_left"
+              }, [
+                vue.createVNode(_component_uni_icons, {
+                  color: "#808080",
+                  type: "flag",
+                  size: "22"
+                }),
+                vue.createElementVNode("view", { class: "margin_left_20" }),
+                vue.createElementVNode("view", null, vue.toDisplayString("\u70ED\u7231\u751F\u6D3B"))
+              ])
+            ])
+          ])
+        ]),
+        _: 1
+      }),
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createCommentVNode(" \u4E0A\u6ED1\u6307\u793A\u7EBF "),
+          vue.createElementVNode("view", {
+            id: "navTop",
+            class: "border_line_grey"
+          }),
+          vue.createCommentVNode(" \u4E0A\u6ED1\u56FA\u5B9A "),
+          vue.withDirectives(vue.createElementVNode("view", { style: { "height": "110rpx" } }, [
+            vue.createElementVNode("view", {
+              style: { "height": "100rpx", "width": "100%" },
+              class: "baiyan fixed"
+            }, [
+              vue.createVNode(_component_uni_col, { span: 12 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", {
+                    class: "aligin_center_item",
+                    style: { "height": "90rpx" }
+                  }, [
+                    vue.createElementVNode("text", {
+                      class: vue.normalizeClass(["aligin_center_item height_100per", { "border_line": $data.swiperIndex == 0 }])
+                    }, "\u6587\u7AE0", 2)
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_col, { span: 12 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", {
+                    class: "aligin_center_item",
+                    style: { "height": "90rpx" }
+                  }, [
+                    vue.createElementVNode("text", {
+                      class: vue.normalizeClass(["aligin_center_item height_100per", { "border_line": $data.swiperIndex == 1 }])
+                    }, "\u8D5B\u4E8B", 2)
+                  ])
+                ]),
+                _: 1
+              })
+            ])
+          ], 512), [
+            [vue.vShow, $data.nav_show]
+          ]),
+          vue.createCommentVNode(" \u4E0A\u6ED1\u9690\u85CF "),
+          vue.withDirectives(vue.createElementVNode("view", { style: { "height": "110rpx" } }, [
+            vue.createElementVNode("view", {
+              style: { "height": "100rpx", "width": "100%" },
+              class: "baiyan"
+            }, [
+              vue.createVNode(_component_uni_col, { span: 12 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", {
+                    class: "aligin_center_item",
+                    style: { "height": "90rpx" }
+                  }, [
+                    vue.createElementVNode("text", {
+                      class: vue.normalizeClass(["aligin_center_item height_100per", { "border_line": $data.swiperIndex == 0 }])
+                    }, "\u6587\u7AE0", 2)
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_col, { span: 12 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", {
+                    class: "aligin_center_item",
+                    style: { "height": "90rpx" }
+                  }, [
+                    vue.createElementVNode("text", {
+                      class: vue.normalizeClass(["aligin_center_item height_100per", { "border_line": $data.swiperIndex == 1 }])
+                    }, "\u8D5B\u4E8B", 2)
+                  ])
+                ]),
+                _: 1
+              })
+            ])
+          ], 512), [
+            [vue.vShow, !$data.nav_show]
+          ])
+        ]),
+        _: 1
+      }),
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("swiper", {
+            style: { "height": "1200rpx" },
+            onChange: _cache[1] || (_cache[1] = (...args) => $options.swiperChage && $options.swiperChage(...args))
+          }, [
+            vue.createCommentVNode(" \u6587\u7AE0 "),
+            vue.createElementVNode("swiper-item", null, [
+              vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+              vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 2 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              class: "sec_avatar",
+                              src: "/static/logo.png"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 17 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx", "overflow": "hidden" }
+                          }, [
+                            vue.createElementVNode("text", null, "author")
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 5 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_right",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                            vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                }),
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 16 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill padding_top_10",
+                                  style: { "height": "110rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                                ])
+                              ]),
+                              _: 1
+                            }),
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill aligin_center_text_left",
+                                  style: { "height": "60rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u70B9\u8D5E:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                                ])
+                              ]),
+                              _: 1
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 8 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_item",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              mode: "scaleToFill",
+                              style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                              src: "/static/ad/home2.jpg"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                })
+              ]),
+              vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+              vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 2 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              class: "sec_avatar",
+                              src: "/static/logo.png"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 17 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx", "overflow": "hidden" }
+                          }, [
+                            vue.createElementVNode("text", null, "author")
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 5 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_right",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                            vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                }),
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 16 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill padding_top_10",
+                                  style: { "height": "110rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                                ])
+                              ]),
+                              _: 1
+                            }),
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill aligin_center_text_left",
+                                  style: { "height": "60rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u70B9\u8D5E:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                                ])
+                              ]),
+                              _: 1
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 8 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_item",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              mode: "scaleToFill",
+                              style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                              src: "/static/ad/home2.jpg"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                })
+              ]),
+              vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+              vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 2 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              class: "sec_avatar",
+                              src: "/static/logo.png"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 17 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx", "overflow": "hidden" }
+                          }, [
+                            vue.createElementVNode("text", null, "author")
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 5 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_right",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                            vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                }),
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 16 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill padding_top_10",
+                                  style: { "height": "110rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                                ])
+                              ]),
+                              _: 1
+                            }),
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill aligin_center_text_left",
+                                  style: { "height": "60rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u70B9\u8D5E:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                                ])
+                              ]),
+                              _: 1
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 8 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_item",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              mode: "scaleToFill",
+                              style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                              src: "/static/ad/home2.jpg"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                })
+              ]),
+              vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+              vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 2 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              class: "sec_avatar",
+                              src: "/static/logo.png"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 17 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_left",
+                            style: { "height": "75rpx", "overflow": "hidden" }
+                          }, [
+                            vue.createElementVNode("text", null, "author")
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 5 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_text_right",
+                            style: { "height": "75rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                            vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                }),
+                vue.createVNode(_component_uni_row, null, {
+                  default: vue.withCtx(() => [
+                    vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                      vue.createVNode(_component_uni_col, { span: 16 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill padding_top_10",
+                                  style: { "height": "110rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                                ])
+                              ]),
+                              _: 1
+                            }),
+                            vue.createVNode(_component_uni_row, null, {
+                              default: vue.withCtx(() => [
+                                vue.createElementVNode("view", {
+                                  class: "fill aligin_center_text_left",
+                                  style: { "height": "60rpx" }
+                                }, [
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, [
+                                    vue.createTextVNode(" \u70B9\u8D5E:"),
+                                    vue.createElementVNode("text", null, "10")
+                                  ]),
+                                  vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                                ])
+                              ]),
+                              _: 1
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      }),
+                      vue.createVNode(_component_uni_col, { span: 8 }, {
+                        default: vue.withCtx(() => [
+                          vue.createElementVNode("view", {
+                            class: "fill aligin_center_item",
+                            style: { "height": "175rpx" }
+                          }, [
+                            vue.createElementVNode("image", {
+                              mode: "scaleToFill",
+                              style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                              src: "/static/ad/home2.jpg"
+                            })
+                          ])
+                        ]),
+                        _: 1
+                      })
+                    ])
+                  ]),
+                  _: 1
+                })
+              ])
+            ]),
+            vue.createCommentVNode(" \u8D5B\u4E8B "),
+            vue.createElementVNode("swiper-item", null, [
+              vue.createCommentVNode(" \u8D5B\u4E8B\u5361\u7247 \uFF08\u5361\u7247\u4E2D\u56FE\u7247\u9ED8\u8BA4\u63D0\u4F9B\u51E0\u79CD\uFF09"),
+              vue.createElementVNode("view", {
+                class: "margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan",
+                style: { "position": "relative" }
+              }, [
+                vue.createCommentVNode(" \u8D5B\u4E8B\u72B6\u6001 "),
+                vue.createElementVNode("view", {
+                  style: { "height": "55rpx", "width": "150rpx" },
+                  class: "absolute_event_status box_radius_20 aligin_center_item status_before"
+                }, "\u5DF2\u7ED3\u675F"),
+                vue.createCommentVNode(" \u56FE\u7247 "),
+                vue.createElementVNode("view", { style: { "height": "230rpx", "width": "100%", "background-color": "antiquewhite" } }, [
+                  vue.createElementVNode("image", {
+                    class: "fill",
+                    src: "/static/ad/ad2.jpg"
+                  })
+                ]),
+                vue.createCommentVNode(" \u4FE1\u606F "),
+                vue.createElementVNode("view", { class: "margin_lr_10 margin_bt_15" }, [
+                  vue.createElementVNode("view", { class: "fill_width eventTitle padding_tb_10 overflowHide" }, [
+                    vue.createElementVNode("text", null, "2023ACM\u7A0B\u5E8F\u8BBE\u8BA1\u7ADE\u8D5B\u4E2D\u56FD\u533A\u9884\u9009\u8D5B")
+                  ]),
+                  vue.createCommentVNode(" \u65F6\u95F4 "),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+                    vue.createElementVNode("view", {
+                      class: "margin_right_10",
+                      style: { "color": "black" }
+                    }, "\u62A5\u540D\u65F6\u95F4 \uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+                    vue.createElementVNode("view", null, "--"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+                    vue.createElementVNode("view", {
+                      class: "margin_right_10",
+                      style: { "color": "black" }
+                    }, "\u7ED3\u675F\u65F6\u95F4 \uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+                    vue.createElementVNode("view", null, "--"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left margin_bt_15 event_other" }, [
+                    vue.createElementVNode("view", { class: "margin_right_10" }, "\u4E3B\u529E\u65B9\uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_left_15" }, "\u673A\u6784\u540D\u79F0")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left event_other" }, [
+                    vue.createElementVNode("view", null, "\u6536\u85CF\uFF1A " + vue.toDisplayString(0)),
+                    vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+                    vue.createElementVNode("view", null, "\u8BC4\u8BBA\uFF1A" + vue.toDisplayString(0)),
+                    vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+                    vue.createElementVNode("view", null, "\u7EA7\u522B\uFF1A" + vue.toDisplayString("\u5176\u4ED6"))
+                  ])
+                ])
+              ]),
+              vue.createCommentVNode(" \u8D5B\u4E8B\u5361\u7247 \uFF08\u5361\u7247\u4E2D\u56FE\u7247\u9ED8\u8BA4\u63D0\u4F9B\u51E0\u79CD\uFF09"),
+              vue.createElementVNode("view", {
+                class: "margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan",
+                style: { "position": "relative" }
+              }, [
+                vue.createCommentVNode(" \u8D5B\u4E8B\u72B6\u6001 "),
+                vue.createElementVNode("view", {
+                  style: { "height": "55rpx", "width": "150rpx" },
+                  class: "absolute_event_status box_radius_20 aligin_center_item status_before"
+                }, "\u5DF2\u7ED3\u675F"),
+                vue.createCommentVNode(" \u56FE\u7247 "),
+                vue.createElementVNode("view", { style: { "height": "230rpx", "width": "100%", "background-color": "antiquewhite" } }, [
+                  vue.createElementVNode("image", {
+                    class: "fill",
+                    src: "/static/ad/ad2.jpg"
+                  })
+                ]),
+                vue.createCommentVNode(" \u4FE1\u606F "),
+                vue.createElementVNode("view", { class: "margin_lr_10 margin_bt_15" }, [
+                  vue.createElementVNode("view", { class: "fill_width eventTitle padding_tb_10 overflowHide" }, [
+                    vue.createElementVNode("text", null, "2023ACM\u7A0B\u5E8F\u8BBE\u8BA1\u7ADE\u8D5B\u4E2D\u56FD\u533A\u9884\u9009\u8D5B")
+                  ]),
+                  vue.createCommentVNode(" \u65F6\u95F4 "),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+                    vue.createElementVNode("view", {
+                      class: "margin_right_10",
+                      style: { "color": "black" }
+                    }, "\u62A5\u540D\u65F6\u95F4 \uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+                    vue.createElementVNode("view", null, "--"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+                    vue.createElementVNode("view", {
+                      class: "margin_right_10",
+                      style: { "color": "black" }
+                    }, "\u7ED3\u675F\u65F6\u95F4 \uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+                    vue.createElementVNode("view", null, "--"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left margin_bt_15 event_other" }, [
+                    vue.createElementVNode("view", { class: "margin_right_10" }, "\u4E3B\u529E\u65B9\uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_left_15" }, "\u673A\u6784\u540D\u79F0")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left event_other" }, [
+                    vue.createElementVNode("view", null, "\u6536\u85CF\uFF1A " + vue.toDisplayString(0)),
+                    vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+                    vue.createElementVNode("view", null, "\u8BC4\u8BBA\uFF1A" + vue.toDisplayString(0)),
+                    vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+                    vue.createElementVNode("view", null, "\u7EA7\u522B\uFF1A" + vue.toDisplayString("\u5176\u4ED6"))
+                  ])
+                ])
+              ]),
+              vue.createCommentVNode(" \u8D5B\u4E8B\u5361\u7247 \uFF08\u5361\u7247\u4E2D\u56FE\u7247\u9ED8\u8BA4\u63D0\u4F9B\u51E0\u79CD\uFF09"),
+              vue.createElementVNode("view", {
+                class: "margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan",
+                style: { "position": "relative" }
+              }, [
+                vue.createCommentVNode(" \u8D5B\u4E8B\u72B6\u6001 "),
+                vue.createElementVNode("view", {
+                  style: { "height": "55rpx", "width": "150rpx" },
+                  class: "absolute_event_status box_radius_20 aligin_center_item status_before"
+                }, "\u5DF2\u7ED3\u675F"),
+                vue.createCommentVNode(" \u56FE\u7247 "),
+                vue.createElementVNode("view", { style: { "height": "230rpx", "width": "100%", "background-color": "antiquewhite" } }, [
+                  vue.createElementVNode("image", {
+                    class: "fill",
+                    src: "/static/ad/ad2.jpg"
+                  })
+                ]),
+                vue.createCommentVNode(" \u4FE1\u606F "),
+                vue.createElementVNode("view", { class: "margin_lr_10 margin_bt_15" }, [
+                  vue.createElementVNode("view", { class: "fill_width eventTitle padding_tb_10 overflowHide" }, [
+                    vue.createElementVNode("text", null, "2023ACM\u7A0B\u5E8F\u8BBE\u8BA1\u7ADE\u8D5B\u4E2D\u56FD\u533A\u9884\u9009\u8D5B")
+                  ]),
+                  vue.createCommentVNode(" \u65F6\u95F4 "),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+                    vue.createElementVNode("view", {
+                      class: "margin_right_10",
+                      style: { "color": "black" }
+                    }, "\u62A5\u540D\u65F6\u95F4 \uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+                    vue.createElementVNode("view", null, "--"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left eventTime margin_top_5" }, [
+                    vue.createElementVNode("view", {
+                      class: "margin_right_10",
+                      style: { "color": "black" }
+                    }, "\u7ED3\u675F\u65F6\u95F4 \uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2"),
+                    vue.createElementVNode("view", null, "--"),
+                    vue.createElementVNode("view", { class: "margin_lr_10" }, "2022-10-2")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left margin_bt_15 event_other" }, [
+                    vue.createElementVNode("view", { class: "margin_right_10" }, "\u4E3B\u529E\u65B9\uFF1A"),
+                    vue.createElementVNode("view", { class: "margin_left_15" }, "\u673A\u6784\u540D\u79F0")
+                  ]),
+                  vue.createElementVNode("view", { class: "fill_width aligin_center_text_left event_other" }, [
+                    vue.createElementVNode("view", null, "\u6536\u85CF\uFF1A " + vue.toDisplayString(0)),
+                    vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+                    vue.createElementVNode("view", null, "\u8BC4\u8BBA\uFF1A" + vue.toDisplayString(0)),
+                    vue.createElementVNode("view", { class: "margin_lr_50" }, "|"),
+                    vue.createElementVNode("view", null, "\u7EA7\u522B\uFF1A" + vue.toDisplayString("\u5176\u4ED6"))
+                  ])
+                ])
+              ])
+            ])
+          ], 32)
+        ]),
+        _: 1
+      })
+    ]);
+  }
+  var PagesSelfSelf_detailSelf_detail = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "D:/dachuang/uniapp_client/Client/pages/self/self_detail/self_detail.vue"]]);
+  var popup = {
+    data() {
+      return {};
+    },
+    created() {
+      this.popup = this.getParent();
+    },
+    methods: {
+      getParent(name = "uniPopup") {
+        let parent = this.$parent;
+        let parentName = parent.$options.name;
+        while (parentName !== name) {
+          parent = parent.$parent;
+          if (!parent)
+            return false;
+          parentName = parent.$options.name;
+        }
+        return parent;
+      }
+    }
+  };
+  var en = {
+    "uni-popup.cancel": "cancel",
+    "uni-popup.ok": "ok",
+    "uni-popup.placeholder": "pleace enter",
+    "uni-popup.title": "Hint",
+    "uni-popup.shareTitle": "Share to"
+  };
+  var zhHans = {
+    "uni-popup.cancel": "\u53D6\u6D88",
+    "uni-popup.ok": "\u786E\u5B9A",
+    "uni-popup.placeholder": "\u8BF7\u8F93\u5165",
+    "uni-popup.title": "\u63D0\u793A",
+    "uni-popup.shareTitle": "\u5206\u4EAB\u5230"
+  };
+  var zhHant = {
+    "uni-popup.cancel": "\u53D6\u6D88",
+    "uni-popup.ok": "\u78BA\u5B9A",
+    "uni-popup.placeholder": "\u8ACB\u8F38\u5165",
+    "uni-popup.title": "\u63D0\u793A",
+    "uni-popup.shareTitle": "\u5206\u4EAB\u5230"
+  };
+  var messages = {
+    en,
+    "zh-Hans": zhHans,
+    "zh-Hant": zhHant
+  };
+  const { t } = initVueI18n(messages);
+  const _sfc_main$4 = {
+    name: "uniPopupDialog",
+    mixins: [popup],
+    emits: ["confirm", "close"],
+    props: {
+      inputType: {
+        type: String,
+        default: "text"
+      },
+      value: {
+        type: [String, Number],
+        default: ""
+      },
+      placeholder: {
+        type: [String, Number],
+        default: ""
+      },
+      type: {
+        type: String,
+        default: "error"
+      },
+      mode: {
+        type: String,
+        default: "base"
+      },
+      title: {
+        type: String,
+        default: ""
+      },
+      content: {
+        type: String,
+        default: ""
+      },
+      beforeClose: {
+        type: Boolean,
+        default: false
+      },
+      cancelText: {
+        type: String,
+        default: ""
+      },
+      confirmText: {
+        type: String,
+        default: ""
+      }
+    },
+    data() {
+      return {
+        dialogType: "error",
+        focus: false,
+        val: ""
+      };
+    },
+    computed: {
+      okText() {
+        return this.confirmText || t("uni-popup.ok");
+      },
+      closeText() {
+        return this.cancelText || t("uni-popup.cancel");
+      },
+      placeholderText() {
+        return this.placeholder || t("uni-popup.placeholder");
+      },
+      titleText() {
+        return this.title || t("uni-popup.title");
+      }
+    },
+    watch: {
+      type(val) {
+        this.dialogType = val;
+      },
+      mode(val) {
+        if (val === "input") {
+          this.dialogType = "info";
+        }
+      },
+      value(val) {
+        this.val = val;
+      }
+    },
+    created() {
+      this.popup.disableMask();
+      if (this.mode === "input") {
+        this.dialogType = "info";
+        this.val = this.value;
+      } else {
+        this.dialogType = this.type;
+      }
+    },
+    mounted() {
+      this.focus = true;
+    },
+    methods: {
+      onOk() {
+        if (this.mode === "input") {
+          this.$emit("confirm", this.val);
+        } else {
+          this.$emit("confirm");
+        }
+        if (this.beforeClose)
+          return;
+        this.popup.close();
+      },
+      closeDialog() {
+        this.$emit("close");
+        if (this.beforeClose)
+          return;
+        this.popup.close();
+      },
+      close() {
+        this.popup.close();
+      }
+    }
+  };
+  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-popup-dialog" }, [
+      vue.createElementVNode("view", { class: "uni-dialog-title" }, [
+        vue.createElementVNode("text", {
+          class: vue.normalizeClass(["uni-dialog-title-text", ["uni-popup__" + $data.dialogType]])
+        }, vue.toDisplayString($options.titleText), 3)
+      ]),
+      $props.mode === "base" ? (vue.openBlock(), vue.createElementBlock("view", {
+        key: 0,
+        class: "uni-dialog-content"
+      }, [
+        vue.renderSlot(_ctx.$slots, "default", {}, () => [
+          vue.createElementVNode("text", { class: "uni-dialog-content-text" }, vue.toDisplayString($props.content), 1)
+        ], true)
+      ])) : (vue.openBlock(), vue.createElementBlock("view", {
+        key: 1,
+        class: "uni-dialog-content"
+      }, [
+        vue.renderSlot(_ctx.$slots, "default", {}, () => [
+          vue.withDirectives(vue.createElementVNode("input", {
+            class: "uni-dialog-input",
+            "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.val = $event),
+            type: $props.inputType,
+            placeholder: $options.placeholderText,
+            focus: $data.focus
+          }, null, 8, ["type", "placeholder", "focus"]), [
+            [vue.vModelDynamic, $data.val]
+          ])
+        ], true)
+      ])),
+      vue.createElementVNode("view", { class: "uni-dialog-button-group" }, [
+        vue.createElementVNode("view", {
+          class: "uni-dialog-button",
+          onClick: _cache[1] || (_cache[1] = (...args) => $options.closeDialog && $options.closeDialog(...args))
+        }, [
+          vue.createElementVNode("text", { class: "uni-dialog-button-text" }, vue.toDisplayString($options.closeText), 1)
+        ]),
+        vue.createElementVNode("view", {
+          class: "uni-dialog-button uni-border-left",
+          onClick: _cache[2] || (_cache[2] = (...args) => $options.onOk && $options.onOk(...args))
+        }, [
+          vue.createElementVNode("text", { class: "uni-dialog-button-text uni-button-color" }, vue.toDisplayString($options.okText), 1)
+        ])
+      ])
+    ]);
+  }
+  var __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__scopeId", "data-v-6f54520a"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog.vue"]]);
+  const _sfc_main$3 = {
+    name: "uniPopupMessage",
+    mixins: [popup],
+    props: {
+      type: {
+        type: String,
+        default: "success"
+      },
+      message: {
+        type: String,
+        default: ""
+      },
+      duration: {
+        type: Number,
+        default: 3e3
+      },
+      maskShow: {
+        type: Boolean,
+        default: false
+      }
+    },
+    data() {
+      return {};
+    },
+    created() {
+      this.popup.maskShow = this.maskShow;
+      this.popup.messageChild = this;
+    },
+    methods: {
+      timerClose() {
+        if (this.duration === 0)
+          return;
+        clearTimeout(this.timer);
+        this.timer = setTimeout(() => {
+          this.popup.close();
+        }, this.duration);
+      }
+    }
+  };
+  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-popup-message" }, [
+      vue.createElementVNode("view", {
+        class: vue.normalizeClass(["uni-popup-message__box fixforpc-width", "uni-popup__" + $props.type])
+      }, [
+        vue.renderSlot(_ctx.$slots, "default", {}, () => [
+          vue.createElementVNode("text", {
+            class: vue.normalizeClass(["uni-popup-message-text", "uni-popup__" + $props.type + "-text"])
+          }, vue.toDisplayString($props.message), 3)
+        ], true)
+      ], 2)
+    ]);
+  }
+  var __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__scopeId", "data-v-38167fe2"], ["__file", "D:/dachuang/uniapp_client/Client/uni_modules/uni-popup/components/uni-popup-message/uni-popup-message.vue"]]);
+  var self_;
+  const _sfc_main$2 = {
+    data() {
+      return {
+        msgType: "success",
+        messageText: "\u8FD9\u662F\u4E00\u6761\u6210\u529F\u63D0\u793A",
+        inputDialogValue: "",
+        inputDialogValue2: "",
+        dialogIndex: 2,
+        formData: {
+          avatar: []
+        },
+        user: {
+          avatar: "../../../static/faces/3-thump.jpg",
+          nickname: "author",
+          college: "\u56DB\u5DDD\u8F7B\u5316\u5DE5\u5927\u5B66",
+          major: "\u8BA1\u7B97\u673A\u79D1\u5B66\u4E0E\u6280\u672F",
+          email: "qihang_duan@foxmail.com",
+          description: "\u70ED\u7231\u751F\u6D3B\uFF01",
+          blog: "qihangduan.icu"
+        }
+      };
+    },
+    created() {
+      self_ = this;
+    },
+    methods: {
+      chooseImage() {
+        uni.chooseImage({
+          count: 1,
+          sizeType: "origin",
+          sourceType: "album",
+          success: function(res) {
+            formatAppLog("log", "at pages/self/self_update/self_update.vue:105", JSON.stringify(res.tempFilePaths));
+            formatAppLog("log", "at pages/self/self_update/self_update.vue:106", JSON.stringify(res.tempFiles));
+            const tempFilePath = res.tempFilePaths;
+            self_.formData.avatar = [tempFilePath];
+            self_.avatarSrc = res.tempFilePaths;
+            formatAppLog("log", "at pages/self/self_update/self_update.vue:110", JSON.stringify(self_.formData.avatar));
+          }
+        });
+      },
+      dialogInputConfirm(value) {
+        formatAppLog("log", "at pages/self/self_update/self_update.vue:116", "\u70B9\u51FB\u786E\u8BA4");
+        formatAppLog("log", "at pages/self/self_update/self_update.vue:117", value);
+        this.msgType = "success";
+        this.messageText = "Test";
+        this.$refs.message.open();
+      },
+      dialogInputConfirm2(value) {
+        formatAppLog("log", "at pages/self/self_update/self_update.vue:126", "\u70B9\u51FB\u786E\u8BA42");
+        formatAppLog("log", "at pages/self/self_update/self_update.vue:127", value);
+        self_.dosomething(value);
+      },
+      dosomething(value) {
+        let dialogIndex = this.dialogIndex;
+        if (dialogIndex == 2) {
+          this.user.college = value;
+          formatAppLog("log", "at pages/self/self_update/self_update.vue:134", this.user.college);
+        } else if (dialogIndex == 3) {
+          this.user.major = value;
+          formatAppLog("log", "at pages/self/self_update/self_update.vue:137", this.user.major);
+        } else if (dialogIndex == 4) {
+          this.user.email = value;
+          formatAppLog("log", "at pages/self/self_update/self_update.vue:140", this.user.email);
+        } else if (dialogIndex == 5) {
+          this.user.blog = value;
+          formatAppLog("log", "at pages/self/self_update/self_update.vue:143", this.user.blog);
+        } else if (dialogIndex == 6) {
+          this.user.description = value;
+          formatAppLog("log", "at pages/self/self_update/self_update.vue:147", this.user.description);
+        }
+      },
+      dialogOpen(index) {
+        this.dialogIndex = index;
+        if (index == 1) {
+          this.$refs.inputDialog.open();
+          this.inputDialogValue = this.user.nickname;
+        } else if (index == 2) {
+          this.$refs.inputDialog2.open();
+          this.inputDialogValue2 = this.user.college;
+        } else if (index == 3) {
+          this.$refs.inputDialog2.open();
+          this.inputDialogValue2 = this.user.major;
+        } else if (index == 4) {
+          this.$refs.inputDialog2.open();
+          this.inputDialogValue2 = this.user.email;
+        } else if (index == 5) {
+          this.$refs.inputDialog2.open();
+          this.inputDialogValue2 = this.user.blog;
+        } else if (index == 6) {
+          this.$refs.inputDialog2.open();
+          this.inputDialogValue2 = this.user.description;
+        }
+      },
+      submit() {
+        uni.navigateBack();
+      }
+    }
+  };
+  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    const _component_uni_popup_dialog = resolveEasycom(vue.resolveDynamicComponent("uni-popup-dialog"), __easycom_2);
+    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_3);
+    const _component_uni_popup_message = resolveEasycom(vue.resolveDynamicComponent("uni-popup-message"), __easycom_4);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            style: { "height": "100rpx" },
+            class: "border_line_grey_b_tiny align"
+          }, [
+            vue.createVNode(_component_uni_col, { span: 12 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  class: "aligin_center_item_left fill",
+                  style: { "height": "100rpx" }
+                }, [
+                  vue.createElementVNode("image", {
+                    class: "margin_left_50",
+                    style: { "height": "80rpx", "width": "80rpx", "border-radius": "80rpx" },
+                    src: $data.user.avatar
+                  }, null, 8, ["src"])
+                ])
+              ]),
+              _: 1
+            }),
+            vue.createVNode(_component_uni_col, { span: 12 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  class: "aligin_center_item_right margin_right_50",
+                  style: { "height": "100rpx" }
+                }, [
+                  vue.createElementVNode("button", {
+                    class: "margin_none",
+                    size: "mini",
+                    onClick: _cache[0] || (_cache[0] = (...args) => $options.chooseImage && $options.chooseImage(...args))
+                  }, "\u4E0A\u4F20")
+                ])
+              ]),
+              _: 1
+            })
+          ])
+        ]),
+        _: 1
+      }),
+      vue.createVNode(_component_uni_row, null, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            onClick: _cache[1] || (_cache[1] = ($event) => $options.dialogOpen(1)),
+            style: { "height": "100rpx" },
+            class: "border_line_grey_b_tiny aligin_center_item_left padding_rl_50"
+          }, [
+            vue.createElementVNode("view", {
+              style: { "width": "50%" },
+              class: "margin_right_10"
+            }, "\u6635\u79F0\uFF1A"),
+            vue.createElementVNode("view", {
+              style: { "width": "50%", "color": "grey", "font-size": "30rpx" },
+              class: "aligin_center_item_right"
+            }, vue.toDisplayString($data.user.nickname), 1)
+          ]),
+          vue.createElementVNode("view", {
+            onClick: _cache[2] || (_cache[2] = ($event) => $options.dialogOpen(2)),
+            style: { "height": "100rpx" },
+            class: "border_line_grey_b_tiny aligin_center_item_left padding_rl_50"
+          }, [
+            vue.createElementVNode("view", {
+              style: { "width": "50%" },
+              class: "margin_right_10"
+            }, "\u5B66\u6821\uFF1A"),
+            vue.createElementVNode("view", {
+              style: { "width": "50%", "color": "grey", "font-size": "30rpx" },
+              class: "aligin_center_item_right"
+            }, vue.toDisplayString($data.user.college), 1)
+          ]),
+          vue.createElementVNode("view", {
+            onClick: _cache[3] || (_cache[3] = ($event) => $options.dialogOpen(3)),
+            style: { "height": "100rpx" },
+            class: "border_line_grey_b_tiny aligin_center_item_left padding_rl_50"
+          }, [
+            vue.createElementVNode("view", {
+              style: { "width": "50%" },
+              class: "margin_right_10"
+            }, "\u4E13\u4E1A\uFF1A"),
+            vue.createElementVNode("view", {
+              style: { "width": "50%", "color": "grey", "font-size": "30rpx" },
+              class: "aligin_center_item_right"
+            }, vue.toDisplayString($data.user.major), 1)
+          ]),
+          vue.createElementVNode("view", {
+            onClick: _cache[4] || (_cache[4] = ($event) => $options.dialogOpen(4)),
+            style: { "height": "100rpx" },
+            class: "border_line_grey_b_tiny aligin_center_item_left padding_rl_50"
+          }, [
+            vue.createElementVNode("view", {
+              style: { "width": "50%" },
+              class: "margin_right_10"
+            }, "\u90AE\u7BB1\uFF1A"),
+            vue.createElementVNode("view", {
+              style: { "width": "50%", "color": "grey", "font-size": "30rpx" },
+              class: "aligin_center_item_right"
+            }, vue.toDisplayString($data.user.email), 1)
+          ]),
+          vue.createElementVNode("view", {
+            onClick: _cache[5] || (_cache[5] = ($event) => $options.dialogOpen(5)),
+            style: { "height": "100rpx" },
+            class: "border_line_grey_b_tiny aligin_center_item_left padding_rl_50"
+          }, [
+            vue.createElementVNode("view", {
+              style: { "width": "50%" },
+              class: "margin_right_10"
+            }, "\u4E2A\u4EBA\u535A\u5BA2\uFF1A"),
+            vue.createElementVNode("view", {
+              style: { "width": "50%", "color": "grey", "font-size": "30rpx" },
+              class: "aligin_center_item_right"
+            }, vue.toDisplayString($data.user.blog), 1)
+          ]),
+          vue.createElementVNode("view", {
+            onClick: _cache[6] || (_cache[6] = ($event) => $options.dialogOpen(6)),
+            class: "border_line_grey_b_tiny aligin_center_item_left padding_rl_50 padding_tb_20"
+          }, [
+            vue.createElementVNode("view", {
+              style: { "width": "50%" },
+              class: "margin_right_10"
+            }, "\u5EA7\u53F3\u94ED\uFF1A"),
+            vue.createElementVNode("view", {
+              style: { "width": "50%", "color": "grey", "font-size": "30rpx" },
+              class: "aligin_center_item_right"
+            }, vue.toDisplayString($data.user.description), 1)
+          ]),
+          vue.createElementVNode("view", { class: "fill" }, [
+            vue.createElementVNode("button", {
+              onClick: _cache[7] || (_cache[7] = (...args) => $options.submit && $options.submit(...args)),
+              class: "margin_20",
+              type: "primary"
+            }, "\u4FDD\u5B58\u63D0\u4EA4")
+          ])
+        ]),
+        _: 1
+      }),
+      vue.createCommentVNode(" \u8F93\u5165\u6846\u793A\u4F8B "),
+      vue.createVNode(_component_uni_popup, {
+        ref: "inputDialog",
+        type: "dialog"
+      }, {
+        default: vue.withCtx(() => [
+          vue.createVNode(_component_uni_popup_dialog, {
+            ref: "inputClose",
+            mode: "input",
+            title: "\u8F93\u5165\u5185\u5BB9",
+            value: $data.inputDialogValue,
+            placeholder: "\u8BF7\u8F93\u5165\u5185\u5BB9",
+            onConfirm: $options.dialogInputConfirm
+          }, null, 8, ["value", "onConfirm"])
+        ]),
+        _: 1
+      }, 512),
+      vue.createCommentVNode(" \u5BF9\u4E8E\u4E0D\u7528\u5F02\u6B65\u8BF7\u6C42\u540E\u7AEF\uFF08nickname\uFF09\u7684\u5176\u4ED6\u5F39\u51FA\u5C42 "),
+      vue.createVNode(_component_uni_popup, {
+        ref: "inputDialog2",
+        type: "dialog"
+      }, {
+        default: vue.withCtx(() => [
+          vue.createVNode(_component_uni_popup_dialog, {
+            ref: "inputClose2",
+            mode: "input",
+            title: "\u8F93\u5165\u5185\u5BB9",
+            value: $data.inputDialogValue2,
+            placeholder: "\u8BF7\u8F93\u5165\u5185\u5BB9",
+            onConfirm: $options.dialogInputConfirm2
+          }, null, 8, ["value", "onConfirm"])
+        ]),
+        _: 1
+      }, 512),
+      vue.createCommentVNode(" \u63D0\u793A\u4FE1\u606F\u5F39\u7A97 "),
+      vue.createVNode(_component_uni_popup, {
+        ref: "message",
+        type: "message"
+      }, {
+        default: vue.withCtx(() => [
+          vue.createVNode(_component_uni_popup_message, {
+            type: $data.msgType,
+            message: $data.messageText,
+            duration: 2e3
+          }, null, 8, ["type", "message"])
+        ]),
+        _: 1
+      }, 512)
+    ]);
+  }
+  var PagesSelfSelf_updateSelf_update = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "D:/dachuang/uniapp_client/Client/pages/self/self_update/self_update.vue"]]);
+  const _sfc_main$1 = {
+    data() {
+      return {
+        swiperIndex: 0
+      };
+    },
+    created() {
+    },
+    methods: {
+      back() {
+        uni.navigateBack();
+      },
+      swiperChange(e) {
+        this.swiperIndex = e.detail.current;
+        formatAppLog("log", "at pages/search_result/search_result.vue:722", e.detail.current);
+      }
+    }
+  };
+  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+    const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_1$1);
+    const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_2$3);
+    const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_3$1);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
+      vue.createElementVNode("view", {
+        class: "border_line_grey_bt_tiny margin_lr_20 fixed_eventNav",
+        style: { "height": "100rpx" }
+      }, [
+        vue.createVNode(_component_uni_row, null, {
+          default: vue.withCtx(() => [
+            vue.createVNode(_component_uni_col, { span: 4 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  class: "aligin_center_item",
+                  style: { "height": "100rpx" },
+                  onClick: _cache[0] || (_cache[0] = (...args) => $options.back && $options.back(...args))
+                }, [
+                  vue.createVNode(_component_uni_icons, {
+                    type: "arrow-left",
+                    color: "#808080",
+                    size: "26"
+                  })
+                ])
+              ]),
+              _: 1
+            }),
+            vue.createVNode(_component_uni_col, { span: 20 }, {
+              default: vue.withCtx(() => [
+                vue.createElementVNode("view", {
+                  class: "aligin_center_item",
+                  style: { "height": "100rpx" }
+                }, [
+                  vue.createElementVNode("view", {
+                    class: "fill_height aligin_center_item",
+                    style: { "width": "80%" }
+                  }, [
+                    vue.createVNode(_component_uni_easyinput, {
+                      placeholder: "\u641C\u7D22",
+                      clearable: ""
+                    })
+                  ]),
+                  vue.createElementVNode("view", {
+                    class: "fill_height aligin_center_item",
+                    style: { "width": "20%" }
+                  }, [
+                    vue.createVNode(_component_uni_icons, {
+                      type: "search",
+                      size: "26",
+                      color: "#808080"
+                    })
+                  ])
+                ])
+              ]),
+              _: 1
+            })
+          ]),
+          _: 1
+        }),
+        vue.createCommentVNode(" swiper_nav"),
+        vue.createElementVNode("view", {
+          class: "fill_width aligin_center_item_left",
+          style: { "height": "100rpx" }
+        }, [
+          vue.createElementVNode("view", {
+            class: "fill_height aligin_center_item",
+            style: { "width": "33%" }
+          }, [
+            vue.createElementVNode("text", {
+              class: vue.normalizeClass(["padding_tb_20", { "border_line": $data.swiperIndex == 0 }])
+            }, "\u6587\u7AE0", 2)
+          ]),
+          vue.createElementVNode("view", {
+            class: "fill_height aligin_center_item",
+            style: { "width": "33%" }
+          }, [
+            vue.createElementVNode("text", {
+              class: vue.normalizeClass(["padding_tb_20", { "border_line": $data.swiperIndex == 1 }])
+            }, "\u8D5B\u4E8B", 2)
+          ]),
+          vue.createElementVNode("view", {
+            class: "fill_height aligin_center_item",
+            style: { "width": "33%" }
+          }, [
+            vue.createElementVNode("text", {
+              class: vue.normalizeClass(["padding_tb_20", { "border_line": $data.swiperIndex == 2 }])
+            }, "\u7528\u6237", 2)
+          ])
+        ])
+      ]),
+      vue.createCommentVNode(" \u5360\u4F4D "),
+      vue.createElementVNode("view", { style: { "height": "200rpx" } }),
+      vue.createElementVNode("swiper", {
+        ref: "swiper",
+        onChange: _cache[1] || (_cache[1] = (...args) => $options.swiperChange && $options.swiperChange(...args)),
+        class: "margin_top_10",
+        style: { "height": "400rpx" },
+        circular: "true"
+      }, [
+        vue.createElementVNode("swiper-item", { style: { "height": "100%", "width": "100%" } }, [
+          vue.createElementVNode("scroll-view", { style: { "height": "100%" } }, [
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ])
+          ])
+        ]),
+        vue.createElementVNode("swiper-item", null, [
+          vue.createElementVNode("scroll-view", { style: { "height": "400rpx", "width": "100%" } }, [
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ])
+          ])
+        ]),
+        vue.createElementVNode("swiper-item", null, [
+          vue.createElementVNode("scroll-view", { style: { "height": "400rpx", "width": "100%" } }, [
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ]),
+            vue.createCommentVNode(" \u6587\u7AE0\u9884\u89C8\u5361\u7247 "),
+            vue.createElementVNode("view", { class: "border_line_grey_bt margin_top_20 padding_rl_20" }, [
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "75rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 2 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            class: "sec_avatar",
+                            src: "/static/logo.png"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 17 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_left",
+                          style: { "height": "75rpx", "overflow": "hidden" }
+                        }, [
+                          vue.createElementVNode("text", null, "author")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 5 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_text_right",
+                          style: { "height": "75rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_icons, { type: "more-filled" }),
+                          vue.createElementVNode("text", null, vue.toDisplayString("\xA0"))
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_uni_row, null, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("view", { style: { "height": "175rpx" } }, [
+                    vue.createVNode(_component_uni_col, { span: 16 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill padding_top_10",
+                                style: { "height": "110rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "fill white-space" }, "\u6807\u9898")
+                              ])
+                            ]),
+                            _: 1
+                          }),
+                          vue.createVNode(_component_uni_row, null, {
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("view", {
+                                class: "fill aligin_center_text_left",
+                                style: { "height": "60rpx" }
+                              }, [
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u8BC4\u8BBA:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, [
+                                  vue.createTextVNode(" \u70B9\u8D5E:"),
+                                  vue.createElementVNode("text", null, "10")
+                                ]),
+                                vue.createElementVNode("view", { class: "sec_message" }, "2022-12-03")
+                              ])
+                            ]),
+                            _: 1
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    vue.createVNode(_component_uni_col, { span: 8 }, {
+                      default: vue.withCtx(() => [
+                        vue.createElementVNode("view", {
+                          class: "fill aligin_center_item",
+                          style: { "height": "175rpx" }
+                        }, [
+                          vue.createElementVNode("image", {
+                            mode: "scaleToFill",
+                            style: { "height": "160rpx", "width": "220rpx", "border-radius": "8rpx" },
+                            src: "/static/ad/home2.jpg"
+                          })
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                _: 1
+              })
+            ])
+          ])
+        ])
+      ], 544)
+    ]);
+  }
+  var PagesSearch_resultSearch_result = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/dachuang/uniapp_client/Client/pages/search_result/search_result.vue"]]);
   __definePage("pages/index/index", PagesIndexIndex);
   __definePage("pages/user/login/login", PagesUserLoginLogin);
   __definePage("pages/user/register/register", PagesUserRegisterRegister);
@@ -7091,6 +10241,9 @@ if (uni.restoreGlobal) {
   __definePage("pages/msg/msg", PagesMsgMsg);
   __definePage("pages/self/self", PagesSelfSelf);
   __definePage("pages/test/test", PagesTestTest);
+  __definePage("pages/self/self_detail/self_detail", PagesSelfSelf_detailSelf_detail);
+  __definePage("pages/self/self_update/self_update", PagesSelfSelf_updateSelf_update);
+  __definePage("pages/search_result/search_result", PagesSearch_resultSearch_result);
   const _sfc_main = {
     globalData: {},
     onLaunch: function() {

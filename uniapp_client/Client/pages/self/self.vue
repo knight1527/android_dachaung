@@ -32,7 +32,7 @@
 				</uni-col>
 				<uni-col :span="7">
 					<view style="height: 200rpx;" class="aligin_center_item" @click="change()">
-						<navigator hover-class="click_nav" url="/pages/test/test">
+						<navigator hover-class="click_nav" url="/pages/self/self_detail/self_detail">
 							<text class="margin_right_10">主页</text>
 							<uni-icons :color="icon_color" type="right"></uni-icons>
 						</navigator>
@@ -72,7 +72,7 @@
 		data() {
 			return {
 				icon_color: '',
-				form: {
+				user: {
 					avatar: '',
 					nickname: '',
 					college: '',

@@ -30,6 +30,8 @@ const _sfc_main = {
         level: "",
         category: "",
         hostUnit: [""],
+        status: 1,
+        status_content: "\u8FDB\u884C\u4E2D",
         author: {
           id: 0,
           avatar: "",
@@ -65,6 +67,11 @@ const _sfc_main = {
       this.timer = setTimeout(() => {
         this.status = "nomore";
       }, 1e3);
+    },
+    search() {
+      common_vendor.index.navigateTo({
+        url: "/pages/search_result/search_result"
+      });
     }
   }
 };
@@ -97,29 +104,30 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     b: common_vendor.p({
       span: 20
     }),
-    c: common_vendor.p({
+    c: common_vendor.o($options.search),
+    d: common_vendor.p({
       type: "search",
       size: "28",
       color: "grey"
     }),
-    d: common_vendor.p({
+    e: common_vendor.p({
       span: 4
     }),
-    e: common_vendor.p({
+    f: common_vendor.p({
       type: "list"
     }),
-    f: common_vendor.o(($event) => $options.openPopup(1)),
-    g: common_vendor.p({
+    g: common_vendor.o(($event) => $options.openPopup(1)),
+    h: common_vendor.p({
       span: 12
     }),
-    h: common_vendor.p({
+    i: common_vendor.p({
       type: "settings"
     }),
-    i: common_vendor.o(($event) => $options.openPopup(2)),
-    j: common_vendor.p({
+    j: common_vendor.o(($event) => $options.openPopup(2)),
+    k: common_vendor.p({
       span: 12
     }),
-    k: common_vendor.f($data.categories, (item, index, i0) => {
+    l: common_vendor.f($data.categories, (item, index, i0) => {
       return common_vendor.e({
         a: common_vendor.t(item),
         b: index == $data.category_index
@@ -136,12 +144,12 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         g: item
       });
     }),
-    l: common_vendor.sr("popup_category", "30399a9a-10"),
-    m: common_vendor.p({
+    m: common_vendor.sr("popup_category", "30399a9a-10"),
+    n: common_vendor.p({
       backgroundColor: "#fff",
       type: "top"
     }),
-    n: common_vendor.f($data.levels, (item, index, i0) => {
+    o: common_vendor.f($data.levels, (item, index, i0) => {
       return common_vendor.e({
         a: common_vendor.t(item),
         b: index == $data.level_index
@@ -158,19 +166,22 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         g: item
       });
     }),
-    o: common_vendor.sr("popup_level", "30399a9a-12"),
-    p: common_vendor.p({
+    p: common_vendor.sr("popup_level", "30399a9a-12"),
+    q: common_vendor.p({
       backgroundColor: "#fff",
       type: "top"
     }),
-    q: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
-    r: common_vendor.p({
+    r: common_vendor.t(0),
+    s: common_vendor.t(0),
+    t: common_vendor.t("\u5176\u4ED6"),
+    v: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
+    w: common_vendor.p({
       status: $data.status,
       color: "#03dac5",
       contentText: $data.contentText,
       iconType: "circle"
     }),
-    s: common_vendor.p({
+    x: common_vendor.p({
       pattern: $data.pattern,
       horizontal: "right",
       vertical: "bottom"
