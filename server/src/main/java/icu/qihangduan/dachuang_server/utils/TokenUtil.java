@@ -1,8 +1,13 @@
 package icu.qihangduan.dachuang_server.utils;
 
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.StrUtil;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import icu.qihangduan.dachuang_server.mapper.UserMapper;
+import icu.qihangduan.dachuang_server.pojo.User;
+import icu.qihangduan.dachuang_server.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -21,15 +26,15 @@ import java.util.Date;
  */
 @Component
 public class TokenUtil {
-    /*private static IUserService staticUserService;*/
+    private static UserService staticUserService;
 
-    /*@Resource
-    private IUserService userService;*/
+    @Resource
+    private UserService userService;
 
-    /*@PostConstruct
+    @PostConstruct
     public void setUserService() {
         staticUserService = userService;
-    }*/
+    }
 
     /**
      * 生成token
@@ -47,17 +52,17 @@ public class TokenUtil {
      *
      * @return user对象
      */
-    /*public static User getCurrentUser() {
+    public static User getCurrentUser() {
         try {
             HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
             String token = request.getHeader("token");
             if (StrUtil.isNotBlank(token)) {
                 String userId = JWT.decode(token).getAudience().get(0);
-                return staticUserService.getById(Integer.valueOf(userId));
+                return staticUserService.getUserByID(Long.parseLong(userId));
             }
         } catch (Exception e) {
             return null;
         }
         return null;
-    }*/
+    }
 }

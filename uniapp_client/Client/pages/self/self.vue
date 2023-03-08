@@ -8,23 +8,23 @@
 			<view class="margin_15 radious_20" style="height: 200rpx;background-color:aliceblue;">
 				<uni-col :span="6">
 					<view style="height: 200rpx" class=" aligin_center_item">
-						<image src="../../static/faces/3-thump.jpg" class="image_user"></image>
+						<image src="../../static/faces/3-thump.jpg" :src="user.avatar" class="image_user"></image>
 					</view>
 				</uni-col>
 				<uni-col :span="11">
 					<view style="height: 160rpx;" class="padding_20">
 						<uni-row>
 							<view class="margin_10" style="font-size: 45rpx;">
-								<text class="margin_left_15">nickname</text>
+								<text class="margin_left_15">{{user.nickname}}</text>
 							</view>
 						</uni-row>
 						<uni-row>
 							<view class="margin_10 padding_20" style="font-size: 30rpx;">
 								<uni-col :span="12">
-									<navigator hover-class="click_nav" class="font_grey"><text>关注 </text><text>0</text></navigator>
+									<view @click="openFocus" hover-class="click_nav" class="font_grey"><text>关注 </text><text>{{user.focusNum}}</text></view>
 								</uni-col>
 								<uni-col :span="12">
-									<navigator hover-class="click_nav" class="font_grey"><text>粉丝 </text><text>0</text></navigator>
+									<view @click="openFocus" hover-class="click_nav" class="font_grey"><text>粉丝 </text><text>{{user.focusedNum}}</text></view>
 								</uni-col>
 							</view>
 						</uni-row>
@@ -32,10 +32,10 @@
 				</uni-col>
 				<uni-col :span="7">
 					<view style="height: 200rpx;" class="aligin_center_item" @click="change()">
-						<navigator hover-class="click_nav" url="/pages/self/self_detail/self_detail">
+						<view class="aligin_center_item_left" hover-class="click_nav" @click="openPage(4)">
 							<text class="margin_right_10">主页</text>
 							<uni-icons :color="icon_color" type="right"></uni-icons>
-						</navigator>
+						</view>
 					</view>
 				</uni-col>
 			</view>
@@ -56,10 +56,10 @@
 		<uni-row>
 			<view class="margin_top_20">
 				<uni-list>
-					<uni-list-item title="我的收藏" showArrow></uni-list-item>
-					<uni-list-item title="编辑资料" showArrow></uni-list-item>
-					<uni-list-item title="设置" showArrow></uni-list-item>
-					<uni-list-item title="帮助与反馈" showArrow></uni-list-item>
+					<uni-list-item title="我的收藏" clickable showArrow @click="openPage(1)"></uni-list-item>
+					<uni-list-item title="编辑资料" clickable showArrow @click="openPage(2)"></uni-list-item>
+					<uni-list-item title="设置" clickable showArrow @click="openPage(3)"></uni-list-item>
+					<uni-list-item title="帮助与反馈" clickable showArrow></uni-list-item>
 				</uni-list>
 			</view>
 		</uni-row>
@@ -68,20 +68,24 @@
 </template>
 
 <script>
+	//导入封装的request方法
+	import {$request} from '@/utils/request.js'
+	var self_
 	export default {
 		data() {
 			return {
 				icon_color: '',
-				user: {
-					avatar: '',
-					nickname: '',
-					college: '',
-					major: '',
-					email: '',
-					description: '',
-					blog: ''
-				}
+				user: {},
 			}
+		},
+		onLoad() {
+			/* 初始数据 */
+			$request({
+				url: '/user/self',
+				method: 'POST'
+			}).then(res => {
+				this.user = res.data
+			}).catch(err => {console.log(err.code + err.msg)})
 		},
 		onShow() {
 			this.unchange()
@@ -101,6 +105,29 @@
 			closeDrawer() {
 				this.$refs.showRight.close();
 			},
+			/* 打开工具页面 */
+			openPage(index){
+				if(index == 1){
+					
+				}else if(index == 2){
+					/* 打开编辑 */
+					uni.navigateTo({
+						url: '/pages/self/self_update/self_update?id=' + this.user.id,
+					});
+				}else if(index == 3){
+					
+				}else{
+					/* 打开详情 */
+					uni.navigateTo({
+						url: '/pages/self/self_detail/self_detail?id=' + this.user.id,
+					});
+				}
+			},
+			openFocus(){
+				uni.navigateTo({
+					url: '/pages/focus/focus',
+				})
+			}
 		}
 	}
 </script>

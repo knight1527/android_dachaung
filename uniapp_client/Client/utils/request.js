@@ -6,7 +6,11 @@ export const $request = (options) => {  // {url: '', method: '', data: {}}
 		uni.request({
 			url: BASE_URL + options.url,
 			method: options.method || 'GET',
-			header: {token: uni.getStorageSync('user') ? uni.getStorageSync('user').token : ''},
+			/* 记着改 */
+			/* header: {token: uni.getStorageSync('user') ? uni.getStorageSync('user').token : ''}, */
+			header: {
+				token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxIiwiZXhwIjoxNjc4OTg4NTY4fQ.jHVYW-bAt0dYbROjtKkIJ5t32LFu1cDGVdmOi9fY5mQ',
+			},
 			data: options.data || {},
 			success: (res) => {
 				const data = res.data

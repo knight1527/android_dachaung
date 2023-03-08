@@ -1,19 +1,22 @@
 "use strict";
 var common_vendor = require("../../common/vendor.js");
+var utils_request = require("../../utils/request.js");
 const _sfc_main = {
   data() {
     return {
       icon_color: "",
-      user: {
-        avatar: "",
-        nickname: "",
-        college: "",
-        major: "",
-        email: "",
-        description: "",
-        blog: ""
-      }
+      user: {}
     };
+  },
+  onLoad() {
+    utils_request.$request({
+      url: "/user/self",
+      method: "POST"
+    }).then((res) => {
+      this.user = res.data;
+    }).catch((err) => {
+      console.log(err.code + err.msg);
+    });
   },
   onShow() {
     this.unchange();
@@ -30,6 +33,26 @@ const _sfc_main = {
     },
     closeDrawer() {
       this.$refs.showRight.close();
+    },
+    openPage(index) {
+      if (index == 1)
+        ;
+      else if (index == 2) {
+        common_vendor.index.navigateTo({
+          url: "/pages/self/self_update/self_update?id=" + this.user.id
+        });
+      } else if (index == 3)
+        ;
+      else {
+        common_vendor.index.navigateTo({
+          url: "/pages/self/self_detail/self_detail?id=" + this.user.id
+        });
+      }
+    },
+    openFocus() {
+      common_vendor.index.navigateTo({
+        url: "/pages/focus/focus"
+      });
     }
   }
 };
@@ -62,48 +85,62 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       height: "80rpx",
       title: "\u6211\u7684"
     }),
-    b: common_vendor.p({
+    b: $data.user.avatar,
+    c: common_vendor.p({
       span: 6
     }),
-    c: common_vendor.p({
+    d: common_vendor.t($data.user.nickname),
+    e: common_vendor.t($data.user.focusNum),
+    f: common_vendor.o((...args) => $options.openFocus && $options.openFocus(...args)),
+    g: common_vendor.p({
       span: 12
     }),
-    d: common_vendor.p({
+    h: common_vendor.t($data.user.focusedNum),
+    i: common_vendor.o((...args) => $options.openFocus && $options.openFocus(...args)),
+    j: common_vendor.p({
       span: 12
     }),
-    e: common_vendor.p({
+    k: common_vendor.p({
       span: 11
     }),
-    f: common_vendor.p({
+    l: common_vendor.p({
       color: $data.icon_color,
       type: "right"
     }),
-    g: common_vendor.o(($event) => $options.change()),
-    h: common_vendor.p({
+    m: common_vendor.o(($event) => $options.openPage(4)),
+    n: common_vendor.o(($event) => $options.change()),
+    o: common_vendor.p({
       span: 7
     }),
-    i: common_vendor.p({
+    p: common_vendor.p({
       ["is-shadow"]: false,
       ["is-full"]: true
     }),
-    j: common_vendor.p({
+    q: common_vendor.p({
       title: "\u4F7F\u7528\u63D0\u793A",
       type: "line"
     }),
-    k: common_vendor.p({
+    r: common_vendor.o(($event) => $options.openPage(1)),
+    s: common_vendor.p({
       title: "\u6211\u7684\u6536\u85CF",
+      clickable: true,
       showArrow: true
     }),
-    l: common_vendor.p({
+    t: common_vendor.o(($event) => $options.openPage(2)),
+    v: common_vendor.p({
       title: "\u7F16\u8F91\u8D44\u6599",
+      clickable: true,
       showArrow: true
     }),
-    m: common_vendor.p({
+    w: common_vendor.o(($event) => $options.openPage(3)),
+    x: common_vendor.p({
       title: "\u8BBE\u7F6E",
+      clickable: true,
       showArrow: true
     }),
-    n: common_vendor.p({
+    y: common_vendor.p({
       title: "\u5E2E\u52A9\u4E0E\u53CD\u9988",
+      clickable: true,
       showArrow: true
     })
   };

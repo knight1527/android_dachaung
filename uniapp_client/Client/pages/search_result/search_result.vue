@@ -1,6 +1,6 @@
 <template>
 	<view class="container" @touchstart="touchStart" @touchend="touchEnd">
-		<view class="border_line_grey_bt_tiny margin_lr_20 fixed_eventNav" style="height: 100rpx;">
+		<view class="border_line_grey_bt_tiny fixed_eventNav">
 			<uni-row>
 				<uni-col :span="4">
 					<view class="aligin_center_item" style="height: 100rpx;" @click="back">
@@ -10,7 +10,7 @@
 				<uni-col :span="20">
 					<view class="aligin_center_item" style="height: 100rpx;">
 						<view class="fill_height aligin_center_item" style="width: 80%;">
-							<uni-easyinput placeholder="搜索" clearable></uni-easyinput>
+							<uni-easyinput v-model="searchText" placeholder="搜索" clearable></uni-easyinput>
 						</view>
 						<view class="fill_height aligin_center_item" style="width: 20%;">
 							<uni-icons type="search" size="26" color="#808080"></uni-icons>
@@ -21,13 +21,13 @@
 			
 			<!-- swiper_nav-->
 			<view class="fill_width aligin_center_item_left" style="height: 100rpx;">
-				<view class="fill_height aligin_center_item" style="width: 33%;">
+				<view class="fill_height aligin_center_item" style="width: 33%;" @click="changeIndex(0)">
 					<text class="padding_tb_20" :class="{'border_line':showIndex == 0}">文章</text>
 				</view>
-				<view class="fill_height aligin_center_item" style="width: 33%;">
+				<view class="fill_height aligin_center_item" style="width: 33%;" @click="changeIndex(1)">
 					<text class="padding_tb_20" :class="{'border_line':showIndex == 1}">赛事</text>
 				</view>
-				<view class="fill_height aligin_center_item" style="width: 33%;">
+				<view class="fill_height aligin_center_item" style="width: 33%;" @click="changeIndex(2)">
 					<text class="padding_tb_20" :class="{'border_line':showIndex == 2}">用户</text>
 				</view>
 			</view>
@@ -99,6 +99,8 @@
 					<view class="margin_top_50 aligin_center_item">
 						<uni-load-more @clickLoadMore="clickLoadMore(e)" :status="status" color="#03dac5" :contentText="contentText" iconType="circle"></uni-load-more>
 					</view>
+					<!-- 占位 -->
+					<view style="height: 1000rpx;"></view>
 				</view>
 			</uni-transition>
 			<!-- 赛事 -->
@@ -149,6 +151,8 @@
 					<view class="margin_top_50 aligin_center_item">
 						<uni-load-more @clickLoadMore="clickLoadMore(e)" :status="status" color="#03dac5" :contentText="contentText" iconType="circle"></uni-load-more>
 					</view>
+					<!-- 占位 -->
+					<view style="height: 1000rpx;"></view>
 				</view>
 			</uni-transition>
 			<!-- 用户 -->
@@ -172,6 +176,8 @@
 					<view class="margin_top_50 aligin_center_item">
 						<uni-load-more @clickLoadMore="clickLoadMore(e)" :status="status" color="#03dac5" :contentText="contentText" iconType="circle"></uni-load-more>
 					</view>
+					<!-- 占位 -->
+					<view style="height: 1000rpx;"></view>
 				</view>
 			</uni-transition>
 		</view>
@@ -195,9 +201,15 @@
 				},
 				status: 'more',
 				/* nav */
-				showIndex: 2,
+				showIndex: 0,
 				transType: ['fade','slide-left'],
+				/* 搜索文本 */
+				searchText: '',
 			}
+		},
+		onLoad(option) {
+			this.searchText = option.searchText
+			this.showIndex = option.showIndex
 		},
 		created() {
 			self_ = this
@@ -255,6 +267,10 @@
 							console.log("可能是误触！")  
 					}  
 			},
+			/* 改变显示模块 */
+			changeIndex(index){
+				this.showIndex = index
+			},
 			gotoDetail(){
 				
 			},
@@ -264,10 +280,10 @@
 
 <style lang="scss">
 	.fixed_eventNav{
+		background-color: white;
 		width: 100%;
 		position: fixed;
 		top: 0;
-		left: 0;
 		z-index: 4;
 	}
 </style>

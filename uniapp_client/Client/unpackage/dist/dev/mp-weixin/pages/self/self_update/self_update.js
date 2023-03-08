@@ -23,6 +23,13 @@ const _sfc_main = {
       }
     };
   },
+  onLoad(option) {
+    console.log(option.id);
+  },
+  mounted() {
+  },
+  onShow() {
+  },
   created() {
     self_ = this;
   },

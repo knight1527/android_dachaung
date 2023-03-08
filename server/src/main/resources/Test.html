@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="margin: 20px">
+        <h4>Git与SVN的区别</h4>
+        <pre><code class="language-markdown">svn是集中式版本控制系统，版本库是集中放在中央服务器的，而工作
+的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，
+然后工作，工作完成后，需要把自己做完的或推送到中央服务器。集中式版本控
+制系统是必须联网才能工作，对网络贷款要求较高。
+
+
+Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个
+完整的版本库，工作的时候不需要联网了，因为版本都是在自己电脑上，
+协同的方法：比如自己再电脑上改变了文件A，这时，你们两之间只需
+把各自的修改推送给对方，就可以互相看到对方的修改了。
+</code></pre>
+        <blockquote>
+            <p>tips:	资源下载速度较慢解决方案：找国内镜像
+                如：<a href="https://npm.taobao.org/mirrors/git-for-windows/">https://npm.taobao.org/mirrors/git-for-windows/</a></p>
+        </blockquote>
+        <h4>Git基本理论：</h4>
+        <blockquote>
+            <p>工作原理：</p>
+        </blockquote>
+        <p>git本地有三个工作区域：工作目录（working directory），暂存区（stage、index），资源库（respository）。如果在加上远程的仓库（remote directory）就可以分为四个工作区域。文件在四个区域之间的关系如下：</p>
+        <center>
+            <img src="https://pic-home.oss-cn-beijing.aliyuncs.com/img/picture/MarkP_commit/屏幕截图 2021-05-01 232619.png">
+            <blockquote>
+                <p>工作目录(工作区)：  工程文件夹
+                    Index/Stage(暂存区) ：  临时存放改动
+                    Respository(仓库区/本地仓库):   安全存放数据的位置，这里面有你提交到所有版本的数据，其中HEAD指向最新放入仓库的版本
+                    Remote:  远程仓库</p>
+            </blockquote>
+            <pre><code>工作流程：
+
+一：本地提交
+0. git init #初始化本地仓库（一次）
+1：git add . 			   #把所有文件加入暂存区
+2：git commit -m &quot;Message&quot; #将暂存区文件加入本地仓库
+3：git  push origin master  #提交到远程仓库
+
+二：克隆远程仓库
+1： git clone [url]  #克隆仓库地址
+</code></pre>
+            <h4>git文件操作</h4>
+            <blockquote>
+                <p>#查看文件状态
+                    git status
+                    #查看指定文件状态
+                    git status [filename]</p>
+            </blockquote>
+            <p>==忽略文件：==
+                在主目录下建立 .gitignore 文件，文件规则如下：</p>
+            <center>
+                <img src="https://pic-home.oss-cn-beijing.aliyuncs.com/img/picture/2021-5-2/1619964657684-gitFIleM.png">
+                <h4>使用</h4>
+                <p>==配置远程连接==</p>
+                <pre><code class="language-java">在任意目录git bash输入：ssh-keygen 生成本地公钥
+#加密生成：ssh-keygen -t rsa[添加链接描述](https://www.bilibili.com/video/BV1FE411P7B3?p=12)
+#生成地址：C:\Users\用户名\.ssh
+
+将目录中的 .pub（public公钥文件）文件内容copy到远程仓库生成公钥的地方
+
+将仓库clone到本地
+</code></pre>
+                <p>==IDEA使用git==</p>
+                <pre><code class="language-java">创建本地idea工程文件目录（最好和克隆的仓库目录在同一级）
+将克隆仓库文件夹里面所有内容复制到工程文件下
+
+#或者直接在仓库目录下创建idea工程
+</code></pre>
+                <p>参考：<a href="https://www.bilibili.com/video/BV1FE411P7B3?p=12">狂神说说git</a></p>
+                <h4>git分支说明</h4>
+                <blockquote>
+                    <p>多分支仓库：</p>
+                </blockquote>
+                <pre><code class="language-java">#分支查看
+git branch
+#新建分支
+git branch [branchName]  //依然停留在目前分支
+详情：https://www.bilibili.com/video/BV1FE411P7B3?p=13
+</code></pre>
+                <h4>git克隆指定分支</h4>
+                <pre><code class="language-c">git clone -b master ssh
+</code></pre>
+
+
+    </div>
+</body>
+</html>

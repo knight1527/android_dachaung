@@ -4,7 +4,7 @@
 			<view style="height: 180rpx;" class="aligin_center_text_left border_line_grey_bt">
 				<uni-col :span="8">
 					<view class="margin_lr_50" style="height: 150rpx;width: 150rpx;border-radius: 150rpx;">
-						<image class="fill" src="../../../static/faces/1-thump.jpg"></image>
+						<image class="fill" :src="user.avatar" ></image>
 					</view>
 				</uni-col>
 				<uni-col :span="16">
@@ -18,28 +18,28 @@
 			<view class=" margin_bottom_20">
 				<view class="margin_lr_50 self_detail_text">
 					<view style="" class="margin_bt_15 aligin_center_item_left">
-						{{"Author"}}
+						{{user.nickname}}
 					</view>
 					<view style="" class="margin_bt_15 aligin_center_item_left">
-						{{"四川轻化工大学"}}
+						{{user.college}}
 					</view>
 					<view style="" class="margin_bt_15 aligin_center_item_left">
-						{{"计算机科学与技术"}}
+						{{user.major}}
 					</view>
 					<view style="" class="margin_bt_15 aligin_center_item_left">
 						<uni-icons color="#808080" type="mail-open-filled" size="22"></uni-icons>
 						<view class="margin_left_20"></view>
-						<view>{{"qihang_duan@foxmail.com"}}</view>
+						<view>{{user.email}}</view>
 					</view>
 					<view style="" class="margin_bt_15 aligin_center_item_left">
 						<uni-icons color="#808080" type="navigate" size="22"></uni-icons>
 						<view class="margin_left_20"></view>
-						<uni-link href="https://uniapp.dcloud.io/" text="https://uniapp.dcloud.io/" color="#03dac5"></uni-link>
+						<uni-link :href="user.blog" :text="user.blog" color="#03dac5"></uni-link>
 					</view>
 					<view style="" class="margin_bt_15 aligin_center_item_left">
 						<uni-icons color="#808080" type="flag" size="22"></uni-icons>
 						<view class="margin_left_20"></view>
-						<view>{{"热爱生活"}}</view>
+						<view>{{user.description}}</view>
 					</view>
 				</view>
 			</view>
@@ -83,344 +83,108 @@
 			<swiper style="height: 1200rpx;" @change="swiperChage">
 				<!-- 文章 -->
 				<swiper-item>
-					<!-- 文章预览卡片 -->
-					<view class="border_line_grey_bt margin_top_20 padding_rl_20">
-						<uni-row>
-							<view style="height: 75rpx;">
-								<uni-col :span="2">
-									 <view class="fill aligin_center_text_left" style="height:75rpx;">
-											<image class="sec_avatar" src="../../static/logo.png"></image>
-									 </view>
-								</uni-col>
-								<uni-col :span="17">
-									<view class="fill aligin_center_text_left" style="height: 75rpx;overflow: hidden;">
-										<text>author</text>
-									</view>
-								</uni-col>
-								<uni-col :span="5">
-									<view class="fill aligin_center_text_right" style="height: 75rpx;">
-										<uni-icons type="more-filled"></uni-icons>
-										<text>{{"\u00A0"}}</text>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-						<uni-row>
-							<view style="height: 175rpx;">
-								<uni-col :span="16">
-									<view class="fill" style="height: 175rpx;">
-										<uni-row>
-											<view class="fill padding_top_10" style="height: 110rpx;">
-												<view class="fill white-space">标题</view>
-											</view>
-										</uni-row>
-										<uni-row>
-											<view class="fill aligin_center_text_left" style="height: 60rpx;">
-												<view class="sec_message">
-													评论:<text>10</text>
+					<view v-for="(article, index) in user.articles" :key="article.id">
+						<!-- 文章预览卡片 -->
+						<view class="border_line_grey_bt margin_top_20 padding_rl_20">
+							<uni-row>
+								<view style="height: 75rpx;">
+									<uni-col :span="2">
+										 <view class="fill aligin_center_text_left" style="height:75rpx;">
+												<image class="sec_avatar" :src="article.user.avatar" src="../../static/logo.png"></image>
+										 </view>
+									</uni-col>
+									<uni-col :span="17">
+										<view class="fill aligin_center_text_left" style="height: 75rpx;overflow: hidden;">
+											<text>{{article.user.nickname}}</text>
+										</view>
+									</uni-col>
+									<uni-col :span="5">
+										<view class="fill aligin_center_text_right" style="height: 75rpx;">
+											<uni-icons type="more-filled"></uni-icons>
+											<text>{{"\u00A0"}}</text>
+										</view>
+									</uni-col>
+								</view>
+							</uni-row>
+							<uni-row>
+								<view style="height: 175rpx;">
+									<uni-col :span="16">
+										<view class="fill" style="height: 175rpx;">
+											<uni-row>
+												<view class="fill padding_top_10" style="height: 110rpx;">
+													<view class="fill white-space">{{article.title}}</view>
 												</view>
-												<view class="sec_message">
-													点赞:<text>10</text>
+											</uni-row>
+											<uni-row>
+												<view class="fill aligin_center_text_left" style="height: 60rpx;">
+													<view class="sec_message">
+														评论:<text>{{article.commentsNum}}</text>
+													</view>
+													<view class="sec_message">
+														点赞:<text>{{article.likesNum}}</text>
+													</view>
+													<view class="sec_message">{{formatDate(article.createdAt)}}</view>
 												</view>
-												<view class="sec_message">2022-12-03</view>
-											</view>
-										</uni-row>
-									</view>
-								</uni-col>
-								<uni-col :span="8">
-									<view class="fill aligin_center_item" style="height: 175rpx;">
-										<image mode="scaleToFill" 
-										style="height: 160rpx;width: 220rpx;border-radius: 8rpx;"
-										 src="../../static/ad/home2.jpg"></image>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-					</view>
-					<!-- 文章预览卡片 -->
-					<view class="border_line_grey_bt margin_top_20 padding_rl_20">
-						<uni-row>
-							<view style="height: 75rpx;">
-								<uni-col :span="2">
-									 <view class="fill aligin_center_text_left" style="height:75rpx;">
-											<image class="sec_avatar" src="../../static/logo.png"></image>
-									 </view>
-								</uni-col>
-								<uni-col :span="17">
-									<view class="fill aligin_center_text_left" style="height: 75rpx;overflow: hidden;">
-										<text>author</text>
-									</view>
-								</uni-col>
-								<uni-col :span="5">
-									<view class="fill aligin_center_text_right" style="height: 75rpx;">
-										<uni-icons type="more-filled"></uni-icons>
-										<text>{{"\u00A0"}}</text>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-						<uni-row>
-							<view style="height: 175rpx;">
-								<uni-col :span="16">
-									<view class="fill" style="height: 175rpx;">
-										<uni-row>
-											<view class="fill padding_top_10" style="height: 110rpx;">
-												<view class="fill white-space">标题</view>
-											</view>
-										</uni-row>
-										<uni-row>
-											<view class="fill aligin_center_text_left" style="height: 60rpx;">
-												<view class="sec_message">
-													评论:<text>10</text>
-												</view>
-												<view class="sec_message">
-													点赞:<text>10</text>
-												</view>
-												<view class="sec_message">2022-12-03</view>
-											</view>
-										</uni-row>
-									</view>
-								</uni-col>
-								<uni-col :span="8">
-									<view class="fill aligin_center_item" style="height: 175rpx;">
-										<image mode="scaleToFill" 
-										style="height: 160rpx;width: 220rpx;border-radius: 8rpx;"
-										 src="../../static/ad/home2.jpg"></image>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-					</view>
-					<!-- 文章预览卡片 -->
-					<view class="border_line_grey_bt margin_top_20 padding_rl_20">
-						<uni-row>
-							<view style="height: 75rpx;">
-								<uni-col :span="2">
-									 <view class="fill aligin_center_text_left" style="height:75rpx;">
-											<image class="sec_avatar" src="../../static/logo.png"></image>
-									 </view>
-								</uni-col>
-								<uni-col :span="17">
-									<view class="fill aligin_center_text_left" style="height: 75rpx;overflow: hidden;">
-										<text>author</text>
-									</view>
-								</uni-col>
-								<uni-col :span="5">
-									<view class="fill aligin_center_text_right" style="height: 75rpx;">
-										<uni-icons type="more-filled"></uni-icons>
-										<text>{{"\u00A0"}}</text>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-						<uni-row>
-							<view style="height: 175rpx;">
-								<uni-col :span="16">
-									<view class="fill" style="height: 175rpx;">
-										<uni-row>
-											<view class="fill padding_top_10" style="height: 110rpx;">
-												<view class="fill white-space">标题</view>
-											</view>
-										</uni-row>
-										<uni-row>
-											<view class="fill aligin_center_text_left" style="height: 60rpx;">
-												<view class="sec_message">
-													评论:<text>10</text>
-												</view>
-												<view class="sec_message">
-													点赞:<text>10</text>
-												</view>
-												<view class="sec_message">2022-12-03</view>
-											</view>
-										</uni-row>
-									</view>
-								</uni-col>
-								<uni-col :span="8">
-									<view class="fill aligin_center_item" style="height: 175rpx;">
-										<image mode="scaleToFill" 
-										style="height: 160rpx;width: 220rpx;border-radius: 8rpx;"
-										 src="../../static/ad/home2.jpg"></image>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-					</view>
-					<!-- 文章预览卡片 -->
-					<view class="border_line_grey_bt margin_top_20 padding_rl_20">
-						<uni-row>
-							<view style="height: 75rpx;">
-								<uni-col :span="2">
-									 <view class="fill aligin_center_text_left" style="height:75rpx;">
-											<image class="sec_avatar" src="../../static/logo.png"></image>
-									 </view>
-								</uni-col>
-								<uni-col :span="17">
-									<view class="fill aligin_center_text_left" style="height: 75rpx;overflow: hidden;">
-										<text>author</text>
-									</view>
-								</uni-col>
-								<uni-col :span="5">
-									<view class="fill aligin_center_text_right" style="height: 75rpx;">
-										<uni-icons type="more-filled"></uni-icons>
-										<text>{{"\u00A0"}}</text>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-						<uni-row>
-							<view style="height: 175rpx;">
-								<uni-col :span="16">
-									<view class="fill" style="height: 175rpx;">
-										<uni-row>
-											<view class="fill padding_top_10" style="height: 110rpx;">
-												<view class="fill white-space">标题</view>
-											</view>
-										</uni-row>
-										<uni-row>
-											<view class="fill aligin_center_text_left" style="height: 60rpx;">
-												<view class="sec_message">
-													评论:<text>10</text>
-												</view>
-												<view class="sec_message">
-													点赞:<text>10</text>
-												</view>
-												<view class="sec_message">2022-12-03</view>
-											</view>
-										</uni-row>
-									</view>
-								</uni-col>
-								<uni-col :span="8">
-									<view class="fill aligin_center_item" style="height: 175rpx;">
-										<image mode="scaleToFill" 
-										style="height: 160rpx;width: 220rpx;border-radius: 8rpx;"
-										 src="../../static/ad/home2.jpg"></image>
-									</view>
-								</uni-col>
-							</view>
-						</uni-row>
-					</view>
-					
+											</uni-row>
+										</view>
+									</uni-col>
+									<uni-col :span="8">
+										<view class="fill aligin_center_item" style="height: 175rpx;">
+											<image mode="scaleToFill" 
+											style="height: 160rpx;width: 220rpx;border-radius: 8rpx;"
+											:src="article.avatar"></image>
+										</view>
+									</uni-col>
+								</view>
+							</uni-row>
+						</view>
+						
+					</view>										
 				</swiper-item>
 				<!-- 赛事 -->
 				<swiper-item>
-					<!-- 赛事卡片 （卡片中图片默认提供几种）-->
-					<view class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" style="position: relative;">
-						<!-- 赛事状态 -->
-						<view style="height: 55rpx;width:150rpx" class="absolute_event_status box_radius_20 aligin_center_item status_before">已结束</view>
-						<!-- 图片 -->
-						<view style="height: 230rpx;width: 100%;background-color: antiquewhite;">
-							<image class="fill" src="../../static/ad/ad2.jpg"></image>
-						</view>
-						<!-- 信息 -->
-						<view class="margin_lr_10 margin_bt_15">
-							<view class="fill_width eventTitle padding_tb_10 overflowHide">
-								<text>2023ACM程序设计竞赛中国区预选赛</text>
+					<view v-for="(event, index) in user.events" :key="event.id">
+						<!-- 赛事卡片 （卡片中图片默认提供几种）-->
+						<view class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" style="position: relative;">
+							<!-- 赛事状态 -->
+							<view style="height: 55rpx;width:150rpx" class="absolute_event_status box_radius_20 aligin_center_item" :class="event_status(event)">{{event.status}}</view>
+							<!-- 图片 -->
+							<view style="height: 230rpx;width: 100%;background-color: antiquewhite;">
+								<image class="fill" :src="event.avatar"></image>
 							</view>
-							<!-- 时间 -->
-							<view class="fill_width aligin_center_text_left eventTime margin_top_5">
-								<view class="margin_right_10" style="color: black;">报名时间 ：</view>
-								<view class="margin_lr_10">2022-10-2</view>
-								<view>--</view>
-								<view class="margin_lr_10">2022-10-2</view>
-							</view>
-							<view class="fill_width aligin_center_text_left eventTime margin_top_5">
-								<view class="margin_right_10" style="color: black;">结束时间 ：</view>
-								<view class="margin_lr_10">2022-10-2</view>
-								<view>--</view>
-								<view class="margin_lr_10">2022-10-2</view>
-							</view>
-							<view class="fill_width aligin_center_text_left margin_bt_15 event_other">
-								<view class="margin_right_10">主办方：</view>
-								<view class="margin_left_15">机构名称</view>
-							</view>
-							<view class="fill_width aligin_center_text_left event_other">
-								<view>收藏： {{0}}</view>
-								<view class="margin_lr_50">|</view>
-								<view>评论：{{0}}</view>
-								<view class="margin_lr_50">|</view>
-								<view>级别：{{"其他"}}</view>
-							</view>
-						</view>
-					</view>
-					<!-- 赛事卡片 （卡片中图片默认提供几种）-->
-					<view class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" style="position: relative;">
-						<!-- 赛事状态 -->
-						<view style="height: 55rpx;width:150rpx" class="absolute_event_status box_radius_20 aligin_center_item status_before">已结束</view>
-						<!-- 图片 -->
-						<view style="height: 230rpx;width: 100%;background-color: antiquewhite;">
-							<image class="fill" src="../../static/ad/ad2.jpg"></image>
-						</view>
-						<!-- 信息 -->
-						<view class="margin_lr_10 margin_bt_15">
-							<view class="fill_width eventTitle padding_tb_10 overflowHide">
-								<text>2023ACM程序设计竞赛中国区预选赛</text>
-							</view>
-							<!-- 时间 -->
-							<view class="fill_width aligin_center_text_left eventTime margin_top_5">
-								<view class="margin_right_10" style="color: black;">报名时间 ：</view>
-								<view class="margin_lr_10">2022-10-2</view>
-								<view>--</view>
-								<view class="margin_lr_10">2022-10-2</view>
-							</view>
-							<view class="fill_width aligin_center_text_left eventTime margin_top_5">
-								<view class="margin_right_10" style="color: black;">结束时间 ：</view>
-								<view class="margin_lr_10">2022-10-2</view>
-								<view>--</view>
-								<view class="margin_lr_10">2022-10-2</view>
-							</view>
-							<view class="fill_width aligin_center_text_left margin_bt_15 event_other">
-								<view class="margin_right_10">主办方：</view>
-								<view class="margin_left_15">机构名称</view>
-							</view>
-							<view class="fill_width aligin_center_text_left event_other">
-								<view>收藏： {{0}}</view>
-								<view class="margin_lr_50">|</view>
-								<view>评论：{{0}}</view>
-								<view class="margin_lr_50">|</view>
-								<view>级别：{{"其他"}}</view>
+							<!-- 信息 -->
+							<view class="margin_lr_10 margin_bt_15">
+								<view class="fill_width eventTitle padding_tb_10 overflowHide">
+									<text>{{event.title}}</text>
+								</view>
+								<!-- 时间 -->
+								<view class="fill_width aligin_center_text_left eventTime margin_top_5">
+									<view class="margin_right_10" style="color: black;">报名时间 ：</view>
+									<view class="margin_lr_10">{{formatDate(event.registerAt)}}</view>
+									<view>--</view>
+									<view class="margin_lr_10">{{formatDate(event.registerEnd)}}</view>
+								</view>
+								<view class="fill_width aligin_center_text_left eventTime margin_top_5">
+									<view class="margin_right_10" style="color: black;">结束时间 ：</view>
+									<view class="margin_lr_10">{{formatDate(event.progressAt)}}</view>
+									<view>--</view>
+									<view class="margin_lr_10">{{formatDate(event.progressEnd)}}</view>
+								</view>
+								<view class="fill_width aligin_center_text_left margin_bt_15 event_other">
+									<view class="margin_right_10">主办方：</view>
+									<view class="margin_left_15">{{event.company}}</view>
+								</view>
+								<view class="fill_width aligin_center_text_left event_other">
+									<view>收藏： {{event.favoritesNum}}</view>
+									<view class="margin_lr_50">|</view>
+									<view>评论：{{event.commentsNum}}</view>
+									<view class="margin_lr_50">|</view>
+									<view>级别：{{event.level.name}}</view>
+								</view>
 							</view>
 						</view>
-					</view>
-					<!-- 赛事卡片 （卡片中图片默认提供几种）-->
-					<view class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" style="position: relative;">
-						<!-- 赛事状态 -->
-						<view style="height: 55rpx;width:150rpx" class="absolute_event_status box_radius_20 aligin_center_item status_before">已结束</view>
-						<!-- 图片 -->
-						<view style="height: 230rpx;width: 100%;background-color: antiquewhite;">
-							<image class="fill" src="../../static/ad/ad2.jpg"></image>
-						</view>
-						<!-- 信息 -->
-						<view class="margin_lr_10 margin_bt_15">
-							<view class="fill_width eventTitle padding_tb_10 overflowHide">
-								<text>2023ACM程序设计竞赛中国区预选赛</text>
-							</view>
-							<!-- 时间 -->
-							<view class="fill_width aligin_center_text_left eventTime margin_top_5">
-								<view class="margin_right_10" style="color: black;">报名时间 ：</view>
-								<view class="margin_lr_10">2022-10-2</view>
-								<view>--</view>
-								<view class="margin_lr_10">2022-10-2</view>
-							</view>
-							<view class="fill_width aligin_center_text_left eventTime margin_top_5">
-								<view class="margin_right_10" style="color: black;">结束时间 ：</view>
-								<view class="margin_lr_10">2022-10-2</view>
-								<view>--</view>
-								<view class="margin_lr_10">2022-10-2</view>
-							</view>
-							<view class="fill_width aligin_center_text_left margin_bt_15 event_other">
-								<view class="margin_right_10">主办方：</view>
-								<view class="margin_left_15">机构名称</view>
-							</view>
-							<view class="fill_width aligin_center_text_left event_other">
-								<view>收藏： {{0}}</view>
-								<view class="margin_lr_50">|</view>
-								<view>评论：{{0}}</view>
-								<view class="margin_lr_50">|</view>
-								<view>级别：{{"其他"}}</view>
-							</view>
-						</view>
-					</view>
-					
+						
+					</view>									
 				</swiper-item>
 			</swiper>
 		</uni-row>
@@ -440,7 +204,69 @@
 				/* 导航栏显示 */
 				nav_show: false,
 				swiperIndex: 0,
+				/* 展示的用户 */
+				tepId: 0,
+				user: {},
+				currentUser: {},
 			}
+		},
+		computed: {
+			event_status: function(){
+				return function(item){
+					if(item.status == '报名中'){
+						return 'status_before';
+					}else if(item.status == '进行中'){
+						return 'status_ing';
+					}else{
+						return 'status_end';
+					}
+				};
+			},
+			/* 时间格式化 */
+			formatDate: function(time){
+				return function(time){
+					let date = new Date(time)
+					return date.toLocaleString('zh-CN', 
+					{year:'numeric',
+					month: '2-digit',
+					day: '2-digit',
+					});
+				};
+			},
+		},
+		onLoad(option) {
+			console.log(option.id)
+			console.log(option.id)
+			this.tepId = option.id
+			/* 初始化数据 */
+			$request({
+				url: '/user/selfById',
+				method: 'Get',
+				data: {
+					userId: this.tepId,
+				},
+			}).then(res => {
+				this.user = res.data
+				console.log(user)
+				console.log(res.data)
+			}).catch(err => {
+				console.log(err.code + err.msg)
+			});
+			/* 获取当前用户 */
+			$request({
+				url: '/user/selfInfo',
+				method: 'Get',
+			}).then(res => {
+				this.currentUser = res.data
+				console.log(currentUser)
+				console.log(res.data)
+			}).catch(err => {
+				console.log(err.code + err.msg)
+			});
+		},
+		onShow() {
+			/* 判断编辑，关注，已关注三个按钮显示哪一个 */
+			self_.judgeSelf()
 		},
 		created() {
 			self_ = this
@@ -470,7 +296,23 @@
 				uni.navigateTo({
 					url:'/pages/self/self_update/self_update',
 				})
-			}
+			},
+			judgeSelf(){
+				if(this.user.id == this.currentUser.id){
+					this.is_self = true
+				}else{
+					this.is_self = false
+				}
+				if(this.user.focused != null){
+					for(let i = 0; i < this.user.focused.length;i++){
+						if(this.currentUser.id == this.user.focused[i].id){
+							this.is_focus = true;
+							return
+						}
+					}
+				}
+				this.is_focus = false
+			},
 		}
 	}
 </script>

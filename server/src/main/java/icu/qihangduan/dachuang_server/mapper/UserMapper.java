@@ -3,7 +3,6 @@ package icu.qihangduan.dachuang_server.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import icu.qihangduan.dachuang_server.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 /**
  * @author duanqihang

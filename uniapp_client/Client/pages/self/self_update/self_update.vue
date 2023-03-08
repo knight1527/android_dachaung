@@ -92,6 +92,15 @@
 				}
 			}
 		},
+		onLoad(option) {
+			console.log(option.id)
+		},
+		mounted() {
+			
+		},
+		onShow() {
+			
+		},
 		created() {
 			self_ = this
 		},

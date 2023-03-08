@@ -14,6 +14,9 @@ if (!Math) {
   "./pages/self/self_update/self_update.js";
   "./pages/search_result/search_result.js";
   "./pages/index/sec_detail/sec_detail.js";
+  "./pages/events/event_detail/event_detail.js";
+  "./pages/focus/focus.js";
+  "./pages/favorites/favorites.js";
 }
 const _sfc_main = {
   globalData: {},

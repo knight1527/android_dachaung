@@ -9,8 +9,15 @@ import icu.qihangduan.dachuang_server.common.Resp;
 import icu.qihangduan.dachuang_server.controller.user.dto.CaptchaDto;
 import icu.qihangduan.dachuang_server.controller.user.dto.UserDto;
 import icu.qihangduan.dachuang_server.exception.ServiceException;
+import icu.qihangduan.dachuang_server.pojo.Article;
+import icu.qihangduan.dachuang_server.pojo.Event;
 import icu.qihangduan.dachuang_server.pojo.User;
+import icu.qihangduan.dachuang_server.service.ArticleService;
+import icu.qihangduan.dachuang_server.service.EventService;
 import icu.qihangduan.dachuang_server.service.UserService;
+import icu.qihangduan.dachuang_server.service.UtilService;
+import icu.qihangduan.dachuang_server.utils.OtherUtils;
+import icu.qihangduan.dachuang_server.utils.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -23,6 +30,8 @@ import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -40,6 +49,13 @@ public class UserController {
 
     @Autowired
     private StringRedisTemplate redisTemplate;
+
+    @Autowired
+    private UtilService utilService;
+    @Autowired
+    private ArticleService articleService;
+    @Autowired
+    private EventService eventService;
 
 
     @PostMapping(value = "/login")
@@ -113,5 +129,68 @@ public class UserController {
             return Resp.success();
         }
         return Resp.success("201");
+    }
+
+    /**
+     * 获取当前用户详情
+     * @return
+     */
+    @PostMapping(value = "/self")
+    public Resp getSelf(){
+        Long userId = Objects.requireNonNull(TokenUtil.getCurrentUser()).getId();
+        User user = userService.getUserByID(userId);
+        user.setArticles(OtherUtils.fillContent(user.getArticles(), articleService));
+        user.setEvents(OtherUtils.fillContent(user.getEvents(), eventService));
+        return Resp.success(user);
+    }
+    /**
+     * 获取当前用户较详情
+     * @return
+     */
+    @GetMapping(value = "/selfInfo")
+    public Resp getSelfInfo(){
+        Long userId = Objects.requireNonNull(TokenUtil.getCurrentUser()).getId();
+        return Resp.success(userService.getUserInfoById(userId));
+    }
+
+    /**
+     * 获取当前用户详情
+     * @return
+     */
+    @GetMapping(value = "/selfById")
+    public Resp getUserById(
+            @RequestParam(value = "userId") Long userId
+    ){
+        User user = userService.getUserByID(userId);
+        user.setArticles(OtherUtils.fillContent(user.getArticles(), articleService));
+        user.setEvents(OtherUtils.fillContent(user.getEvents(), eventService));
+        return Resp.success(user);
+    }
+
+    /**
+     * 关注
+     * @return
+     */
+    @PostMapping(value = "/focus")
+    public Resp focusUser(
+            @RequestParam(value = "userId")Long userId
+    ){
+        User currentUser = TokenUtil.getCurrentUser();
+        User user = userService.getUserByID(userId);
+        utilService.focus(currentUser, user);
+        return Resp.success();
+    }
+    /**
+     * 取消关注
+     * @return
+     */
+    @PostMapping(value = "/cancelFocus")
+    public Resp cancelFocusUser(
+            @RequestParam(value = "userId")Long userId
+    ){
+        User currentUser = TokenUtil.getCurrentUser();
+        User user = userService.getUserByID(userId);
+        utilService.cancelFocus(currentUser, user);
+        return Resp.success();
     }
 }

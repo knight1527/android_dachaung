@@ -2,9 +2,22 @@
 var common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   data() {
-    return {};
+    return {
+      searchText: ""
+    };
   },
-  methods: {}
+  methods: {
+    search() {
+      common_vendor.index.navigateTo({
+        url: "/pages/search_result/search_result?searchText=" + this.searchText + "&showIndex=2"
+      });
+    },
+    openFocus() {
+      common_vendor.index.navigateTo({
+        url: "/pages/focus/focus"
+      });
+    }
+  }
 };
 if (!Array) {
   const _easycom_uni_nav_bar2 = common_vendor.resolveComponent("uni-nav-bar");
@@ -29,58 +42,63 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       height: "80rpx",
       title: "\u540C\u5FD7"
     }),
-    b: common_vendor.p({
-      placeholder: "\u641C\u7D22\u7528\u6237",
-      clearable: true
-    }),
+    b: common_vendor.o(($event) => $data.searchText = $event),
     c: common_vendor.p({
-      span: 20
+      placeholder: "\u641C\u7D22\u7528\u6237",
+      clearable: true,
+      modelValue: $data.searchText
     }),
     d: common_vendor.p({
+      span: 20
+    }),
+    e: common_vendor.o($options.search),
+    f: common_vendor.p({
       type: "search",
       size: "28",
       color: "grey"
     }),
-    e: common_vendor.p({
+    g: common_vendor.p({
       span: 4
     }),
-    f: common_vendor.p({
+    h: common_vendor.p({
       type: "auth-filled",
       size: "27",
       color: "#03dac5"
-    }),
-    g: common_vendor.p({
-      span: 12
-    }),
-    h: common_vendor.p({
-      type: "right"
     }),
     i: common_vendor.p({
       span: 12
     }),
     j: common_vendor.p({
-      type: "auth-filled",
-      size: "27",
-      color: "#F0E68C"
+      type: "right"
     }),
     k: common_vendor.p({
       span: 12
     }),
-    l: common_vendor.p({
-      type: "right"
-    }),
+    l: common_vendor.o((...args) => $options.openFocus && $options.openFocus(...args)),
     m: common_vendor.p({
-      span: 12
+      type: "auth-filled",
+      size: "27",
+      color: "#F0E68C"
     }),
     n: common_vendor.p({
+      span: 12
+    }),
+    o: common_vendor.p({
+      type: "right"
+    }),
+    p: common_vendor.p({
+      span: 12
+    }),
+    q: common_vendor.o((...args) => $options.openFocus && $options.openFocus(...args)),
+    r: common_vendor.p({
       type: "chatboxes-filled",
       size: "27",
       color: "#87CEFA"
     }),
-    o: common_vendor.p({
+    s: common_vendor.p({
       span: 12
     }),
-    p: common_vendor.p({
+    t: common_vendor.p({
       span: 12
     })
   };

@@ -10,7 +10,10 @@
     "pages/self/self_detail/self_detail",
     "pages/self/self_update/self_update",
     "pages/search_result/search_result",
-    "pages/index/sec_detail/sec_detail"
+    "pages/index/sec_detail/sec_detail",
+    "pages/events/event_detail/event_detail",
+    "pages/focus/focus",
+    "pages/favorites/favorites"
   ],
   "window": {
     "navigationBarTextStyle": "black",

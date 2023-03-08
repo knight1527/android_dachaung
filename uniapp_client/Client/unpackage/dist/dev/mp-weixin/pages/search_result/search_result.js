@@ -9,9 +9,14 @@ const _sfc_main = {
         contentnomore: "\u6CA1\u6709\u66F4\u591A\u4E86"
       },
       status: "more",
-      showIndex: 2,
-      transType: ["fade", "slide-left"]
+      showIndex: 0,
+      transType: ["fade", "slide-left"],
+      searchText: ""
     };
+  },
+  onLoad(option) {
+    this.searchText = option.searchText;
+    this.showIndex = option.showIndex;
   },
   created() {
   },
@@ -60,6 +65,9 @@ const _sfc_main = {
         console.log("\u53EF\u80FD\u662F\u8BEF\u89E6\uFF01");
       }
     },
+    changeIndex(index) {
+      this.showIndex = index;
+    },
     gotoDetail() {
     }
   }
@@ -93,86 +101,91 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     c: common_vendor.p({
       span: 4
     }),
-    d: common_vendor.p({
-      placeholder: "\u641C\u7D22",
-      clearable: true
-    }),
+    d: common_vendor.o(($event) => $data.searchText = $event),
     e: common_vendor.p({
+      placeholder: "\u641C\u7D22",
+      clearable: true,
+      modelValue: $data.searchText
+    }),
+    f: common_vendor.p({
       type: "search",
       size: "26",
       color: "#808080"
     }),
-    f: common_vendor.p({
+    g: common_vendor.p({
       span: 20
     }),
-    g: $data.showIndex == 0 ? 1 : "",
-    h: $data.showIndex == 1 ? 1 : "",
-    i: $data.showIndex == 2 ? 1 : "",
-    j: common_vendor.p({
+    h: $data.showIndex == 0 ? 1 : "",
+    i: common_vendor.o(($event) => $options.changeIndex(0)),
+    j: $data.showIndex == 1 ? 1 : "",
+    k: common_vendor.o(($event) => $options.changeIndex(1)),
+    l: $data.showIndex == 2 ? 1 : "",
+    m: common_vendor.o(($event) => $options.changeIndex(2)),
+    n: common_vendor.p({
       span: 2
     }),
-    k: common_vendor.p({
+    o: common_vendor.p({
       span: 17
     }),
-    l: common_vendor.p({
+    p: common_vendor.p({
       type: "more-filled"
     }),
-    m: common_vendor.t("\xA0"),
-    n: common_vendor.p({
+    q: common_vendor.t("\xA0"),
+    r: common_vendor.p({
       span: 5
     }),
-    o: common_vendor.p({
+    s: common_vendor.p({
       span: 16
     }),
-    p: common_vendor.p({
+    t: common_vendor.p({
       span: 8
     }),
-    q: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
-    r: common_vendor.p({
+    v: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
+    w: common_vendor.p({
       status: $data.status,
       color: "#03dac5",
       contentText: $data.contentText,
       iconType: "circle"
     }),
-    s: $data.showIndex == 0,
-    t: common_vendor.p({
+    x: $data.showIndex == 0,
+    y: common_vendor.p({
       modeClass: $data.transType,
       show: $data.showIndex == 0
     }),
-    v: common_vendor.t(0),
-    w: common_vendor.t(0),
-    x: common_vendor.t("\u5176\u4ED6"),
-    y: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
-    z: common_vendor.p({
+    z: common_vendor.t(0),
+    A: common_vendor.t(0),
+    B: common_vendor.t("\u5176\u4ED6"),
+    C: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
+    D: common_vendor.p({
       status: $data.status,
       color: "#03dac5",
       contentText: $data.contentText,
       iconType: "circle"
     }),
-    A: $data.showIndex == 1,
-    B: common_vendor.p({
+    E: $data.showIndex == 1,
+    F: common_vendor.p({
       modeClass: $data.transType,
       show: $data.showIndex == 1
     }),
-    C: common_vendor.p({
+    G: common_vendor.p({
       type: "right",
       size: "22"
     }),
-    D: common_vendor.o((...args) => $options.gotoDetail && $options.gotoDetail(...args)),
-    E: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
-    F: common_vendor.p({
+    H: common_vendor.o((...args) => $options.gotoDetail && $options.gotoDetail(...args)),
+    I: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
+    J: common_vendor.p({
       status: $data.status,
       color: "#03dac5",
       contentText: $data.contentText,
       iconType: "circle"
     }),
-    G: $data.showIndex == 2,
-    H: common_vendor.p({
+    K: $data.showIndex == 2,
+    L: common_vendor.p({
       modeClass: $data.transType,
       show: $data.showIndex == 2
     }),
-    I: common_vendor.o((...args) => $options.touchStart && $options.touchStart(...args)),
-    J: common_vendor.o((...args) => $options.touchEnd && $options.touchEnd(...args))
+    M: common_vendor.o((...args) => $options.touchStart && $options.touchStart(...args)),
+    N: common_vendor.o((...args) => $options.touchEnd && $options.touchEnd(...args))
   };
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/dachuang/uniapp_client/Client/pages/search_result/search_result.vue"]]);

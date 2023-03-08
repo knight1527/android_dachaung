@@ -5,20 +5,20 @@
 			<view style="height: 110rpx;" class="baiyan">
 				<uni-col :span="20">
 					<view class="margin_10">
-						<uni-easyinput placeholder="搜索用户" clearable></uni-easyinput>
+						<uni-easyinput v-model="searchText" placeholder="搜索用户" clearable></uni-easyinput>
 					</view>
 				</uni-col>
 				<uni-col :span="4" >
 					<view style="width: 100%;" class="margin_auto">
 						<view class="margin_top_20 margin_left_15">
-							<uni-icons type="search" size="28" color="grey"></uni-icons>
+							<uni-icons type="search" size="28" color="grey" @click="search"></uni-icons>
 						</view>
 					</view>
 				</uni-col>
 			</view>
 		</uni-row>
 		<uni-row>
-			<view style="height: 110rpx;" class="border_line_grey_bt_tiny aligin_center_text_left">
+			<view @click="openFocus" style="height: 110rpx;" class="border_line_grey_bt_tiny aligin_center_text_left">
 				<uni-col :span="12">
 					<view class="aligin_center_text_left"> 
 						<view class="margin_left_15"></view>
@@ -32,7 +32,7 @@
 					</view>
 				</uni-col>
 			</view>
-			<view style="height: 110rpx;" class="border_line_grey_bt_tiny aligin_center_text_left">
+			<view @click="openFocus" style="height: 110rpx;" class="border_line_grey_bt_tiny aligin_center_text_left">
 				<uni-col :span="12">
 					<view class="aligin_center_text_left"> 
 						<view class="margin_left_15"></view>
@@ -76,11 +76,20 @@
 	export default {
 		data() {
 			return {
-				
+				searchText: '',
 			}
 		},
 		methods: {
-			
+			search(){
+				uni.navigateTo({
+					url: '/pages/search_result/search_result?searchText=' + this.searchText + '&showIndex=2',
+				})
+			},
+			openFocus(){
+				uni.navigateTo({
+					url: '/pages/focus/focus',
+				})
+			},
 		}
 	}
 </script>

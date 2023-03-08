@@ -5,6 +5,8 @@ import icu.qihangduan.dachuang_server.controller.user.dto.UserDto;
 import icu.qihangduan.dachuang_server.pojo.User;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author duanqihang
  * Created with IntelliJ IDEA.
@@ -16,6 +18,8 @@ import org.springframework.stereotype.Service;
 public interface UserService {
     User getUserInfo(UserDto userDto);
 
+    User getUserInfoById(Long id);
+
     boolean insertUser(User user);
 
     UserDto login(UserDto userDto);
@@ -23,4 +27,8 @@ public interface UserService {
     UserDto register(UserDto userDto);
 
     User queryUserName(String username);
+
+    User getUserByID(Long userID);
+
+    void getUserDetail(User user);
 }

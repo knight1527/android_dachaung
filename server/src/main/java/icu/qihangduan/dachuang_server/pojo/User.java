@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author duanqihang
@@ -34,4 +35,16 @@ public class User {
 
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;
+
+    private transient List<Article> articles;
+    private transient List<Event> events;
+    //关注数
+    private transient int focusNum;
+    //粉丝数
+    private transient int focusedNum;
+    private transient  List<User> focus;
+    private transient List<User> focused;
+    //收藏的文章和赛事
+    private transient List<Article> favoritesArticles;
+    private transient List<Event> favoritesEvents;
 }

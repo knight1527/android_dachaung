@@ -130,6 +130,12 @@
             <artifactId>aliyun-sdk-oss</artifactId>
             <version>3.16.1</version>
         </dependency>
+        <!--flexmark-java-->
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark-all</artifactId>
+            <version>0.62.2</version>
+        </dependency>
     </dependencies>
 
     <build>

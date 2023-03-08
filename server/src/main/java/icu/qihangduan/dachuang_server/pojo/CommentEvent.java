@@ -1,0 +1,30 @@
+package icu.qihangduan.dachuang_server.pojo;
+
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+/**
+ * @author duanqihang
+ * Created with IntelliJ IDEA.
+ * User: suse_QiHang
+ * Date: 2023/3/6 15:35
+ * Description:
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CommentEvent {
+    private Long id;
+    private String content;
+    private Long parentCommentId;
+    @TableField(fill = FieldFill.INSERT)
+    private Date createdAt;
+    private Long eventId;
+    private Long UserId;
+    private Integer replyNum;
+}

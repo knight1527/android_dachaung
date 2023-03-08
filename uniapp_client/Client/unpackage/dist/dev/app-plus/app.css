@@ -18,6 +18,14 @@
 	margin-top: 0.46875rem;
 	margin-bottom: 0.46875rem;
 }
+.margin_bt_20{
+	margin-top: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+.margin_bt_30{
+	margin-top: 0.9375rem;
+	margin-bottom: 0.9375rem;
+}
 .margin_10{
 	margin: 0.3125rem;
 }
@@ -35,6 +43,9 @@
 }
 .margin_top_10{
 	margin-top: 0.3125rem;
+}
+.margin_b0ttom_10{
+	margin-bottom: 0.3125rem;
 }
 .margin_bottom_20{
 	margin-bottom: 0.625rem;
@@ -59,6 +70,12 @@
 }
 .margin_left_50{
 	margin-left: 1.5625rem;
+}
+.margin_right_40{
+	margin-right: 1.25rem;
+}
+.margin_left_40{
+	margin-left: 1.25rem;
 }
 .margin_right_15{
 	margin-right: 0.46875rem;
@@ -111,6 +128,18 @@
 }
 .padding_right_50{
 	padding-right: 1.5625rem;
+}
+.padding_left_20{
+	padding-left: 0.625rem;
+}
+.padding_left_10{
+	padding-left: 0.3125rem;
+}
+.padding_left_30{
+	padding-left: 0.9375rem;
+}
+.padding_left_50{
+	padding-left: 1.5625rem;
 }
 .padding_top_20{
 	padding-top: 0.625rem;
@@ -244,6 +273,14 @@
 	border-color: #f5f5f5;
 	border-style: solid;
 }
+.border_line_grey_t_tiny{
+	border-bottom: 0;
+	border-top: 0.03125rem;
+	border-right: 0;
+	border-left: 0;
+	border-color: #f5f5f5;
+	border-style: solid;
+}
 
 	/* 文章卡片shadow */
 .sec_box_shandow{
@@ -335,6 +372,27 @@
 	font-size: 0.75rem;
 	color: grey;
 	font-weight: 12.5rem;
+}
+
+	/* 时间 */
+.time{
+	font-size: 0.78125rem;
+	color: #808080;
+}
+
+	/* 文章标题 */
+.sec_title{
+	font-size: 1.5625rem;
+	font-weight: 400;
+}
+
+	/* 标签 */
+.tag{
+	font-size: 0.9375rem;
+	background-color: #03DAC5;
+	color: white;
+	border-radius: 0.3125rem;
+	padding: 0.3125rem;
 }
 
 	/* .status_bar {

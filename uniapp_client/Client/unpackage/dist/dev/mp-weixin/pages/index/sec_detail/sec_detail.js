@@ -1,12 +1,37 @@
 "use strict";
 var common_vendor = require("../../../common/vendor.js");
+var utils_request = require("../../../utils/request.js");
 const _sfc_main = {
   data() {
     return {
-      is_focus: true
+      is_focus: true,
+      tepId: 0,
+      article: {}
     };
   },
-  methods: {}
+  onLoad(option) {
+    this.tepId = option.id;
+    utils_request.$request({
+      url: "/article/detail",
+      method: "GET",
+      data: {
+        articleId: this.tepId
+      }
+    }).then((res) => {
+      this.article = res.data;
+    }).catch((err) => {
+    });
+  },
+  created() {
+  },
+  methods: {
+    scrollToTop() {
+      common_vendor.index.pageScrollTo({
+        scrollTop: 0,
+        duration: 300
+      });
+    }
+  }
 };
 if (!Array) {
   const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
@@ -26,24 +51,50 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     d: common_vendor.p({
       type: "heart",
+      color: "#808080",
+      size: "22"
+    }),
+    e: common_vendor.p({
+      type: "chat",
+      color: "#808080",
+      size: "22"
+    }),
+    f: common_vendor.t(0),
+    g: common_vendor.p({
+      type: "closeempty",
+      color: "#808080"
+    }),
+    h: common_vendor.p({
+      type: "heart",
+      color: "#808080",
+      size: "22"
+    }),
+    i: common_vendor.p({
+      type: "chat",
+      color: "#808080",
+      size: "22"
+    }),
+    j: common_vendor.p({
+      type: "heart",
       size: "60rpx",
       color: "#808080"
     }),
-    e: common_vendor.p({
+    k: common_vendor.p({
       type: "star",
       size: "60rpx",
       color: "#808080"
     }),
-    f: common_vendor.p({
+    l: common_vendor.p({
       type: "chat",
       size: "60rpx",
       color: "#808080"
     }),
-    g: common_vendor.p({
+    m: common_vendor.p({
       type: "arrow-up",
       size: "60rpx",
       color: "#808080"
-    })
+    }),
+    n: common_vendor.o((...args) => $options.scrollToTop && $options.scrollToTop(...args))
   };
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/dachuang/uniapp_client/Client/pages/index/sec_detail/sec_detail.vue"]]);

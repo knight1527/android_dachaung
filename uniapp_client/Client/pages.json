@@ -96,11 +96,41 @@
 				}
 				
 		}
+		,{
+				"path" : "pages/index/sec_detail/sec_detail",
+				"style" :                                                                                    
+				{
+						"navigationBarTitleText": "文章详情",
+						"enablePullDownRefresh": false,
+						"app-plus": {
+							"scrollIndicator": "none"
+						}
+				}
+				
+		}
         ,{
-            "path" : "pages/index/sec_detail/sec_detail",
+            "path" : "pages/events/event_detail/event_detail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "文章详情",
+                "navigationBarTitleText": "赛事详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/focus/focus",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关注与粉丝",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/favorites/favorites",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收藏",
                 "enablePullDownRefresh": false
             }
             

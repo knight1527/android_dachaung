@@ -48,9 +48,30 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "赛事详情",
+          "pathName": "pages/events/event_detail/event_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "关注与粉丝",
+          "pathName": "pages/focus/focus",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "收藏",
+          "pathName": "pages/favorites/favorites",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
-  "libVersion": "2.29.2"
+  "libVersion": "2.30.2"
 }
