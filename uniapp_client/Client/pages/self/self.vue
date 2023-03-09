@@ -112,7 +112,7 @@
 				}else if(index == 2){
 					/* 打开编辑 */
 					uni.navigateTo({
-						url: '/pages/self/self_update/self_update?id=' + this.user.id,
+						url: '/pages/self/self_update/self_update',
 					});
 				}else if(index == 3){
 					

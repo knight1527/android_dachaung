@@ -39,7 +39,7 @@ const _sfc_main = {
         ;
       else if (index == 2) {
         common_vendor.index.navigateTo({
-          url: "/pages/self/self_update/self_update?id=" + this.user.id
+          url: "/pages/self/self_update/self_update"
         });
       } else if (index == 3)
         ;

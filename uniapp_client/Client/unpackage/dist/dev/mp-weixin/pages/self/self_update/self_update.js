@@ -1,5 +1,6 @@
 "use strict";
 var common_vendor = require("../../../common/vendor.js");
+var utils_request = require("../../../utils/request.js");
 var self_;
 const _sfc_main = {
   data() {
@@ -12,19 +13,26 @@ const _sfc_main = {
       formData: {
         avatar: []
       },
+      tepId: 0,
       user: {
         avatar: "../../../static/faces/3-thump.jpg",
-        nickname: "author",
-        college: "\u56DB\u5DDD\u8F7B\u5316\u5DE5\u5927\u5B66",
-        major: "\u8BA1\u7B97\u673A\u79D1\u5B66\u4E0E\u6280\u672F",
-        email: "qihang_duan@foxmail.com",
-        description: "\u70ED\u7231\u751F\u6D3B\uFF01",
-        blog: "qihangduan.icu"
+        nickname: "",
+        college: "",
+        major: "",
+        email: "",
+        description: "",
+        blog: ""
       }
     };
   },
-  onLoad(option) {
-    console.log(option.id);
+  onLoad() {
+    utils_request.$request({
+      url: "/user/self",
+      method: "POST"
+    }).then((res2) => {
+      this.user = res2.data;
+    }).catch((err) => {
+    });
   },
   mounted() {
   },
@@ -39,12 +47,12 @@ const _sfc_main = {
         count: 1,
         sizeType: "origin",
         sourceType: "album",
-        success: function(res) {
-          console.log(JSON.stringify(res.tempFilePaths));
-          console.log(JSON.stringify(res.tempFiles));
-          const tempFilePath = res.tempFilePaths;
+        success: function(res2) {
+          console.log(JSON.stringify(res2.tempFilePaths));
+          console.log(JSON.stringify(res2.tempFiles));
+          const tempFilePath = res2.tempFilePaths;
           self_.formData.avatar = [tempFilePath];
-          self_.avatarSrc = res.tempFilePaths;
+          self_.avatarSrc = res2.tempFilePaths;
           console.log(JSON.stringify(self_.formData.avatar));
         }
       });
@@ -52,9 +60,33 @@ const _sfc_main = {
     dialogInputConfirm(value) {
       console.log("\u70B9\u51FB\u786E\u8BA4");
       console.log(value);
-      this.msgType = "success";
-      this.messageText = "Test";
-      this.$refs.message.open();
+      if (value == null) {
+        common_vendor.index.showToast({
+          icon: "error",
+          title: "\u6635\u79F0\u4E0D\u80FD\u4E3A\u7A7A"
+        });
+        return;
+      }
+      console.log("\u8868\u5355\u6570\u636E\u4FE1\u606F\uFF1A", res);
+      utils_request.$request({
+        url: "/user/queryUser",
+        method: "GET",
+        data: { username: this.user.username }
+      }).then((res2) => {
+        if (res2.code == "200") {
+          console.log("username \u5408\u6CD5");
+          this.msgType = "success";
+          this.messageText = "\u5408\u6CD5\u5185\u5BB9";
+          this.$refs.message.open();
+        } else {
+          this.msgType = "err";
+          this.messageText = "\u6635\u79F0\u5DF2\u88AB\u5360\u7528";
+          this.$refs.message.open();
+        }
+      }).catch((err) => {
+        console.log(err);
+        console.log("\u670D\u52A1\u5668 500\uFF01");
+      });
     },
     dialogInputConfirm2(value) {
       console.log("\u70B9\u51FB\u786E\u8BA42");
@@ -83,26 +115,41 @@ const _sfc_main = {
     dialogOpen(index) {
       this.dialogIndex = index;
       if (index == 1) {
-        this.$refs.inputDialog.open();
         this.inputDialogValue = this.user.nickname;
+        this.$refs.inputDialog.open();
       } else if (index == 2) {
-        this.$refs.inputDialog2.open();
         this.inputDialogValue2 = this.user.college;
+        this.$refs.inputDialog2.open();
       } else if (index == 3) {
-        this.$refs.inputDialog2.open();
         this.inputDialogValue2 = this.user.major;
+        this.$refs.inputDialog2.open();
       } else if (index == 4) {
-        this.$refs.inputDialog2.open();
         this.inputDialogValue2 = this.user.email;
+        this.$refs.inputDialog2.open();
       } else if (index == 5) {
-        this.$refs.inputDialog2.open();
         this.inputDialogValue2 = this.user.blog;
-      } else if (index == 6) {
         this.$refs.inputDialog2.open();
+      } else if (index == 6) {
         this.inputDialogValue2 = this.user.description;
+        this.$refs.inputDialog2.open();
       }
     },
     submit() {
+      if (this.user.nickname == null) {
+        common_vendor.index.showToast({
+          icon: "error",
+          title: "\u6635\u79F0\u4E0D\u80FD\u4E3A\u7A7A"
+        });
+        return;
+      }
+      utils_request.$request({
+        url: "/user/update",
+        method: "POST",
+        data: this.user
+      }).then((res2) => {
+        console.log(res2.data);
+      }).catch((err) => {
+      });
       common_vendor.index.navigateBack();
     }
   }

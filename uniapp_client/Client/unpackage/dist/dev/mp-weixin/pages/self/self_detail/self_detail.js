@@ -5,7 +5,6 @@ var self_;
 const _sfc_main = {
   data() {
     return {
-      is_self: true,
       is_focus: false,
       nav_show: false,
       swiperIndex: 0,
@@ -28,17 +27,11 @@ const _sfc_main = {
     },
     formatDate: function(time) {
       return function(time2) {
-        let date = new Date(time2);
-        return date.toLocaleString("zh-CN", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit"
-        });
+        return common_vendor.hooks(time2).format("YYYY-MM-DD");
       };
     }
   },
   onLoad(option) {
-    console.log(option.id);
     console.log(option.id);
     this.tepId = option.id;
     utils_request.$request({
@@ -49,24 +42,20 @@ const _sfc_main = {
       }
     }).then((res) => {
       this.user = res.data;
-      console.log(user);
-      console.log(res.data);
-    }).catch((err) => {
-      console.log(err.code + err.msg);
-    });
-    utils_request.$request({
-      url: "/user/selfInfo",
-      method: "Get"
-    }).then((res) => {
-      this.currentUser = res.data;
-      console.log(currentUser);
-      console.log(res.data);
+      utils_request.$request({
+        url: "/user/selfInfo",
+        method: "Get"
+      }).then((res2) => {
+        this.currentUser = res2.data;
+        self_.judgeSelf();
+      }).catch((err) => {
+        console.log(err.code + err.msg);
+      });
     }).catch((err) => {
       console.log(err.code + err.msg);
     });
   },
   onShow() {
-    self_.judgeSelf();
   },
   created() {
     self_ = this;
@@ -97,11 +86,6 @@ const _sfc_main = {
       });
     },
     judgeSelf() {
-      if (this.user.id == this.currentUser.id) {
-        this.is_self = true;
-      } else {
-        this.is_self = false;
-      }
       if (this.user.focused != null) {
         for (let i = 0; i < this.user.focused.length; i++) {
           if (this.currentUser.id == this.user.focused[i].id) {
@@ -111,6 +95,34 @@ const _sfc_main = {
         }
       }
       this.is_focus = false;
+    },
+    focus(type) {
+      this.is_focus = !this.is_focus;
+      if (type == 1) {
+        utils_request.$request({
+          url: "/user/focus",
+          method: "POST",
+          data: {
+            userId: this.user.id
+          }
+        }).then((res) => {
+          console.log("\u5173\u6CE8\u6210\u529F\uFF01");
+        }).catch((err) => {
+          console.log(err.code + err.msg);
+        });
+      } else {
+        utils_request.$request({
+          url: "/user/cancelFocus",
+          method: "POST",
+          data: {
+            userId: this.user.id
+          }
+        }).then((res) => {
+          console.log("\u53D6\u6D88\u5173\u6CE8\u6210\u529F\uFF01");
+        }).catch((err) => {
+          console.log(err.code + err.msg);
+        });
+      }
     }
   }
 };
@@ -135,56 +147,59 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       span: 8
     }),
     c: common_vendor.o((...args) => $options.selfUpdate && $options.selfUpdate(...args)),
-    d: $data.is_self,
-    e: $data.is_focus,
-    f: $data.is_focus,
-    g: common_vendor.p({
+    d: $data.user.id == $data.currentUser.id,
+    e: !$data.is_focus,
+    f: common_vendor.o(($event) => $options.focus(1)),
+    g: $data.is_focus,
+    h: common_vendor.o(($event) => $options.focus(2)),
+    i: $data.user.id != $data.currentUser.id,
+    j: common_vendor.p({
       span: 16
     }),
-    h: common_vendor.t($data.user.nickname),
-    i: common_vendor.t($data.user.college),
-    j: common_vendor.t($data.user.major),
-    k: common_vendor.p({
+    k: common_vendor.t($data.user.nickname),
+    l: common_vendor.t($data.user.college),
+    m: common_vendor.t($data.user.major),
+    n: common_vendor.p({
       color: "#808080",
       type: "mail-open-filled",
       size: "22"
     }),
-    l: common_vendor.t($data.user.email),
-    m: common_vendor.p({
+    o: common_vendor.t($data.user.email),
+    p: common_vendor.p({
       color: "#808080",
       type: "navigate",
       size: "22"
     }),
-    n: common_vendor.p({
+    q: common_vendor.p({
       href: $data.user.blog,
       text: $data.user.blog,
       color: "#03dac5"
     }),
-    o: common_vendor.p({
+    r: common_vendor.p({
       color: "#808080",
       type: "flag",
       size: "22"
     }),
-    p: common_vendor.t($data.user.description),
-    q: $data.swiperIndex == 0 ? 1 : "",
-    r: common_vendor.p({
+    s: common_vendor.t($data.user.description),
+    t: $data.swiperIndex == 0 ? 1 : "",
+    v: common_vendor.p({
       span: 12
     }),
-    s: $data.swiperIndex == 1 ? 1 : "",
-    t: common_vendor.p({
-      span: 12
-    }),
-    v: $data.nav_show,
-    w: $data.swiperIndex == 0 ? 1 : "",
+    w: $data.swiperIndex == 1 ? 1 : "",
     x: common_vendor.p({
       span: 12
     }),
-    y: $data.swiperIndex == 1 ? 1 : "",
-    z: common_vendor.p({
+    y: $data.nav_show,
+    z: $data.swiperIndex == 0 ? 1 : "",
+    A: common_vendor.p({
       span: 12
     }),
-    A: !$data.nav_show,
-    B: common_vendor.f($data.user.articles, (article, index, i0) => {
+    B: $data.swiperIndex == 1 ? 1 : "",
+    C: common_vendor.p({
+      span: 12
+    }),
+    D: !$data.nav_show,
+    E: common_vendor.f($data.user.articles, (article, index, i0) => {
       return {
         a: article.user.avatar,
         b: "3a6e9742-14-" + i0 + "," + ("3a6e9742-13-" + i0),
@@ -206,26 +221,26 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         r: article.id
       };
     }),
-    C: common_vendor.p({
+    F: common_vendor.p({
       span: 2
     }),
-    D: common_vendor.p({
+    G: common_vendor.p({
       span: 17
     }),
-    E: common_vendor.p({
+    H: common_vendor.p({
       type: "more-filled"
     }),
-    F: common_vendor.t("\xA0"),
-    G: common_vendor.p({
+    I: common_vendor.t("\xA0"),
+    J: common_vendor.p({
       span: 5
     }),
-    H: common_vendor.p({
+    K: common_vendor.p({
       span: 16
     }),
-    I: common_vendor.p({
+    L: common_vendor.p({
       span: 8
     }),
-    J: common_vendor.f($data.user.events, (event, index, i0) => {
+    M: common_vendor.f($data.user.events, (event, index, i0) => {
       return {
         a: common_vendor.t(event.status),
         b: common_vendor.n($options.event_status(event)),
@@ -242,7 +257,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         m: event.id
       };
     }),
-    K: common_vendor.o((...args) => $options.swiperChage && $options.swiperChage(...args))
+    N: common_vendor.o((...args) => $options.swiperChage && $options.swiperChage(...args))
   };
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/dachuang/uniapp_client/Client/pages/self/self_detail/self_detail.vue"]]);

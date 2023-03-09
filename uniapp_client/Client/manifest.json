@@ -55,6 +55,7 @@
         "setting" : {
             "urlCheck" : false,
             "minified" : true,
+						"ignoreDevUnusedFiles" : false,
             "postcss" : true
         },
         "usingComponents" : true

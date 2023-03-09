@@ -231,6 +231,14 @@
 .baiyan{
 	background-color: #f5f5f5;
 }
+.border{
+	border-bottom: 2rpx;
+	border-top: 2rpx;
+	border-right: 2rpx;
+	border-left: 2rpx;
+	border-color: #f5f5f5;
+	border-style: solid;
+}
 .border_line {
 	border-bottom: 6rpx;
 	border-top: 0;

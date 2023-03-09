@@ -1,50 +1,51 @@
 <template>
 	<view class="container">
-		<uni-row>
-			<view style="height: 100rpx;" class="border_line_grey_b_tiny align">
-				<uni-col :span="12">
-					<view class="aligin_center_item_left fill" style="height: 100rpx;">
-						<image class="margin_left_50" style="height: 80rpx;width: 80rpx;border-radius: 80rpx;" :src="user.avatar"></image>
-					</view>
-				</uni-col>
-				<uni-col :span="12">
-					<view class="aligin_center_item_right margin_right_50" style="height: 100rpx;">
-						<button class="margin_none" size="mini" @click="chooseImage">上传</button>
-					</view>
-				</uni-col>
-			</view>
-		</uni-row>
-		<uni-row>
-			<view @click="dialogOpen(1)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
-				<view style="width: 50%;" class="margin_right_10">昵称：</view>
-				<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.nickname}}</view>
-			</view>
-			<view @click="dialogOpen(2)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
-				<view style="width: 50%;" class="margin_right_10">学校：</view>
-				<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.college}}</view>
-			</view>
-			<view @click="dialogOpen(3)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
-				<view style="width: 50%;" class="margin_right_10">专业：</view>
-				<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.major}}</view>
-			</view>
-			<view @click="dialogOpen(4)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
-				<view style="width: 50%;" class="margin_right_10">邮箱：</view>
-				<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.email}}</view>
-			</view>
-			<view @click="dialogOpen(5)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
-				<view style="width: 50%;" class="margin_right_10">个人博客：</view>
-				<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.blog}}</view>
-			</view>
-			<view @click="dialogOpen(6)" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50 padding_tb_20">
-				<view style="width: 50%;" class="margin_right_10">座右铭：</view>
-				<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.description}}</view>
-			</view>
-			
-			<view class="fill">
-				<button @click="submit" class="margin_20" type="primary">保存提交</button>
-			</view>
-		</uni-row>
-		
+			<uni-row>
+				<view style="height: 100rpx;" class="border_line_grey_b_tiny align">
+					<uni-col :span="12">
+						<view class="aligin_center_item_left fill" style="height: 100rpx;">
+							<image class="margin_left_50" style="height: 80rpx;width: 80rpx;border-radius: 80rpx;" :src="user.avatar"></image>
+						</view>
+					</uni-col>
+					<uni-col :span="12">
+						<view class="aligin_center_item_right margin_right_50" style="height: 100rpx;">
+							<button class="margin_none" size="mini" @click="chooseImage">上传</button>
+						</view>
+					</uni-col>
+				</view>
+			</uni-row>
+			<uni-row>
+				<view @click="dialogOpen(1)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
+					<view style="width: 50%;" class="margin_right_10">昵称：</view>
+					<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.nickname}}</view>
+				</view>
+				<view @click="dialogOpen(2)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
+					<view style="width: 50%;" class="margin_right_10">学校：</view>
+					<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.college}}</view>
+				</view>
+				<view @click="dialogOpen(3)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
+					<view style="width: 50%;" class="margin_right_10">专业：</view>
+					<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.major}}</view>
+				</view>
+				<view @click="dialogOpen(4)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
+					<view style="width: 50%;" class="margin_right_10">邮箱：</view>
+					<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.email}}</view>
+				</view>
+				<view @click="dialogOpen(5)" style="height: 100rpx;" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50">
+					<view style="width: 50%;" class="margin_right_10">个人博客：</view>
+					<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.blog}}</view>
+				</view>
+				<view @click="dialogOpen(6)" class="border_line_grey_b_tiny aligin_center_item_left padding_rl_50 padding_tb_20">
+					<view style="width: 50%;" class="margin_right_10">座右铭：</view>
+					<view style="width: 50%;color: grey;font-size: 30rpx;" class="aligin_center_item_right">{{user.description}}</view>
+				</view>
+				
+				<view class="fill">
+					<button @click="submit" class="margin_20" type="primary">保存提交</button>
+				</view>
+			</uni-row>
+
+
 		<!-- 输入框示例 -->
 		<uni-popup ref="inputDialog" type="dialog">
 			<uni-popup-dialog ref="inputClose"  mode="input" title="输入内容" :value="inputDialogValue"
@@ -81,19 +82,27 @@
 					avatar: [],
 				},
 				/* 用户 */
+				tepId: 0,
 				user: {
 					avatar: '../../../static/faces/3-thump.jpg',
-					nickname: 'author',
-					college: '四川轻化工大学',
-					major: '计算机科学与技术',
-					email: 'qihang_duan@foxmail.com',
-					description: '热爱生活！',
-					blog: 'qihangduan.icu'
+					nickname: '',
+					college: '',
+					major: '',
+					email: '',
+					description: '',
+					blog: ''
 				}
 			}
 		},
-		onLoad(option) {
-			console.log(option.id)
+		onLoad() {
+			$request({
+				url: '/user/self',
+				method: 'POST',
+			}).then(res => {
+				this.user = res.data
+			}).catch(err => {
+				
+			});
 		},
 		mounted() {
 			
@@ -124,12 +133,38 @@
 			dialogInputConfirm(value) {
 				console.log('点击确认')
 				console.log(value)
+				if(value == null){
+					uni.showToast({
+						icon:'error',
+						title: '昵称不能为空' 
+					})
+					return;
+				}
 				/* 异步请求服务器看nickname是否被占用 */
+				console.log('表单数据信息：', res);
+				//用户名是否已注册验证
+				$request({
+					url: '/user/queryUser',
+					method: 'GET',
+					data: {username: this.user.username}
+				}).then(res=>{
+					if(res.code == '200'){
+						console.log("username 合法")
+						/* 请求成功 */
+						this.msgType = 'success'
+						this.messageText = "合法内容"
+						this.$refs.message.open()
+					}else{
+						/* 请求成功 */
+						this.msgType = 'err'
+						this.messageText = "昵称已被占用"
+						this.$refs.message.open()
+					}
+				}).catch(err=>{
+					console.log(err)
+					console.log('服务器 500！')
+				})
 				
-				/* 请求成功 */
-				this.msgType = 'success'
-				this.messageText = "Test"
-				this.$refs.message.open()
 			},
 			dialogInputConfirm2(value) {
 				console.log('点击确认2')
@@ -159,26 +194,43 @@
 			dialogOpen(index){
 				this.dialogIndex = index;
 				if(index == 1){
-					this.$refs.inputDialog.open()
 					this.inputDialogValue = this.user.nickname
+					this.$refs.inputDialog.open()
 				}else if(index == 2){
-					this.$refs.inputDialog2.open()
 					this.inputDialogValue2 = this.user.college
+					this.$refs.inputDialog2.open()
 				}else if(index == 3){
-					this.$refs.inputDialog2.open()
 					this.inputDialogValue2 = this.user.major
+					this.$refs.inputDialog2.open()	
 				}else if(index == 4){
-					this.$refs.inputDialog2.open()
 					this.inputDialogValue2 = this.user.email
+					this.$refs.inputDialog2.open()
 				}else if(index == 5){
-					this.$refs.inputDialog2.open()
 					this.inputDialogValue2 = this.user.blog
-				}else if(index == 6){
 					this.$refs.inputDialog2.open()
+				}else if(index == 6){
 					this.inputDialogValue2 = this.user.description
+					this.$refs.inputDialog2.open()
 				}
 			},
 			submit(){
+				if(this.user.nickname == null){
+					uni.showToast({
+						icon:'error',
+						title: '昵称不能为空' 
+					})
+					return;
+				}
+				/* 提交 */
+				$request({
+					url: '/user/update',
+					method: 'POST',
+					data: this.user
+				}).then(res => {
+					console.log(res.data)
+				}).catch(err => {
+					
+				});
 				uni.navigateBack()
 			},
 		}

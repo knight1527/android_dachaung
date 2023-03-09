@@ -1,4 +1,5 @@
 const BASE_URL = `http://localhost:8096`
+/* const BASE_URL = `http://118.31.54.149:8096` */
 
 /* 封装的request */
 export const $request = (options) => {  // {url: '', method: '', data: {}}

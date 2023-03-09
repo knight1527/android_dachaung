@@ -31,4 +31,6 @@ public interface UserService {
     User getUserByID(Long userID);
 
     void getUserDetail(User user);
+
+    void updateCurrentUser(User user);
 }

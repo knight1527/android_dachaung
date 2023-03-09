@@ -2,6 +2,7 @@ package icu.qihangduan.dachuang_server.controller.user;
 
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSON;
 import com.wf.captcha.SpecCaptcha;
 import com.wf.captcha.base.Captcha;
 import icu.qihangduan.dachuang_server.common.Constants;
@@ -191,6 +192,14 @@ public class UserController {
         User currentUser = TokenUtil.getCurrentUser();
         User user = userService.getUserByID(userId);
         utilService.cancelFocus(currentUser, user);
+        return Resp.success();
+    }
+
+    @PostMapping(value = "/update")
+    public Resp updateCurrentUser(
+        @RequestBody User user
+    ){
+        userService.updateCurrentUser(user);
         return Resp.success();
     }
 }

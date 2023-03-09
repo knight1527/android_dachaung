@@ -89,7 +89,7 @@
 		<scroll-view>
 			<!-- 赛事卡片 （卡片中图片默认提供几种）-->
 			<view v-for="(event, index) in events" :key="event.id">
-				<view :id="'item-' + index" v-show="event_type_show(event.type)&&event_level_show(event.level)"
+				<view @click="openDetail(event.id)" :id="'item-' + index" v-show="event_type_show(event.type)&&event_level_show(event.level)"
 				class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" 
 				style="position: relative;">
 					<!-- 赛事状态 -->
@@ -148,7 +148,9 @@
 
 <script>
 	//导入封装的request方法
-	import {$request} from '@/utils/request.js'
+	import {$request} from '@/utils/request.js';
+	import moment from 'moment';
+	import 'moment/locale/zh-cn';
 	var self_
 	export default {
 		data() {
@@ -193,12 +195,7 @@
 			},
 			formatDate: function(time){
 				return function(time){
-					let date = new Date(time)
-					return date.toLocaleString('zh-CN', 
-					{year:'numeric',
-					month: '2-digit',
-					day: '2-digit',
-					});
+					return moment(time).format('YYYY-MM-DD')
 				};
 			},
 			/* 关于选择筛选卡以后赛事卡片是否显示的计算属性 */
@@ -313,7 +310,12 @@
 							duration: 300
 						})
 					}).exec();
-			}
+			},
+			openDetail(id){
+				uni.navigateTo({
+					url: '/pages/events/event_detail/event_detail?id=' + id,
+				})
+			},
 		}
 	}
 </script>

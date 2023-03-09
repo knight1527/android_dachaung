@@ -1,65 +1,171 @@
-2023-03-08 15:18:27.550  INFO 6140 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 6140 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 15:18:27.558  INFO 6140 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 15:18:27.635  INFO 6140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 15:18:27.635  INFO 6140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 15:18:28.667  INFO 6140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 15:18:28.673  INFO 6140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 15:18:28.716  INFO 6140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-2023-03-08 15:18:29.470  INFO 6140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 15:18:29.479  INFO 6140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 15:18:29.480  INFO 6140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 15:18:29.483  INFO 6140 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 15:18:29.484  INFO 6140 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 15:18:29.484  INFO 6140 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 15:18:29.484  INFO 6140 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 15:18:29.498  INFO 6140 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 15:18:29.628  INFO 6140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 15:18:29.628  INFO 6140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1992 ms
-2023-03-08 15:18:29.875  INFO 6140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 15:18:29.877  WARN 6140 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 15:18:30.408  INFO 6140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 15:18:31.477  INFO 6140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 15:18:31.512  INFO 6140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 15:18:31.522  INFO 6140 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.483 seconds (JVM running for 6.371)
-2023-03-08 15:19:31.534  INFO 15428 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 15428 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 15:19:31.538  INFO 15428 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 15:19:31.588  INFO 15428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 15:19:31.588  INFO 15428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 15:19:32.295  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 15:19:32.297  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 15:19:32.330  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2023-03-08 15:19:32.855  INFO 15428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 15:19:32.863  INFO 15428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 15:19:32.863  INFO 15428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 15:19:32.866  INFO 15428 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 15:19:32.866  INFO 15428 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 15:19:32.866  INFO 15428 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 15:19:32.866  INFO 15428 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 15:19:32.870  INFO 15428 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 15:19:32.983  INFO 15428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 15:19:32.983  INFO 15428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
-2023-03-08 15:19:33.187  INFO 15428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 15:19:33.189  WARN 15428 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 15:19:33.703  INFO 15428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 15:19:34.864  INFO 15428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 15:19:34.895  INFO 15428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 15:19:34.904  INFO 15428 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 3.84 seconds (JVM running for 5.13)
-2023-03-08 15:30:19.960  INFO 15428 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 15:30:19.960  INFO 15428 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 15:30:19.963  INFO 15428 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-08 15:30:21.084 ERROR 15428 --- [http-nio-8096-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key] with root cause
+2023-03-09 00:17:49.223  INFO 21156 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 21156 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-03-09 00:17:49.230  INFO 21156 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-03-09 00:17:49.316  INFO 21156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 00:17:49.317  INFO 21156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 00:17:50.665  INFO 21156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-09 00:17:50.669  INFO 21156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 00:17:50.719  INFO 21156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-03-09 00:17:51.584  INFO 21156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-03-09 00:17:51.596  INFO 21156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 00:17:51.596  INFO 21156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-09 00:17:51.599  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-03-09 00:17:51.600  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-03-09 00:17:51.600  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-03-09 00:17:51.600  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-09 00:17:51.619  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-03-09 00:17:51.786  INFO 21156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 00:17:51.787  INFO 21156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
+2023-03-09 00:17:52.080  INFO 21156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 00:17:52.082  WARN 21156 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-09 00:17:52.978  INFO 21156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 00:17:54.466  INFO 21156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 00:17:54.505  INFO 21156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-03-09 00:17:54.518  INFO 21156 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 6.119 seconds (JVM running for 9.06)
+2023-03-09 00:28:58.306  INFO 21156 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 00:28:58.307  INFO 21156 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 00:28:58.309  INFO 21156 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-09 00:41:32.470  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17690405 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:32.577  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@147f8864 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:32.677  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b69efc2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:32.759  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@559cb104 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:32.840  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55097bed (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:32.923  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3dddf580 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:33.034  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39ce1a06 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:41:33.129  WARN 21156 --- [http-nio-8096-exec-10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@96a98aa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-03-09 00:55:16.049  WARN 21156 --- [http-nio-8096-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'articleId' for method parameter type Long is not present]
+2023-03-09 11:47:20.186  INFO 8900 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 8900 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-03-09 11:47:20.188  INFO 8900 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-03-09 11:47:20.257  INFO 8900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 11:47:20.257  INFO 8900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 11:47:21.133  INFO 8900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-09 11:47:21.136  INFO 8900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 11:47:21.184  INFO 8900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-03-09 11:47:21.931  INFO 8900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-03-09 11:47:21.942  INFO 8900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 11:47:21.942  INFO 8900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-09 11:47:21.945  INFO 8900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-03-09 11:47:21.945  INFO 8900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-03-09 11:47:21.945  INFO 8900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-03-09 11:47:21.945  INFO 8900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-09 11:47:21.959  INFO 8900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-03-09 11:47:22.067  INFO 8900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 11:47:22.067  INFO 8900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1809 ms
+2023-03-09 11:47:22.274  INFO 8900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 11:47:22.276  WARN 8900 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-09 11:47:22.817  INFO 8900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 11:47:24.066  INFO 8900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 11:47:24.102  INFO 8900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-03-09 11:47:24.113  INFO 8900 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.882 seconds (JVM running for 7.716)
+2023-03-09 11:47:54.067  INFO 8900 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 11:47:54.068  INFO 8900 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 11:47:54.071  INFO 8900 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-09 11:55:16.928  INFO 3496 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 3496 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-03-09 11:55:16.931  INFO 3496 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-03-09 11:55:16.992  INFO 3496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 11:55:16.993  INFO 3496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 11:55:18.004  INFO 3496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-09 11:55:18.013  INFO 3496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 11:55:18.050  INFO 3496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-03-09 11:55:18.749  INFO 3496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-03-09 11:55:18.759  INFO 3496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 11:55:18.759  INFO 3496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-09 11:55:18.762  INFO 3496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-03-09 11:55:18.762  INFO 3496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-03-09 11:55:18.762  INFO 3496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-03-09 11:55:18.762  INFO 3496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-09 11:55:18.813  INFO 3496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-03-09 11:55:18.922  INFO 3496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 11:55:18.922  INFO 3496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+2023-03-09 11:55:19.106  INFO 3496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 11:55:19.107  WARN 3496 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-09 11:55:19.627  INFO 3496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 11:55:20.806  INFO 3496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 11:55:20.843  INFO 3496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-03-09 11:55:20.854  INFO 3496 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.732 seconds (JVM running for 6.75)
+2023-03-09 11:55:43.287  INFO 3496 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 11:55:43.288  INFO 3496 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 11:55:43.291  INFO 3496 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-09 12:00:50.706  INFO 16624 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 16624 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-03-09 12:00:50.710  INFO 16624 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-03-09 12:00:50.776  INFO 16624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 12:00:50.776  INFO 16624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 12:00:51.598  INFO 16624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-09 12:00:51.601  INFO 16624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 12:00:51.631  INFO 16624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-03-09 12:00:52.187  INFO 16624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-03-09 12:00:52.195  INFO 16624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 12:00:52.195  INFO 16624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-09 12:00:52.197  INFO 16624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-03-09 12:00:52.198  INFO 16624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-03-09 12:00:52.198  INFO 16624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-03-09 12:00:52.198  INFO 16624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-09 12:00:52.202  INFO 16624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-03-09 12:00:52.298  INFO 16624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 12:00:52.298  INFO 16624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1521 ms
+2023-03-09 12:00:52.452  INFO 16624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 12:00:52.453  WARN 16624 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-09 12:00:52.950  INFO 16624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 12:00:53.998  INFO 16624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 12:00:54.027  INFO 16624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-03-09 12:00:54.037  INFO 16624 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 3.997 seconds (JVM running for 5.629)
+2023-03-09 12:01:01.564  INFO 16624 --- [http-nio-8096-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 12:01:01.565  INFO 16624 --- [http-nio-8096-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 12:01:01.568  INFO 16624 --- [http-nio-8096-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-09 12:02:06.716  INFO 16624 --- [http-nio-8096-exec-7] i.q.d.handler.MyMetaObjectHandler        : update fill start...
+2023-03-09 12:10:11.217  WARN 16624 --- [http-nio-8096-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'articleId' for method parameter type Long is not present]
+2023-03-09 12:20:34.311  WARN 16624 --- [http-nio-8096-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'articleId' for method parameter type Long is not present]
+2023-03-09 13:08:04.547  INFO 16624 --- [http-nio-8096-exec-5] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:08:04.791 ERROR 16624 --- [http-nio-8096-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+### The error may involve icu.qihangduan.dachuang_server.mapper.LikesMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO d_likes  ( id, article_id, user_id, created_at )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+; Column 'created_at' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null] with root cause
 
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
+java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy99.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy69.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.baomidou.mybatisplus.core.override.PageMapperMethod.execute(PageMapperMethod.java:68) ~[mybatis-plus-core-3.0.5.jar:na]
+	at com.baomidou.mybatisplus.core.override.PageMapperProxy.invoke(PageMapperProxy.java:64) ~[mybatis-plus-core-3.0.5.jar:na]
+	at com.sun.proxy.$Proxy72.insert(Unknown Source) ~[na:na]
+	at icu.qihangduan.dachuang_server.service.impl.UtilServiceImpl.likeArticle(UtilServiceImpl.java:64) ~[classes/:na]
+	at icu.qihangduan.dachuang_server.controller.OtherController.likeArticles(OtherController.java:54) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
@@ -96,19 +202,85 @@ java.lang.IllegalArgumentException: Empty key
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
 
-2023-03-08 15:30:21.084 ERROR 15428 --- [http-nio-8096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key] with root cause
+2023-03-09 13:11:30.896  INFO 9472 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 9472 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-03-09 13:11:30.899  INFO 9472 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-03-09 13:11:30.966  INFO 9472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 13:11:30.966  INFO 9472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 13:11:32.189  INFO 9472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-09 13:11:32.194  INFO 9472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 13:11:32.259  INFO 9472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2023-03-09 13:11:32.982  INFO 9472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-03-09 13:11:32.993  INFO 9472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 13:11:32.993  INFO 9472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-09 13:11:32.996  INFO 9472 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-03-09 13:11:32.996  INFO 9472 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-03-09 13:11:32.996  INFO 9472 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-03-09 13:11:32.996  INFO 9472 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-09 13:11:33.011  INFO 9472 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-03-09 13:11:33.109  INFO 9472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 13:11:33.109  INFO 9472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
+2023-03-09 13:11:33.289  INFO 9472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 13:11:33.291  WARN 9472 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-09 13:11:33.808  INFO 9472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 13:11:34.923  INFO 9472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 13:11:34.953  INFO 9472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-03-09 13:11:34.964  INFO 9472 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.617 seconds (JVM running for 6.099)
+2023-03-09 13:11:44.538  INFO 9472 --- [http-nio-8096-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 13:11:44.538  INFO 9472 --- [http-nio-8096-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 13:11:44.540  INFO 9472 --- [http-nio-8096-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-09 13:12:01.152  INFO 9472 --- [http-nio-8096-exec-1] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:12:35.459  INFO 9472 --- [http-nio-8096-exec-6] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:12:35.571 ERROR 9472 --- [http-nio-8096-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+### The error may involve icu.qihangduan.dachuang_server.mapper.FavoritesMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO d_favorites  ( id, article_id, user_id, created_at )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+; Column 'created_at' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null] with root cause
 
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
+java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy99.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy69.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.baomidou.mybatisplus.core.override.PageMapperMethod.execute(PageMapperMethod.java:68) ~[mybatis-plus-core-3.0.5.jar:na]
+	at com.baomidou.mybatisplus.core.override.PageMapperProxy.invoke(PageMapperProxy.java:64) ~[mybatis-plus-core-3.0.5.jar:na]
+	at com.sun.proxy.$Proxy73.insert(Unknown Source) ~[na:na]
+	at icu.qihangduan.dachuang_server.service.impl.UtilServiceImpl.favoritesArticle(UtilServiceImpl.java:79) ~[classes/:na]
+	at icu.qihangduan.dachuang_server.controller.OtherController.favoritesArticles(OtherController.java:82) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
@@ -145,243 +317,59 @@ java.lang.IllegalArgumentException: Empty key
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
 
-2023-03-08 15:30:21.476 ERROR 15428 --- [http-nio-8096-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+2023-03-09 13:13:49.609  INFO 9472 --- [http-nio-8096-exec-4] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:13:52.616  INFO 9472 --- [http-nio-8096-exec-6] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:13:52.666 ERROR 9472 --- [http-nio-8096-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+### The error may involve icu.qihangduan.dachuang_server.mapper.FavoritesMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO d_favorites  ( id, article_id, user_id, created_at )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+; Column 'created_at' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null] with root cause
 
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:30:21.477 ERROR 15428 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-Caused by: java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	... 32 common frames omitted
-
-2023-03-08 15:30:21.484 ERROR 15428 --- [http-nio-8096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:30:21.486 ERROR 15428 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-Caused by: java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	... 32 common frames omitted
-
-2023-03-08 15:32:15.567  INFO 18868 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 18868 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 15:32:15.571  INFO 18868 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 15:32:15.623  INFO 18868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 15:32:15.623  INFO 18868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 15:32:16.361  INFO 18868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 15:32:16.364  INFO 18868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 15:32:16.393  INFO 18868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-2023-03-08 15:32:16.953  INFO 18868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 15:32:16.963  INFO 18868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 15:32:16.963  INFO 18868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 15:32:16.965  INFO 18868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 15:32:16.965  INFO 18868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 15:32:16.966  INFO 18868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 15:32:16.966  INFO 18868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 15:32:16.969  INFO 18868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 15:32:17.071  INFO 18868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 15:32:17.071  INFO 18868 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1447 ms
-2023-03-08 15:32:17.214  INFO 18868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 15:32:17.216  WARN 18868 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 15:32:17.705  INFO 18868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 15:32:18.821  INFO 18868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 15:32:18.853  INFO 18868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 15:32:18.863  INFO 18868 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 3.735 seconds (JVM running for 5.007)
-2023-03-08 15:33:00.570  INFO 18868 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 15:33:00.570  INFO 18868 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 15:33:00.571  INFO 18868 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-08 15:34:26.961 ERROR 18868 --- [http-nio-8096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key] with root cause
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
+java.sql.SQLIntegrityConstraintViolationException: Column 'created_at' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy99.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy69.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.baomidou.mybatisplus.core.override.PageMapperMethod.execute(PageMapperMethod.java:68) ~[mybatis-plus-core-3.0.5.jar:na]
+	at com.baomidou.mybatisplus.core.override.PageMapperProxy.invoke(PageMapperProxy.java:64) ~[mybatis-plus-core-3.0.5.jar:na]
+	at com.sun.proxy.$Proxy73.insert(Unknown Source) ~[na:na]
+	at icu.qihangduan.dachuang_server.service.impl.UtilServiceImpl.favoritesArticle(UtilServiceImpl.java:79) ~[classes/:na]
+	at icu.qihangduan.dachuang_server.controller.OtherController.favoritesArticles(OtherController.java:82) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_141]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
@@ -418,802 +406,35 @@ java.lang.IllegalArgumentException: Empty key
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
 
-2023-03-08 15:34:27.361 ERROR 18868 --- [http-nio-8096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:34:27.363 ERROR 18868 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-Caused by: java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	... 32 common frames omitted
-
-2023-03-08 15:35:03.826 ERROR 18868 --- [http-nio-8096-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key] with root cause
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:35:04.214 ERROR 18868 --- [http-nio-8096-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:35:04.215 ERROR 18868 --- [http-nio-8096-exec-7] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-Caused by: java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	... 32 common frames omitted
-
-2023-03-08 15:39:53.796  INFO 15940 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 15940 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 15:39:53.799  INFO 15940 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 15:39:53.888  INFO 15940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 15:39:53.888  INFO 15940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 15:39:54.897  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 15:39:54.901  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 15:39:54.944  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-2023-03-08 15:39:55.683  INFO 15940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 15:39:55.695  INFO 15940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 15:39:55.696  INFO 15940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 15:39:55.698  INFO 15940 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 15:39:55.698  INFO 15940 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 15:39:55.698  INFO 15940 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 15:39:55.699  INFO 15940 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 15:39:55.714  INFO 15940 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 15:39:55.840  INFO 15940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 15:39:55.840  INFO 15940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1951 ms
-2023-03-08 15:39:56.070  INFO 15940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 15:39:56.072  WARN 15940 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 15:39:56.574  INFO 15940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 15:39:57.837  INFO 15940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 15:39:57.880  INFO 15940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 15:39:57.892  INFO 15940 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.613 seconds (JVM running for 5.896)
-2023-03-08 15:40:01.079  INFO 15940 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 15:40:01.079  INFO 15940 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 15:40:01.080  INFO 15940 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-08 15:40:02.408 ERROR 15940 --- [http-nio-8096-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key] with root cause
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:40:02.896 ERROR 15940 --- [http-nio-8096-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:40:02.897 ERROR 15940 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-Caused by: java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	... 32 common frames omitted
-
-2023-03-08 15:41:35.553 ERROR 15940 --- [http-nio-8096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key] with root cause
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:41:35.944 ERROR 15940 --- [http-nio-8096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
-
-java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-
-2023-03-08 15:41:35.945 ERROR 15940 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Empty key
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_141]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_141]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
-Caused by: java.lang.IllegalArgumentException: Empty key
-	at javax.crypto.spec.SecretKeySpec.<init>(SecretKeySpec.java:96) ~[na:1.8.0_121]
-	at com.auth0.jwt.algorithms.CryptoHelper.createSignatureFor(CryptoHelper.java:61) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:44) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.CryptoHelper.verifySignatureFor(CryptoHelper.java:27) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:48) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:277) ~[java-jwt-3.10.3.jar:3.10.3]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:261) ~[java-jwt-3.10.3.jar:3.10.3]
-	at icu.qihangduan.dachuang_server.interceptor.JWTinterceptor.preHandle(JWTinterceptor.java:62) ~[classes/:na]
-	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1059) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	... 32 common frames omitted
-
-2023-03-08 15:46:06.779  INFO 4180 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 4180 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 15:46:06.782  INFO 4180 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 15:46:06.835  INFO 4180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 15:46:06.835  INFO 4180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 15:46:07.766  INFO 4180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 15:46:07.768  INFO 4180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 15:46:07.801  INFO 4180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2023-03-08 15:46:08.374  INFO 4180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 15:46:08.383  INFO 4180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 15:46:08.383  INFO 4180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 15:46:08.386  INFO 4180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 15:46:08.386  INFO 4180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 15:46:08.386  INFO 4180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 15:46:08.387  INFO 4180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 15:46:08.390  INFO 4180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 15:46:08.550  INFO 4180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 15:46:08.551  INFO 4180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1715 ms
-2023-03-08 15:46:08.760  INFO 4180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 15:46:08.762  WARN 4180 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 15:46:09.282  INFO 4180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 15:46:10.446  INFO 4180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 15:46:10.490  INFO 4180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 15:46:10.503  INFO 4180 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.183 seconds (JVM running for 5.955)
-2023-03-08 15:46:20.457  INFO 4180 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 15:46:20.458  INFO 4180 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 15:46:20.460  INFO 4180 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-08 15:57:27.841  WARN 4180 --- [http-nio-8096-exec-8] o.s.web.servlet.PageNotFound             : No mapping for POST /selfById
-2023-03-08 15:57:27.839  WARN 4180 --- [http-nio-8096-exec-9] o.s.web.servlet.PageNotFound             : No mapping for POST /self
-2023-03-08 15:58:23.464  WARN 4180 --- [http-nio-8096-exec-7] o.s.web.servlet.PageNotFound             : No mapping for POST /selfById
-2023-03-08 15:58:23.466  WARN 4180 --- [http-nio-8096-exec-8] o.s.web.servlet.PageNotFound             : No mapping for POST /self
-2023-03-08 15:58:37.696  WARN 4180 --- [http-nio-8096-exec-4] o.s.web.servlet.PageNotFound             : No mapping for POST /selfById
-2023-03-08 15:58:37.698  WARN 4180 --- [http-nio-8096-exec-3] o.s.web.servlet.PageNotFound             : No mapping for POST /self
-2023-03-08 16:02:12.965  WARN 4180 --- [http-nio-8096-exec-5] o.s.web.servlet.PageNotFound             : No mapping for POST /selfById
-2023-03-08 16:02:12.966  WARN 4180 --- [http-nio-8096-exec-8] o.s.web.servlet.PageNotFound             : No mapping for POST /self
-2023-03-08 16:03:54.551  WARN 4180 --- [http-nio-8096-exec-6] o.s.web.servlet.PageNotFound             : No mapping for POST /selfById
-2023-03-08 16:03:54.552  WARN 4180 --- [http-nio-8096-exec-5] o.s.web.servlet.PageNotFound             : No mapping for POST /self
-2023-03-08 16:08:25.472  WARN 4180 --- [http-nio-8096-exec-5] o.s.web.servlet.PageNotFound             : No mapping for POST /selfById
-2023-03-08 16:08:25.477  WARN 4180 --- [http-nio-8096-exec-6] o.s.web.servlet.PageNotFound             : No mapping for POST /self
-2023-03-08 16:09:13.218  WARN 4180 --- [http-nio-8096-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:10:28.582  WARN 4180 --- [http-nio-8096-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:10:35.132  WARN 4180 --- [http-nio-8096-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:12:59.735  WARN 4180 --- [http-nio-8096-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:13:16.414  WARN 4180 --- [http-nio-8096-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:16:32.131  INFO 14360 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 14360 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 16:16:32.135  INFO 14360 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 16:16:32.215  INFO 14360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 16:16:32.215  INFO 14360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 16:16:33.344  INFO 14360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 16:16:33.353  INFO 14360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 16:16:33.385  INFO 14360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2023-03-08 16:16:34.134  INFO 14360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 16:16:34.145  INFO 14360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 16:16:34.145  INFO 14360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 16:16:34.147  INFO 14360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 16:16:34.147  INFO 14360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 16:16:34.147  INFO 14360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 16:16:34.147  INFO 14360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 16:16:34.164  INFO 14360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 16:16:34.269  INFO 14360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 16:16:34.270  INFO 14360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2054 ms
-2023-03-08 16:16:34.457  INFO 14360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 16:16:34.459  WARN 14360 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 16:16:35.003  INFO 14360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 16:16:36.147  INFO 14360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 16:16:36.185  INFO 14360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 16:16:36.196  INFO 14360 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.774 seconds (JVM running for 6.701)
-2023-03-08 16:16:54.657  INFO 14360 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 16:16:54.658  INFO 14360 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 16:16:54.660  INFO 14360 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-08 16:17:00.770  WARN 14360 --- [http-nio-8096-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:19:39.400  WARN 14360 --- [http-nio-8096-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:19:57.368  WARN 14360 --- [http-nio-8096-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:21:23.053  WARN 14360 --- [http-nio-8096-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:33:39.432  INFO 21156 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 21156 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 16:33:39.436  INFO 21156 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 16:33:39.490  INFO 21156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 16:33:39.491  INFO 21156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 16:33:40.462  INFO 21156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 16:33:40.465  INFO 21156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 16:33:40.504  INFO 21156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2023-03-08 16:33:41.179  INFO 21156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 16:33:41.189  INFO 21156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 16:33:41.190  INFO 21156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 16:33:41.192  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 16:33:41.193  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 16:33:41.193  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 16:33:41.193  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 16:33:41.207  INFO 21156 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 16:33:41.345  INFO 21156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 16:33:41.345  INFO 21156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
-2023-03-08 16:33:41.571  INFO 21156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 16:33:41.573  WARN 21156 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 16:33:42.132  INFO 21156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 16:33:43.316  INFO 21156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 16:33:43.346  INFO 21156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 16:33:43.355  INFO 21156 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.572 seconds (JVM running for 6.381)
-2023-03-08 16:35:30.521  INFO 21156 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 16:35:30.521  INFO 21156 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 16:35:30.524  INFO 21156 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-03-08 16:38:47.238  WARN 21156 --- [http-nio-8096-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2023-03-08 16:41:25.760  WARN 21156 --- [http-nio-8096-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:42:36.241  WARN 21156 --- [http-nio-8096-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2023-03-08 16:43:22.243  WARN 21156 --- [http-nio-8096-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:44:24.946  WARN 21156 --- [http-nio-8096-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:44:36.507  WARN 21156 --- [http-nio-8096-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:45:18.407  WARN 21156 --- [http-nio-8096-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:45:29.012  WARN 21156 --- [http-nio-8096-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:45:40.786  WARN 21156 --- [http-nio-8096-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:46:28.970  WARN 21156 --- [http-nio-8096-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:52:23.504  INFO 11540 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 11540 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 16:52:23.507  INFO 11540 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 16:52:23.566  INFO 11540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 16:52:23.566  INFO 11540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 16:52:24.553  INFO 11540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 16:52:24.556  INFO 11540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 16:52:24.595  INFO 11540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2023-03-08 16:52:25.427  INFO 11540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 16:52:25.441  INFO 11540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 16:52:25.442  INFO 11540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 16:52:25.445  INFO 11540 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 16:52:25.446  INFO 11540 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 16:52:25.446  INFO 11540 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 16:52:25.446  INFO 11540 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 16:52:25.461  INFO 11540 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 16:52:25.595  INFO 11540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 16:52:25.595  INFO 11540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2028 ms
-2023-03-08 16:52:25.827  INFO 11540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 16:52:25.830  WARN 11540 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 16:52:26.372  INFO 11540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 16:52:28.486  INFO 11540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 16:52:28.545  INFO 11540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 16:52:28.568  INFO 11540 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 5.65 seconds (JVM running for 7.699)
-2023-03-08 16:52:29.992  INFO 11540 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 16:52:29.992  INFO 11540 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 16:52:30.004  INFO 11540 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2023-03-08 16:52:31.541  WARN 11540 --- [http-nio-8096-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 16:54:23.654  WARN 11540 --- [http-nio-8096-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 17:02:18.124  WARN 11540 --- [http-nio-8096-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 17:04:38.882  WARN 11540 --- [http-nio-8096-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 17:04:47.670  WARN 11540 --- [http-nio-8096-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type Long is not present]
-2023-03-08 17:08:19.686  INFO 9632 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 9632 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 17:08:19.689  INFO 9632 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 17:08:19.747  INFO 9632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 17:08:19.747  INFO 9632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 17:08:20.554  INFO 9632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 17:08:20.557  INFO 9632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 17:08:20.591  INFO 9632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2023-03-08 17:08:21.477  INFO 9632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 17:08:21.493  INFO 9632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 17:08:21.493  INFO 9632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 17:08:21.496  INFO 9632 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 17:08:21.497  INFO 9632 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 17:08:21.497  INFO 9632 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 17:08:21.498  INFO 9632 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 17:08:21.515  INFO 9632 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 17:08:21.740  INFO 9632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 17:08:21.741  INFO 9632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
-2023-03-08 17:08:21.978  INFO 9632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 17:08:21.981  WARN 9632 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 17:08:22.491  INFO 9632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 17:08:24.030  INFO 9632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 17:08:24.082  INFO 9632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 17:08:24.096  INFO 9632 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 5.095 seconds (JVM running for 7.289)
-2023-03-08 17:08:29.213  INFO 9632 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 17:08:29.213  INFO 9632 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 17:08:29.215  INFO 9632 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-08 17:08:41.799  WARN 9632 --- [http-nio-8096-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: (PushbackInputStream); line: 1, column: 1]]
-2023-03-08 17:17:56.504  WARN 9632 --- [http-nio-8096-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: (PushbackInputStream); line: 1, column: 1]]
-2023-03-08 17:18:03.780  WARN 9632 --- [http-nio-8096-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: (PushbackInputStream); line: 1, column: 1]]
-2023-03-08 17:18:29.184  WARN 9632 --- [http-nio-8096-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2023-03-08 17:18:29.200  WARN 9632 --- [http-nio-8096-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2023-03-08 17:18:59.075  INFO 20308 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 20308 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 17:18:59.078  INFO 20308 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 17:18:59.135  INFO 20308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 17:18:59.135  INFO 20308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 17:18:59.981  INFO 20308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 17:18:59.983  INFO 20308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 17:19:00.024  INFO 20308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-2023-03-08 17:19:00.680  INFO 20308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 17:19:00.689  INFO 20308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 17:19:00.689  INFO 20308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 17:19:00.691  INFO 20308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 17:19:00.691  INFO 20308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 17:19:00.692  INFO 20308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 17:19:00.692  INFO 20308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 17:19:00.706  INFO 20308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 17:19:00.815  INFO 20308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 17:19:00.815  INFO 20308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1679 ms
-2023-03-08 17:19:01.122  INFO 20308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 17:19:01.126  WARN 20308 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 17:19:01.634  INFO 20308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 17:19:02.980  INFO 20308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 17:19:03.020  INFO 20308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 17:19:03.031  INFO 20308 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.453 seconds (JVM running for 6.043)
-2023-03-08 17:19:21.388  INFO 20308 --- [http-nio-8096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 17:19:21.389  INFO 20308 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 17:19:21.390  INFO 20308 --- [http-nio-8096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-08 17:19:21.408  WARN 20308 --- [http-nio-8096-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2023-03-08 17:19:35.391  WARN 20308 --- [http-nio-8096-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public icu.qihangduan.dachuang_server.common.Resp icu.qihangduan.dachuang_server.controller.user.UserController.getUserById(java.lang.Long)]
-2023-03-08 17:20:15.452  INFO 9368 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 9368 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
-2023-03-08 17:20:15.462  INFO 9368 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
-2023-03-08 17:20:15.581  INFO 9368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-08 17:20:15.581  INFO 9368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-08 17:20:16.610  INFO 9368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-08 17:20:16.614  INFO 9368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-08 17:20:16.652  INFO 9368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2023-03-08 17:20:17.272  INFO 9368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
-2023-03-08 17:20:17.287  INFO 9368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-08 17:20:17.287  INFO 9368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2023-03-08 17:20:17.290  INFO 9368 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-03-08 17:20:17.291  INFO 9368 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2023-03-08 17:20:17.291  INFO 9368 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2023-03-08 17:20:17.291  INFO 9368 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-03-08 17:20:17.307  INFO 9368 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2023-03-08 17:20:17.439  INFO 9368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-08 17:20:17.439  INFO 9368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
-2023-03-08 17:20:17.669  INFO 9368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-08 17:20:17.671  WARN 9368 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-03-08 17:20:18.192  INFO 9368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-08 17:20:19.318  INFO 9368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-08 17:20:19.356  INFO 9368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
-2023-03-08 17:20:19.368  INFO 9368 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.434 seconds (JVM running for 5.789)
-2023-03-08 17:20:23.603  INFO 9368 --- [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-08 17:20:23.604  INFO 9368 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-08 17:20:23.606  INFO 9368 --- [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-08 17:44:08.717  WARN 9368 --- [http-nio-8096-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'pageNum' for method parameter type int is not present]
-2023-03-08 17:47:11.578  WARN 9368 --- [http-nio-8096-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'articleId' for method parameter type Long is not present]
+2023-03-09 13:14:10.723  INFO 1952 --- [restartedMain] i.q.d.DachuangServerApplication          : Starting DachuangServerApplication using Java 1.8.0_141 on LAPTOP-QHFK85TB with PID 1952 (D:\dachuang\server\target\classes started by knight1527 in D:\dachuang\server)
+2023-03-09 13:14:10.726  INFO 1952 --- [restartedMain] i.q.d.DachuangServerApplication          : No active profile set, falling back to default profiles: default
+2023-03-09 13:14:10.783  INFO 1952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 13:14:10.784  INFO 1952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 13:14:11.734  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-09 13:14:11.747  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 13:14:11.782  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-03-09 13:14:12.414  INFO 1952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+2023-03-09 13:14:12.424  INFO 1952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 13:14:12.424  INFO 1952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-09 13:14:12.426  INFO 1952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-03-09 13:14:12.427  INFO 1952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2023-03-09 13:14:12.427  INFO 1952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-03-09 13:14:12.427  INFO 1952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-09 13:14:12.431  INFO 1952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2023-03-09 13:14:12.535  INFO 1952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 13:14:12.535  INFO 1952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1751 ms
+2023-03-09 13:14:12.702  INFO 1952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 13:14:12.704  WARN 1952 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-09 13:14:13.221  INFO 1952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 13:14:14.212  INFO 1952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 13:14:14.241  INFO 1952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+2023-03-09 13:14:14.250  INFO 1952 --- [restartedMain] i.q.d.DachuangServerApplication          : Started DachuangServerApplication in 4.157 seconds (JVM running for 6.089)
+2023-03-09 13:14:18.251  INFO 1952 --- [http-nio-8096-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 13:14:18.252  INFO 1952 --- [http-nio-8096-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 13:14:18.253  INFO 1952 --- [http-nio-8096-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-09 13:14:29.540  INFO 1952 --- [http-nio-8096-exec-9] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:14:31.179  WARN 1952 --- [http-nio-8096-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /cancelFavorites_a
+2023-03-09 13:16:22.765  INFO 1952 --- [http-nio-8096-exec-4] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:16:29.275  INFO 1952 --- [http-nio-8096-exec-8] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:16:56.512  INFO 1952 --- [http-nio-8096-exec-2] i.q.d.handler.MyMetaObjectHandler        : insert fill start...
+2023-03-09 13:17:06.005  INFO 1952 --- [http-nio-8096-exec-7] i.q.d.handler.MyMetaObjectHandler        : insert fill start...

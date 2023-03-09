@@ -89,8 +89,6 @@ public class EventServiceImpl implements EventService {
         }else{
             event.setStatus("已结束");
         }
-        //markdown转HTML
-        event.setDescription(MarkdownUtil.genHTML(event.getDescription()));
     }
 
     @Override

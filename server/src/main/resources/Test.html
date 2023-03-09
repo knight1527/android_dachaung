@@ -6,89 +6,120 @@
 </head>
 <body>
     <div style="margin: 20px">
-        <h4>Git与SVN的区别</h4>
-        <pre><code class="language-markdown">svn是集中式版本控制系统，版本库是集中放在中央服务器的，而工作
-的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，
-然后工作，工作完成后，需要把自己做完的或推送到中央服务器。集中式版本控
-制系统是必须联网才能工作，对网络贷款要求较高。
-
-
-Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个
-完整的版本库，工作的时候不需要联网了，因为版本都是在自己电脑上，
-协同的方法：比如自己再电脑上改变了文件A，这时，你们两之间只需
-把各自的修改推送给对方，就可以互相看到对方的修改了。
+        <h2 id="问题引入">问题引入</h2>
+        <p>百度百科：<a href="https://baike.baidu.com/item/%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/11053477?fr=aladdin" target="_blank">八皇后问题</a></p>
+        <h3 id="简述">简述：</h3>
+        <p>在8×8格的<a href="https://baike.baidu.com/item/国际象棋/80888" target="_blank">国际象棋</a>上摆放8个<a href="https://baike.baidu.com/item/皇后/15860305" target="_blank">皇后</a>，使其不能互相攻击，即任意两个皇后都不能处于同一行、同一列或同一斜线上，问有多少种摆法。</p>
+        <p>这是一个典型的DFS回溯算法应用题，通过解这个题可以明确DFS算法的思路和步骤。</p>
+        <h2 id="思路">思路</h2>
+        <p>由问题知道每行每列每条对角线都只能有一个皇后，所以需要用数组来记录每种条件的使用情况。其中每行的使用情况可以作为参数放在方法中，并为结束条件提供便利。</p>
+        <h3 id="dfs算法基本步骤">DFS算法基本步骤</h3>
+        <p>要注意递归结束条件和回溯</p>
+        <pre><code class="language-java">static void dfs(){
+    //1.结束条件
+    if (...) {return;}
+    //2.遍历所有可能
+    fori(){
+        if(递归条件){
+            //2.1递归前的操作(改变条件信息)
+            ...
+            dfs();
+            //2.2回溯（也叫恢复现场）
+            ...
+        }
+    }
+    //3.其他特殊操作
+}
 </code></pre>
+        <h3 id="注意">注意</h3>
+        <p>值得注意的是对角线的维护数组的创建思路</p>
         <blockquote>
-            <p>tips:	资源下载速度较慢解决方案：找国内镜像
-                如：<a href="https://npm.taobao.org/mirrors/git-for-windows/">https://npm.taobao.org/mirrors/git-for-windows/</a></p>
+            <p>主对角线：<code>row - col</code>规律如图</p>
         </blockquote>
-        <h4>Git基本理论：</h4>
+        <p><img src="https://pic-home.oss-cn-beijing.aliyuncs.com/img/image-20220321202855992.png" alt="image-20220321202855992" /></p>
         <blockquote>
-            <p>工作原理：</p>
+            <p>次对角线：<code>row + col</code>规律</p>
         </blockquote>
-        <p>git本地有三个工作区域：工作目录（working directory），暂存区（stage、index），资源库（respository）。如果在加上远程的仓库（remote directory）就可以分为四个工作区域。文件在四个区域之间的关系如下：</p>
-        <center>
-            <img src="https://pic-home.oss-cn-beijing.aliyuncs.com/img/picture/MarkP_commit/屏幕截图 2021-05-01 232619.png">
-            <blockquote>
-                <p>工作目录(工作区)：  工程文件夹
-                    Index/Stage(暂存区) ：  临时存放改动
-                    Respository(仓库区/本地仓库):   安全存放数据的位置，这里面有你提交到所有版本的数据，其中HEAD指向最新放入仓库的版本
-                    Remote:  远程仓库</p>
-            </blockquote>
-            <pre><code>工作流程：
+        <p><img src="https://pic-home.oss-cn-beijing.aliyuncs.com/img/image-20220321203244507.png" alt="image-20220321203244507" /></p>
+        <p>主次对角线各14条，主对角线<code>main_diagonal[row - col + 7]</code>即是对应某条主对角线的使用状态，同理次对角线为<code>sec_diagonal[row + col]</code></p>
+        <h2 id="打印所有92种排列的代码">打印所有92种排列的代码</h2>
+        <pre><code class="language-java">
+public class 八皇后问题 {
+    static final int EI = 8, FT = 15;
+    static int[][] map = new int[EI][EI];
+    static boolean[] col = new boolean[EI];
+    static boolean[] main_diagonal = new boolean[FT];
+    static boolean[] sec_diagonal = new boolean[FT];
+    static int result = 0;
 
-一：本地提交
-0. git init #初始化本地仓库（一次）
-1：git add . 			   #把所有文件加入暂存区
-2：git commit -m &quot;Message&quot; #将暂存区文件加入本地仓库
-3：git  push origin master  #提交到远程仓库
+    static void dfs(int n){
+        if (n &gt;= EI){
+            soutMap();
+            return;
+        }
+        for (int i = 0; i &lt; EI; i++) {
+            if (check(n , i)){
+                map[n][i] = 1;
+                act(n, i, true);
+                dfs(n + 1);
+                //回溯
+                act(n, i, false);
+                map[n][i] = 0;
+            }
+        }
+    }
+    static boolean check(int n, int i){
+        return !col[i] &amp;&amp; !main_diagonal[n - i + EI - 1] &amp;&amp; !sec_diagonal[n + i];
+    }
+    static void act(int n, int i, boolean rel){
+        col[i] = rel;
+        main_diagonal[n - i + EI - 1] = rel;
+        sec_diagonal[n + i] = rel;
+    }
+    static void soutMap(){
+        result++;
+        for (int[] i : map){
+            for (int j : i){
+                if(j == 1) System.out.print(&quot;*&quot; + &quot; &quot;);
+                else System.out.print(&quot;0&quot; + &quot; &quot;);
+            }
+            System.out.println();
+        }
+        System.out.println(&quot;++++++++++++++++++++&quot;);
+    }
 
-二：克隆远程仓库
-1： git clone [url]  #克隆仓库地址
+    public static void main(String[] args) {
+        dfs(0);
+        System.out.println(&quot;总共有&quot; + result + &quot;种排列方式！&quot;);
+    }
+}
 </code></pre>
-            <h4>git文件操作</h4>
-            <blockquote>
-                <p>#查看文件状态
-                    git status
-                    #查看指定文件状态
-                    git status [filename]</p>
-            </blockquote>
-            <p>==忽略文件：==
-                在主目录下建立 .gitignore 文件，文件规则如下：</p>
-            <center>
-                <img src="https://pic-home.oss-cn-beijing.aliyuncs.com/img/picture/2021-5-2/1619964657684-gitFIleM.png">
-                <h4>使用</h4>
-                <p>==配置远程连接==</p>
-                <pre><code class="language-java">在任意目录git bash输入：ssh-keygen 生成本地公钥
-#加密生成：ssh-keygen -t rsa[添加链接描述](https://www.bilibili.com/video/BV1FE411P7B3?p=12)
-#生成地址：C:\Users\用户名\.ssh
+        <pre><code class="language-java">//打印结果后面部分
+......
+++++++++++++++++++++
+0 0 0 0 0 0 0 *
+0 0 * 0 0 0 0 0
+* 0 0 0 0 0 0 0
+0 0 0 0 0 * 0 0
+0 * 0 0 0 0 0 0
+0 0 0 0 * 0 0 0
+0 0 0 0 0 0 * 0
+0 0 0 * 0 0 0 0
+++++++++++++++++++++
+0 0 0 0 0 0 0 *
+0 0 0 * 0 0 0 0
+* 0 0 0 0 0 0 0
+0 0 * 0 0 0 0 0
+0 0 0 0 0 * 0 0
+0 * 0 0 0 0 0 0
+0 0 0 0 0 0 * 0
+0 0 0 0 * 0 0 0
+++++++++++++++++++++
+总共有92种排列方式！
 
-将目录中的 .pub（public公钥文件）文件内容copy到远程仓库生成公钥的地方
-
-将仓库clone到本地
 </code></pre>
-                <p>==IDEA使用git==</p>
-                <pre><code class="language-java">创建本地idea工程文件目录（最好和克隆的仓库目录在同一级）
-将克隆仓库文件夹里面所有内容复制到工程文件下
-
-#或者直接在仓库目录下创建idea工程
-</code></pre>
-                <p>参考：<a href="https://www.bilibili.com/video/BV1FE411P7B3?p=12">狂神说说git</a></p>
-                <h4>git分支说明</h4>
-                <blockquote>
-                    <p>多分支仓库：</p>
-                </blockquote>
-                <pre><code class="language-java">#分支查看
-git branch
-#新建分支
-git branch [branchName]  //依然停留在目前分支
-详情：https://www.bilibili.com/video/BV1FE411P7B3?p=13
-</code></pre>
-                <h4>git克隆指定分支</h4>
-                <pre><code class="language-c">git clone -b master ssh
-</code></pre>
-
-
+        <h2 id="总结">总结</h2>
+        <p>对于其他由此问题引出的皇后问题都可以参考此问题代码求解，只需更改特定方法或者参数即可。</p>
     </div>
 </body>
 </html>

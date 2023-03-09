@@ -7,8 +7,6 @@ import icu.qihangduan.dachuang_server.controller.user.dto.UserDto;
 import icu.qihangduan.dachuang_server.exception.ServiceException;
 import icu.qihangduan.dachuang_server.mapper.*;
 import icu.qihangduan.dachuang_server.pojo.*;
-import icu.qihangduan.dachuang_server.service.ArticleService;
-import icu.qihangduan.dachuang_server.service.EventService;
 import icu.qihangduan.dachuang_server.service.UserService;
 import icu.qihangduan.dachuang_server.utils.MD5Utils;
 import icu.qihangduan.dachuang_server.utils.TokenUtil;
@@ -41,6 +39,8 @@ public class UserServiceImpl implements UserService {
     FavoritesMapper favoritesMapper;
     @Autowired
     FavoritesEventMapper favoritesEventMapper;
+    @Autowired
+    LikesMapper likesMapper;
 
     @Override
     public User getUserInfo(UserDto userDto) {
@@ -166,6 +166,17 @@ public class UserServiceImpl implements UserService {
             return eventMapper.selectOne(new QueryWrapper<Event>().eq("id", t.getEventId()));
         }).collect(Collectors.toList());
         user.setFavoritesEvents(events);
+        //获取喜欢的文章的id
+        List<Likes> likes = likesMapper.selectList(new QueryWrapper<Likes>().eq("user_id", user.getId()));
+        List<Long> likesIds = likes.parallelStream().map(t -> {
+           return  articleMapper.selectOne(new QueryWrapper<Article>().eq("id", t.getArticleId())).getId();
+        }).collect(Collectors.toList());
+        user.setLikesArticlesIds(likesIds);
+    }
+
+    @Override
+    public void updateCurrentUser(User user) {
+        userMapper.update(user, new QueryWrapper<User>().eq("id", user.getId()));
     }
 
 }

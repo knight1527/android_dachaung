@@ -39,12 +39,7 @@ const _sfc_main = {
     },
     formatDate: function(time) {
       return function(time2) {
-        let date = new Date(time2);
-        return date.toLocaleString("zh-CN", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit"
-        });
+        return common_vendor.hooks(time2).format("YYYY-MM-DD");
       };
     },
     event_type_show: function() {
@@ -156,6 +151,11 @@ const _sfc_main = {
           duration: 300
         });
       }).exec();
+    },
+    openDetail(id) {
+      common_vendor.index.navigateTo({
+        url: "/pages/events/event_detail/event_detail?id=" + id
+      });
     }
   }
 };
@@ -294,9 +294,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         j: common_vendor.t(event.favoritesNum),
         k: common_vendor.t(event.commentsNum),
         l: common_vendor.t(event.level.name),
-        m: "item-" + index,
-        n: $options.event_type_show(event.type) && $options.event_level_show(event.level),
-        o: event.id
+        m: common_vendor.o(($event) => $options.openDetail(event.id)),
+        n: "item-" + index,
+        o: $options.event_type_show(event.type) && $options.event_level_show(event.level),
+        p: event.id
       };
     }),
     E: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),

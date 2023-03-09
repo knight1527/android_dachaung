@@ -93,8 +93,6 @@ public class ArticleServiceImpl implements ArticleService {
         User user = userMapper.selectOne(new QueryWrapper<User>().eq("id", article.getUserId()));
         user.setPassword("");
         article.setUser(user);
-        //markdown转html
-        article.setContent(MarkdownUtil.genHTML(article.getContent()));
     }
 
     @Override

@@ -7,6 +7,7 @@ import icu.qihangduan.dachuang_server.service.UtilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -61,12 +62,13 @@ public class UtilServiceImpl implements UtilService {
         Likes likes = new Likes();
         likes.setUserId(currentUser.getId());
         likes.setArticleId(article.getId());
-        likesMapper.insert(likes);
+        likes.setCreatedAt(new Date());
+        System.out.println(likesMapper.insert(likes));
     }
     @Override
     public void cancelLikeArticle(User currentUser, Article article) {
-        likesMapper.delete(new QueryWrapper<Likes>().eq("user_id", currentUser.getId()).eq("article_id",
-                article.getId()));
+        System.out.println(likesMapper.delete(new QueryWrapper<Likes>().eq("user_id", currentUser.getId()).eq("article_id",
+                article.getId())));
     }
 
     @Override
@@ -74,6 +76,7 @@ public class UtilServiceImpl implements UtilService {
         Favorites favorites = new Favorites();
         favorites.setUserId(currentUser.getId());
         favorites.setArticleId(article.getId());
+        favorites.setCreatedAt(new Date());
         favoritesMapper.insert(favorites);
     }
 
@@ -88,6 +91,7 @@ public class UtilServiceImpl implements UtilService {
         FavoritesEvent favorites = new FavoritesEvent();
         favorites.setUserId(currentUser.getId());
         favorites.setEventId(event.getId());
+        favorites.setCreatedAt(new Date());
         favoritesEventMapper.insert(favorites);
     }
 

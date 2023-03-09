@@ -9,9 +9,11 @@
 				</uni-col>
 				<uni-col :span="16">
 					<view class="padding_right_50 aligin_center_item_right" style="height: 180rpx;">
-						<button @click="selfUpdate" class="margin_none" size="mini" type="warn"  plain="true" v-show="is_self">编辑</button>
-						<button class="margin_none" size="mini" type="primary" plain="true" v-show="is_focus">关注</button>
-						<button class="margin_none" size="mini" disabled="true" v-show="is_focus">已关注</button>
+						<button @click="selfUpdate" class="margin_none" size="mini" type="warn"  plain="true" v-show="user.id==currentUser.id">编辑</button>
+						<view v-show="user.id!=currentUser.id">
+							<button class="margin_none" size="mini" type="primary" plain="true" v-show="!is_focus" @click="focus(1)">关注</button>
+							<button class="margin_none" size="mini" disabled="true" v-show="is_focus" @click="focus(2)">已关注</button>
+						</view>
 					</view>
 				</uni-col>
 			</view>
@@ -194,12 +196,13 @@
 
 <script>
 	//导入封装的request方法
-	import {$request} from '@/utils/request.js'
+	import {$request} from '@/utils/request.js';
+	import moment from 'moment';
+	import 'moment/locale/zh-cn';
 	var self_
 	export default {
 		data() {
 			return {
-				is_self: true,
 				is_focus: false,
 				/* 导航栏显示 */
 				nav_show: false,
@@ -225,17 +228,11 @@
 			/* 时间格式化 */
 			formatDate: function(time){
 				return function(time){
-					let date = new Date(time)
-					return date.toLocaleString('zh-CN', 
-					{year:'numeric',
-					month: '2-digit',
-					day: '2-digit',
-					});
+					return moment(time).format('YYYY-MM-DD')
 				};
 			},
 		},
 		onLoad(option) {
-			console.log(option.id)
 			console.log(option.id)
 			this.tepId = option.id
 			/* 初始化数据 */
@@ -247,26 +244,26 @@
 				},
 			}).then(res => {
 				this.user = res.data
-				console.log(user)
-				console.log(res.data)
+			
+				/* 获取当前用户 */
+				$request({
+					url: '/user/selfInfo',
+					method: 'Get',
+				}).then(res => {
+					this.currentUser = res.data
+					
+					/* 判断编辑，关注，已关注三个按钮显示哪一个 */
+					self_.judgeSelf()	
+				}).catch(err => {
+					console.log(err.code + err.msg)
+				});
 			}).catch(err => {
 				console.log(err.code + err.msg)
 			});
-			/* 获取当前用户 */
-			$request({
-				url: '/user/selfInfo',
-				method: 'Get',
-			}).then(res => {
-				this.currentUser = res.data
-				console.log(currentUser)
-				console.log(res.data)
-			}).catch(err => {
-				console.log(err.code + err.msg)
-			});
+			
 		},
 		onShow() {
-			/* 判断编辑，关注，已关注三个按钮显示哪一个 */
-			self_.judgeSelf()
+			
 		},
 		created() {
 			self_ = this
@@ -298,20 +295,43 @@
 				})
 			},
 			judgeSelf(){
-				if(this.user.id == this.currentUser.id){
-					this.is_self = true
-				}else{
-					this.is_self = false
-				}
+				
 				if(this.user.focused != null){
 					for(let i = 0; i < this.user.focused.length;i++){
 						if(this.currentUser.id == this.user.focused[i].id){
 							this.is_focus = true;
+							
 							return
 						}
 					}
 				}
 				this.is_focus = false
+				
+			},
+			/* 关注 */
+			focus(type){
+				this.is_focus = !this.is_focus;
+				if(type == 1){
+					$request({
+						url: '/user/focus',
+						method: 'POST',
+						data:{
+							userId: this.user.id
+						}
+					}).then(res => {
+						console.log("关注成功！")
+					}).catch(err => {console.log(err.code + err.msg)});
+				}else{
+					$request({
+						url: '/user/cancelFocus',
+						method: 'POST',
+						data:{
+							userId: this.user.id
+						}
+					}).then(res => {
+						console.log("取消关注成功！")
+					}).catch(err => {console.log(err.code + err.msg)});
+				}
 			},
 		}
 	}

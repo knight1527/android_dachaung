@@ -38,6 +38,8 @@ public class User {
 
     private transient List<Article> articles;
     private transient List<Event> events;
+    //喜欢的文章id
+    private transient List<Long> likesArticlesIds;
     //关注数
     private transient int focusNum;
     //粉丝数
