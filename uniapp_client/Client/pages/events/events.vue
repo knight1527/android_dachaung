@@ -1,5 +1,6 @@
 <template>
 	<view class="container">
+		<view style="height: 50rpx;"></view>
 		<view class="fixed_eventNav">
 			<uni-row>
 				<view style="height: 110rpx;" class="baiyan">
@@ -89,7 +90,7 @@
 		<scroll-view>
 			<!-- 赛事卡片 （卡片中图片默认提供几种）-->
 			<view v-for="(event, index) in events" :key="event.id">
-				<view @click="openDetail(event.id)" :id="'item-' + index" v-show="event_type_show(event.type)&&event_level_show(event.level)"
+				<view @click="openDetail(event.id)" :id="'item-' + index" v-show="event_type_show(event.type)&event_level_show(event.level)"
 				class="margin_top_20 margin_lr_10 box_radius_20 overflowHide baiyan" 
 				style="position: relative;">
 					<!-- 赛事状态 -->
@@ -135,7 +136,7 @@
 			
 			<!-- 加载更多 -->
 			<view class="margin_top_50 aligin_center_item">
-				<uni-load-more @clickLoadMore="clickLoadMore(e)" :status="status" color="#03dac5" :contentText="contentText" iconType="circle"></uni-load-more>
+				<uni-load-more ref="loadMore" @clickLoadMore="clickLoadMore(e)" :status="status" color="#03dac5" :contentText="contentText" iconType="circle"></uni-load-more>
 			</view>
 		</scroll-view>
 		
@@ -260,12 +261,14 @@
 				this.category_index = index
 				console.log(this.category_index)
 				this.$refs.popup_category.close()
+				
 			},
 			choseLevel(index){
 				console.log(this.levels[index])
 				this.level_index = index
 				console.log(this.level_index)
 				this.$refs.popup_level.close()
+				
 			},
 			/* 加载更多 */
 			clickLoadMore(e){

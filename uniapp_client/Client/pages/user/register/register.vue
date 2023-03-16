@@ -132,7 +132,7 @@
 					}
 				}).then(res=>{
 					if(res.code == '200'){
-						uni.setStorageSync('token', res.data.token)
+						uni.setStorageSync('user', res.data)
 					
 						uni.switchTab({
 							url: '/pages/index/index'

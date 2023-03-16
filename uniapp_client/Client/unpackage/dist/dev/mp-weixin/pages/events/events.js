@@ -296,18 +296,19 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         l: common_vendor.t(event.level.name),
         m: common_vendor.o(($event) => $options.openDetail(event.id)),
         n: "item-" + index,
-        o: $options.event_type_show(event.type) && $options.event_level_show(event.level),
+        o: $options.event_type_show(event.type) & $options.event_level_show(event.level),
         p: event.id
       };
     }),
-    E: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
-    F: common_vendor.p({
+    E: common_vendor.sr("loadMore", "30399a9a-16"),
+    F: common_vendor.o(($event) => $options.clickLoadMore(_ctx.e)),
+    G: common_vendor.p({
       status: $data.status,
       color: "#03dac5",
       contentText: $data.contentText,
       iconType: "circle"
     }),
-    G: common_vendor.p({
+    H: common_vendor.p({
       pattern: $data.pattern,
       horizontal: "right",
       vertical: "bottom"

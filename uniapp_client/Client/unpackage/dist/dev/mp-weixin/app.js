@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports[Symbol.toStringTag] = "Module";
 var common_vendor = require("./common/vendor.js");
 if (!Math) {
-  "./pages/index/index.js";
   "./pages/user/login/login.js";
+  "./pages/index/index.js";
   "./pages/user/register/register.js";
   "./pages/events/events.js";
   "./pages/msg/msg.js";

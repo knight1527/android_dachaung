@@ -1,5 +1,6 @@
 <template>
 	<view class="container">
+		<view style="height: 50rpx;"></view>
 		<uni-nav-bar :fixed="true" height="80rpx" title="同志"></uni-nav-bar>
 		<uni-row>
 			<view style="height: 110rpx;" class="baiyan">

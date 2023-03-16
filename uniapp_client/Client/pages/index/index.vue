@@ -1,6 +1,6 @@
 <template>
 	<view class="container"  @touchstart="touchStart" @touchend="touchEnd">
-		
+		<view style="height: 50rpx;"></view>
 		<uni-row>
 			<!-- 滚动到顶部显示 -->
 			<view style="height: 110rpx;"  v-show="scroll_show">
@@ -250,7 +250,9 @@
 
 <script>
 	//导入封装的request方法
-	import {$request} from '@/utils/request.js'
+	import {$request} from '@/utils/request.js';
+	import moment from 'moment';
+	import 'moment/locale/zh-cn';
 	var self_
 	export default {
 		data() {
@@ -295,12 +297,7 @@
 			/* 时间格式化 */
 			formatDate: function(time){
 				return function(time){
-					let date = new Date(time)
-					return date.toLocaleString('zh-CN', 
-					{year:'numeric',
-					month: '2-digit',
-					day: '2-digit',
-					});
+					return moment(time).format('YYYY-MM-DD')
 				};
 			},
 		},

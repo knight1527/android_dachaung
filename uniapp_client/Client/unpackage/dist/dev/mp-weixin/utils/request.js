@@ -1,14 +1,12 @@
 "use strict";
 var common_vendor = require("../common/vendor.js");
-const BASE_URL = `http://localhost:8096`;
+const BASE_URL = `http://118.31.54.149:8096`;
 const $request = (options) => {
   return new Promise((resolve, reject) => {
     common_vendor.index.request({
       url: BASE_URL + options.url,
       method: options.method || "GET",
-      header: {
-        token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxIiwiZXhwIjoxNjc4OTg4NTY4fQ.jHVYW-bAt0dYbROjtKkIJ5t32LFu1cDGVdmOi9fY5mQ"
-      },
+      header: { token: common_vendor.index.getStorageSync("user") ? common_vendor.index.getStorageSync("user").token : "" },
       data: options.data || {},
       success: (res) => {
         const data = res.data;

@@ -37,12 +37,7 @@ const _sfc_main = {
     },
     formatDate: function(time) {
       return function(time2) {
-        let date = new Date(time2);
-        return date.toLocaleString("zh-CN", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit"
-        });
+        return common_vendor.hooks(time2).format("YYYY-MM-DD");
       };
     }
   },

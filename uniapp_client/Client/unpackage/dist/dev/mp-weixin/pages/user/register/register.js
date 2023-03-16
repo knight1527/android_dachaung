@@ -82,7 +82,7 @@ const _sfc_main = {
         }
       }).then((res) => {
         if (res.code == "200") {
-          common_vendor.index.setStorageSync("token", res.data.token);
+          common_vendor.index.setStorageSync("user", res.data);
           common_vendor.index.switchTab({
             url: "/pages/index/index"
           });

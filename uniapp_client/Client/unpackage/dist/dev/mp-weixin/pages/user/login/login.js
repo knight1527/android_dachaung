@@ -67,7 +67,7 @@ const _sfc_main = {
           }
         }).then((res2) => {
           if (res2.code == "200") {
-            common_vendor.index.setStorageSync("token", res2.data.token);
+            common_vendor.index.setStorageSync("user", res2.data);
             common_vendor.index.showToast({
               title: "\u767B\u5F55\u6210\u529F"
             });

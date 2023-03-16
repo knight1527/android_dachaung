@@ -24,7 +24,7 @@ import java.util.List;
 @Service
 public class EventServiceImpl implements EventService {
 
-    private static final int pageSize = 5;
+    private static final int pageSize = 6;
 
     @Autowired
     private EventMapper eventMapper;
@@ -54,6 +54,7 @@ public class EventServiceImpl implements EventService {
                 "\n=======debug=======");*/
         List<Event> eventList = tep.subList( Math.min(tep.size(), (pageNum - 1) * pageSize) , Math.min(tep.size(),
                 pageNum*pageSize));
+        
         /*System.out.println(articleList.size());*/
         for (Event t : eventList){
             getEventDetails(t);
